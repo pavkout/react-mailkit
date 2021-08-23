@@ -1,0 +1,31 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3,
+        "targets": {
+          "browsers": "Last 2 Chrome versions, Firefox ESR",
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  "plugins": ["@babel/plugin-proposal-class-properties"],
+  "env": {
+    "build": {
+      "ignore": [
+        "**/*.test.tsx",
+        "**/*.test.ts",
+        "**/*.story.tsx",
+        "__snapshots__",
+        "__tests__",
+        "__stories__"
+      ]
+    }
+  },
+  "ignore": ["node_modules"]
+}
