@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-image
+  alt="Youtube Thumbnail"
+  border-radius="0px"
+  src="https://img.youtube.com/vi/smGTQrwvOc8/maxresdefault.jpg"
+/>
+`;
