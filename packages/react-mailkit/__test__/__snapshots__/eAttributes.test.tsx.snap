@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-attributes>
+  <mj-text
+    padding="0px"
+  />
+  <mj-class
+    color="blue"
+    font-size="20px"
+    name="blue"
+  />
+  <mj-all
+    font-family="Arial"
+  />
+</mj-attributes>
+`;

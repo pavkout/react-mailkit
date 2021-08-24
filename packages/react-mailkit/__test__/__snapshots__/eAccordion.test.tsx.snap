@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-accordion>
+  <mj-accordion-element
+    data-testid="e-accordion-element-1"
+    icon-height="24px"
+    icon-unwrapped-url="https://i.imgur.com/KKHenWa.png"
+    icon-width="24px"
+    icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png"
+  >
+    <mj-accordion-title
+      background-color="#fff"
+      color="#031017"
+      font-family="Roboto, Open Sans, Helvetica, Arial, sans-serif"
+      font-size="18px"
+      padding="15px"
+    >
+      Why use an accordion?
+    </mj-accordion-title>
+    <mj-accordion-text
+      background-color="#fafafa"
+      color="#505050"
+      font-family="Open Sans, Helvetica, Arial, sans-serif"
+      font-size="14potrt"
+      padding="15px"
+    >
+      <span
+        style={
+          Object {
+            "lineHeight": "20px",
+          }
+        }
+      >
+        Because emails with a lot of content are most of the time a very bad experience on mobile, E-accordion comes handy when you want to deliver a lot of information in a concise way.
+      </span>
+    </mj-accordion-text>
+  </mj-accordion-element>
+  <mj-accordion-element
+    data-testid="e-accordion-element-2"
+    icon-height="24px"
+    icon-unwrapped-url="https://i.imgur.com/KKHenWa.png"
+    icon-width="24px"
+    icon-wrapped-url="https://i.imgur.com/Xvw0vjq.png"
+  >
+    <mj-accordion-title
+      background-color="#fff"
+      color="#031017"
+      font-family="Roboto, Open Sans, Helvetica, Arial, sans-serif"
+      font-size="18px"
+      padding="15px"
+    >
+      How it works
+    </mj-accordion-title>
+    <mj-accordion-text
+      background-color="#fafafa"
+      color="#505050"
+      font-family="Open Sans, Helvetica, Arial, sans-serif"
+      font-size="14potrt"
+      padding="15px"
+    >
+      <span
+        style={
+          Object {
+            "lineHeight": "20px",
+          }
+        }
+      >
+        Content is stacked into tabs and users can expand them at will. If responsive styles are not supported (mostly on desktop clients), tabs are then expanded and your content is readable at once.
+      </span>
+    </mj-accordion-text>
+  </mj-accordion-element>
+</mj-accordion>
+`;
