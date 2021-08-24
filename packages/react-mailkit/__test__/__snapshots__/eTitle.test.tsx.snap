@@ -2,6 +2,6 @@
 
 exports[`should be correct output renders correctly 1`] = `
 <mj-title>
-  Hello Fastmail!
+  Hello react-mailkit!
 </mj-title>
 `;

@@ -124,7 +124,7 @@ const TryItLive = () => {
     <ESection>
       <EColumn>
         <EText fontStyle="italic" fontSize="20px" color="#626262">
-          FastMail
+          Awesome Mail Kit
       </EText>
       </EColumn>
     </ESection>

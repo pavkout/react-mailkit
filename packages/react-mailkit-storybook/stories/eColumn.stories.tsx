@@ -140,7 +140,7 @@ const Template: Story<IColumnProps> = args => (
   <ESection backgroundColor='#f0f0f0'>
     <EColumn {...args}>
       <EText fontStyle='italic' fontSize='20px' color='#626262'>
-        FastMail
+        Awesome Mail Kit
       </EText>
     </EColumn>
   </ESection>

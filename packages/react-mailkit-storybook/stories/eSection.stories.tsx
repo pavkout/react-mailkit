@@ -131,7 +131,7 @@ const Template: Story<ISectionProps> = args => (
   <ESection {...args}>
     <EColumn>
       <EText color='#ffffff' fontSize='22px'>
-        Hello FastMail
+        Hello react-mailkit
       </EText>
     </EColumn>
   </ESection>

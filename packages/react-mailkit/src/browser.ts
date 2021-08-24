@@ -14,7 +14,7 @@ import { convertToMjml } from './utils';
 
 /**
  * This hook returns the mjml result plus the text from html.
- * @param email The given fastmail markup.
+ * @param email The given react-mailkit markup.
  * @param options Compailation options for mjml.
  * @returns Object contain mjml result plus the text from html.
  */

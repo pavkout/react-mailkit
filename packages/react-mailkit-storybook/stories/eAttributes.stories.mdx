@@ -2,7 +2,7 @@ import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
 
 import { EAttributes } from '@react-mailkit/core';
 
-<Meta title="Email Design System/Standard Head components/eAttributes" />
+<Meta title='Email Design System/Standard Head components/eAttributes' />
 
 # EAttributes
 
@@ -12,10 +12,10 @@ An mj-all is like the above, but affects all MJML components via the one tag.
 
 mj-class tags create a named group of MJML attributes you can apply to MJML components. To apply them, use mj-class="name".
 
-### Import 
+### Import
 
 ```js
-import { EAttributes } from 'fastmail';
+import { EAttributes } from '@react-mailkit/core';
 ```
 
 ### Examples
@@ -33,15 +33,13 @@ import { EAttributes } from 'fastmail';
   <EBody>
     <ESection>
       <EColumn>
-        <EText mj-class="blue big">
-          Hello World!
-        </EText>
+        <EText mj-class="blue big"> Hello World! </EText>
       </EColumn>
     </ESection>
   </EBody>
 </EMail>
 ```
 
-### Props 
+### Props
 
 <ArgsTable of={EAttributes} />

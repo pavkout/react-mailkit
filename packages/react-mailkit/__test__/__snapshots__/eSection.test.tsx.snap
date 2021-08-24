@@ -9,7 +9,7 @@ exports[`should be correct output renders correctly 1`] = `
       color="#ffffff"
       font-size="22px"
     >
-      Hello FastMail
+      Hello react-mailkit
     </mj-text>
   </mj-column>
 </mj-section>

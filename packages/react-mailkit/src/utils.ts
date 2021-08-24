@@ -44,9 +44,9 @@ export const toColor = (name: any, value: any) => {
 };
 
 /**
- * This function convert fastmail to mjml format
- * @param email The fastmail lcomponent
- * @returns The covnerted mjml format
+ * This function convert react-mailkit to mjml format
+ * @param email The react-mailkit component
+ * @returns The converted mjml format
  */
 export const convertToMjml = (email: ReactElement) =>
   ReactDOMServer.renderToStaticMarkup(email);

@@ -29,7 +29,7 @@ export const parameters = {
         ],
         'Templates',
         'Playground',
-        ['Try It Live', 'Mjml To Fastmail']
+        ['Try It Live', 'Mjml To react-mailkit']
       ]
     }
   }
