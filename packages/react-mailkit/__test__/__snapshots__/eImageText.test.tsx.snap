@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-section
+  background-color="#cfe856"
+>
+  <mj-column>
+    <mj-text>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image
+      src="https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg"
+    />
+  </mj-column>
+</mj-section>
+`;
