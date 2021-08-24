@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-image
+  alt="Static Image Map"
+  height="300px"
+  src="https://maps.googleapis.com/maps/api/staticmap?size=600x300&scale=1&format=png8&maptype=satellite&key=AIzaSyCd5ZoMYrDuVeDkXnpztEodrQ-IyXInnek&"
+  width="600px"
+/>
+`;
