@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-wrapper>
+  <mj-section
+    padding="0"
+  >
+    <mj-column
+      border-radius="5px 5px 0px 0px"
+      width="250px"
+    >
+      <mj-image
+        border-radius="5px 5px 0px 0px"
+        height="150px"
+        padding="0"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPPdpXj3y0aAwHAHICOaU-fwqbahRFDWxL7Q&usqp=CAU"
+        width="250px"
+      />
+    </mj-column>
+  </mj-section>
+  <mj-section
+    padding="0"
+  >
+    <mj-column
+      background-color="#f3f3f3"
+      border-radius="0px 0px 5px 5px"
+      width="250px"
+    >
+      <mj-text
+        font-size="16px"
+        padding="15px 20px 5px 20px"
+      >
+        My Social Media Post Title
+      </mj-text>
+      <mj-text
+        color="#616161"
+        padding="5px 20px 10px 20px"
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </mj-text>
+      <mj-social
+        align="left"
+        icon-size={24}
+        padding="10px 20px"
+      >
+        <mj-social-element
+          border-radius="50px"
+          name="facebook"
+          padding="0"
+        />
+      </mj-social>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>
+`;
