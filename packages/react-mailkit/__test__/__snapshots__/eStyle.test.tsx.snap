@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-style
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": ".blue-text div { color: blue !important; }",
+    }
+  }
+  inline="inline"
+/>
+`;
