@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-wrapper
+  border="1px solid #000000"
+  padding="50px 30px"
+>
+  <mj-section
+    border-left="1px solid #aaaaaa"
+    border-right="1px solid #aaaaaa"
+    border-top="1px solid #aaaaaa"
+    padding="20px"
+  >
+    <mj-column>
+      <mj-image
+        padding="0"
+        src="https://place-hold.it/350x150"
+      />
+    </mj-column>
+  </mj-section>
+  <mj-section
+    border-bottom="1px solid #aaaaaa"
+    border-left="1px solid #aaaaaa"
+    border-right="1px solid #aaaaaa"
+    padding="20px"
+  >
+    <mj-column
+      border="1px solid #dddddd"
+    >
+      <mj-text
+        padding="20px"
+      >
+         First line of text 
+      </mj-text>
+      <mj-divider
+        border-color="lightgrey"
+        border-style="dashed"
+        border-width="1px"
+        padding="0 20px"
+      />
+      <mj-text
+        padding="20px"
+      >
+         Second line of text 
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>
+`;
