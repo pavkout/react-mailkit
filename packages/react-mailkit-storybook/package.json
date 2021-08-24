@@ -1,0 +1,28 @@
+{
+  "name": "@react-mailkit/storybook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@react-mailkit/core": "0.0.1",
+    "@react-mailkit/live": "0.0.1",
+    "@react-mailkit/converter": "0.0.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.3.4",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-controls": "^6.3.4",
+    "@storybook/addon-docs": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-knobs": "^6.3.0",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/react": "^6.3.7"
+  }
+}
