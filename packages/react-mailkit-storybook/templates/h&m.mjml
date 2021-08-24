@@ -1,0 +1,428 @@
+<mjml>
+  <mj-head>
+    <mj-title>H&M Home- A stylish holiday at home</mj-title>
+    <mj-style>
+      .shop-now {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        mso-line-height-rule: single;
+        color: #000000;
+        letter-spacing: 1px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+    </mj-style>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-class name="preheader" font-size="11px" font-family="Arial, Verdana, sans-serif" color="#939393" />
+      <mj-class name="menu" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="12px" line-height="20px" color="#000000" text-transform="uppercase" align="center" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section padding="10px 5px 0 5px">
+      <mj-column width="70%">
+        <mj-text mj-class="preheader">
+          New decor, classic design and ornaments for every room and space.
+        </mj-text>
+      </mj-column>
+      <mj-column width="30%">
+        <mj-text mj-class="preheader" align="right">
+          View online
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="50px">
+      <mj-column>
+        <mj-image src="http://customers.anpdm.com/hm/1311_rknd/header-logo.png" width="76px" href="http://www.hm.com/" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 20px">
+      <mj-group width="75%">
+        <mj-column>
+          <mj-text mj-class="menu">
+            <a href="http://www.hm.com/">SHOP NOW</a>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text mj-class="menu">
+            <a href="http://www.hm.com/">NEW ARRIVALS</a>
+          </mj-text>
+        </mj-column>
+
+        <mj-column>
+          <mj-text mj-class="menu">
+            <a href="http://www.hm.com/">SALE</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+
+      <mj-column width="25%">
+        <mj-text mj-class="menu">
+          <a href="http://www.hm.com/">STORE LOCATOR</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 0" border-top="1px solid #bbbbbb" border-bottom="1px solid #bbbbbb">
+      <mj-column>
+        <mj-text font-family="Helvetica, sans-serif" font-size="18px" line-height="20px" color="#080808" align="center">
+          <a href="http://www.hm.com/">Enjoy <b>free shipping</b> over $50 with code 3181!*</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="40px">
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5RQ_01.jpg" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column width="480px">
+        <mj-text align="center" padding-top="20px">
+          <span style="font-family: Arial, Helvetica, sans-serif;
+                          font-size: 11px;
+                          color: #000000;
+                          font-weight: bold;
+                          letter-spacing: 2px;">
+            HOME
+          </span>
+          <br /><br />
+          <span style="font-family: Didot, Garamond, Georgia;
+                      font-size: 52px;
+                      mso-line-height-rule: single;
+                      line-height: 43px;
+                      color: #000000;
+                      font-weight: bold;">
+            HOLIDAY<br />CLASSICS
+          </span>
+        </mj-text>
+        <mj-text align="center" line-height="14px" padding-top="5px">
+          <span style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 13px;
+                        mso-line-height-rule: single;
+                        color: #080808;
+                        font-weight: normal;
+                        line-height:14px!important;
+                        padding:0">
+            Red remains the ruling color of the holiday season. Invest in new classics to get into a festive mood.
+          </span>
+        </mj-text>
+        <mj-text align="center" padding-top="20px">
+          <span class="shop-now">
+            <a href="http://www.hm.com/">
+              <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+            </a>
+          </span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="30px">
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5RQ_02.gif" href="http://www.hm.com/" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-group>
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0320436003.gif" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10px 20px 10px">
+            Metal Storage Box
+            <br />
+            $ 14.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0320455002.jpg" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10px 20px 10px">
+            Metal Candlestick
+            <br />
+            $ 9.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+
+      <mj-group>
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0324033001.jpg" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10px 20px 10px">
+            Christmas-gift Bag
+            <br />
+            $ 17.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0325941001.gif" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10px 20px 10px">
+            Cotton Cushion Cover
+            <br />
+            $ 5.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5RQ_03.jpg" href="http://www.hm.com/" padding="10px" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5RQ_04.jpg" href="http://www.hm.com/" padding="10px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="10px">
+      <mj-group>
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0323943001.jpg" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10px 20px 10px">
+            Small Porcelain Plate
+            <br />
+            $ 5.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0318204001.jpg" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10px 20px 10px">
+            Metal Tea Light Holder
+            <br />
+            $ 5.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+
+      <mj-group>
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0324075001.jpg" href="http://www.hm.com/" padding="0 10 20 10" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10 20 10">
+            Cotton Tablecloth
+            <br />
+            $ 19.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10px 10px 10px" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0321185002.jpg" href="http://www.hm.com/" padding="0 10px 20px 10px" />
+          <mj-text mj-class="menu" text-transform="none" line-height="18px" padding="0 10 20 10">
+            Tea Towel
+            <br />
+            $ 5.99
+            <br />
+          </mj-text>
+          <mj-text padding="0 10 10 10" align="center">
+            <span class="shop-now">
+              <a href="http://www.hm.com/">
+                <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5RQ_05.jpg" href="http://www.hm.com/" padding="10px 10px" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5RQ_06_US.jpg" href="http://www.hm.com/" padding="10px 10px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-divider padding="20px 10px" border-width="1px" border-color="#bbbbbb" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="10px">
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5SL_07.jpg" href="http://www.hm.com/" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="5px">
+      <mj-column width="480px">
+        <mj-text align="center" padding-top="10px">
+          <span style="font-family: Arial, Helvetica, sans-serif;
+                          font-size: 11px;
+                          color: #000000;
+                          font-weight: bold;
+                          letter-spacing: 2px;">
+            KIDS
+          </span>
+          <br /><br />
+          <span style="font-family: Didot, Garamond, Georgia;
+                      font-size: 52px;
+                      mso-line-height-rule: single;
+                      line-height: 43px;
+                      color: #000000;
+                      font-weight: bold;">
+            HOLIDAY<br />SNUGS
+          </span>
+        </mj-text>
+        <mj-text align="center" line-height="14px" padding-top="5px">
+          <span style="font-family: Arial, Helvetica, sans-serif;
+                        font-size: 13px;
+                        mso-line-height-rule: single;
+                        color: #080808;
+                        font-weight: normal;
+                        line-height:14px!important;
+                        padding:0">
+            The wait is half the fun – set expectations high with seasonal decorations, snuggly cushions and holiday-appropriate accessories. </span>
+        </mj-text>
+        <mj-text align="center" padding-top="20px">
+          <span style="font-family: Arial, Helvetica, sans-serif;
+                      font-size: 11px;
+                      font-weight: bold;
+                      mso-line-height-rule: single;
+                      color: #000000;
+                      letter-spacing: 1px;">
+            <a href="http://www.hm.com/">
+              <img width="3" height="11" display="inline-block" src="http://customers.anpdm.com/hm/1311_rknd/link-darkarrow.png" /> SHOP NOW
+            </a>
+          </span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 0">
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5SL_08.jpg" href="http://www.hm.com/" padding="10px 10px" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_5SL_09.jpg" href="http://www.hm.com/" padding="10px 10px" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/0174818015_US.gif" href="http://www.hm.com/" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="20px">
+      <mj-column>
+        <mj-divider padding="10px 10px 20px 10px" border-width="1px" border-color="#bbbbbb" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="10px 10px 30px 10px">
+      <mj-column>
+        <mj-image src="http://img2.anpdm.com/HM_Huvudkonto/w44_151029_Instagram_11_US.gif" href="http://www.hm.com/" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section full-width="full-width" background-color="rgb(7,9,10)" padding-top="45px">
+      <mj-group width="40%">
+        <mj-column>
+          <mj-image src="http://customers.anpdm.com/hm/1311_rknd/icon-facebook.png" href="http://www.hm.com/" width="20px" />
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://customers.anpdm.com/hm/1311_rknd/icon-twitter.png" href="http://www.hm.com/" width="20px" />
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://customers.anpdm.com/hm/1311_rknd/icon-instagram.png" href="http://www.hm.com/" width="20px" />
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://customers.anpdm.com/hm/1311_rknd/icon-youtube.png" href="http://www.hm.com/" width="20px" />
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://customers.anpdm.com/hm/1311_rknd/icon-googleplus.png" href="http://www.hm.com/" width="20px" />
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="http://customers.anpdm.com/hm/1311_rknd/icon-pinterest.png" href="http://www.hm.com/" width="20px" />
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section full-width="full-width" background-color="rgb(7,9,10)" padding="10px 10px 100px 10px">
+      <mj-column>
+        <mj-text align="center" color="#ffffff" font-size="10px" line-height="11px" font-family="Arial, Helvetica, sans-serif">
+          <p style="font-size:11px; font-weight:bold">DOWNLOAD OUR APP &nbsp <a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">iOS</a> | <a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">ANDROID</a></p>
+          <p>*Offer valid 10/26/2015 - 11/4/2015 on <a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">hm.com</a> on orders of $ 50 or more before taxes. Valid in US only.</p>
+
+          <p>May be subject to printing errors, changes, price changes, delivery delays and limited availability of stock.<br />
+            To ensure you continue to receive news from us, please add <a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">no-reply@hm.com</a> to your address book.</p>
+
+          <p><a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">Contact us</a><br />
+            You are receiving this email because you are signed up to receive H&M promotional communications. This message was sent by H & M Hennes & Mauritz GBC AB, Mäster Samuelsgatan 46, 106 38 Stockholm, Sweden. <a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">www.hm.com</a>
+            <br />If you would prefer not to receive our fashion news and offers, <a style="text-decoration:underline; color:#ffffff" href="http://www.hm.com/">simply click here to unsubscribe</a></p>
+        </mj-text>
+        <mj-image src="http://customers.anpdm.com/hm/1311_rknd/footer-logo.png" href="http://www.hm.com/" width="58px" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
