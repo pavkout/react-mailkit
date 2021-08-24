@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-font
+  href="https://fonts.googleapis.com/css?family=Raleway"
+  name="Raleway"
+/>
+`;
