@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-text
+  align="center"
+  font-size="20px"
+>
+  I'm awesome email
+</mj-text>
+`;
