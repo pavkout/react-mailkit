@@ -1,0 +1,47 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import { EAttributes } from '@react-mailkit/core';
+
+<Meta title="Email Design System/Standard Head components/eAttributes" />
+
+# EAttributes
+
+Inside mj-attributes, a tag citing one MJML component (like mj-text; see example) overrides default settings for listed MJML attributes on the one component.
+
+An mj-all is like the above, but affects all MJML components via the one tag.
+
+mj-class tags create a named group of MJML attributes you can apply to MJML components. To apply them, use mj-class="name".
+
+### Import 
+
+```js
+import { EAttributes } from 'fastmail';
+```
+
+### Examples
+
+```html
+<EMail>
+  <EHead>
+    <EAttributes>
+      <EText padding="0" />
+      <EClass name="blue" color="blue" />
+      <EClass name="big" font-size="20px" />
+      <EAll font-family="Arial" />
+    </EAttributes>
+  </EHead>
+  <EBody>
+    <ESection>
+      <EColumn>
+        <EText mj-class="blue big">
+          Hello World!
+        </EText>
+      </EColumn>
+    </ESection>
+  </EBody>
+</EMail>
+```
+
+### Props 
+
+<ArgsTable of={EAttributes} />

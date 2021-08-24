@@ -1,0 +1,49 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import { EStyle } from '@react-mailkit/core';
+
+<Meta title='Email Design System/Standard Head components/eStyle' />
+
+# EStyle
+
+This tag allows you to set CSS styles that will be applied to the HTML in your MJML document as well as the HTML outputted. The CSS styles will be added to the head of the rendered HTML by default, but can also be inlined by using the inline="inline" attribute.
+
+Here is an example showing the use in combination with the css-class attribute, which is supported by all body components.
+
+### Import
+
+```js
+import { EStyle } from 'fastmail';
+```
+
+### Examples
+
+```html
+<EMail>
+  <EHead>
+    <EAttributes>
+      <EClass name="mjclass" color="green" font-size="30px" />
+    </EAttributes>
+    <EStyle inline="inline">
+      .blue-text div { color: blue !important; }
+    </EStyle>
+    <EStyle>
+      .red-text div { color: red !important; text-decoration: underline
+      !important; }
+    </EStyle>
+  </EHead>
+  <EBody>
+    <ESection>
+      <EColumn>
+        <EText css-class="red-text">I'm red and underlined</EText>
+        <EText css-class="blue-text">I'm blue because of inline</EText>
+        <EText mj-class="mjclass">I'm green</EText>
+      </EColumn>
+    </ESection>
+  </EBody>
+</EMail>
+```
+
+### Props
+
+<ArgsTable of={EStyle} />

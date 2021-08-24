@@ -1,0 +1,257 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title='Overview/Introduction' />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr;
+    }
+  }
+
+  .link-item {
+    display: block;
+    padding: 20px 30px 20px 15px;
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+    transform: translate3d(0, -3px, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .link-item strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  .link-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    flex: none;
+  }
+
+  .link-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  
+`}</style>
+
+# Welcome to FastMail
+
+<img
+  src='https://cdn.worldvectorlogo.com/logos/mjml-by-mailjet.svg'
+  height='64'
+/> &middot; <img
+  src='https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark-700x235.png'
+  height='64'
+/>
+
+[Mjml](https://mjml.io/) is the best responsive mail framework, I love it <3. I created this project to have a React library that use the mjml API to convert a mjml template into valid html ready to use.
+
+`MJML` is a markup language created by [Mailjet](https://www.mailjet.com/).
+So in order to create emails on the fly we created a library with `React` components.
+
+## How it works
+
+Install the required dependencies first:
+
+## 📦 Install
+
+```bash
+yarn add fastmail
+```
+
+OR
+
+```bash
+npm install fastmail
+```
+
+## 🚀 Usage
+
+And afterwards write a code like a pro:
+
+```js
+import {
+  useEmail,
+  EMail,
+  EHead,
+  ETitle,
+  EPreview,
+  EBody,
+  ESection,
+  EColumn,
+  EButton,
+  EImage
+} from '@react-mailkit/core';
+
+const { html, errors } = useEmail(
+  <EMail>
+    <EHead>
+      <ETitle>Last Minute Offer</ETitle>
+      <EPreview>Last Minute Offer...</EPreview>
+    </EHead>
+    <EBody width={500}>
+      <ESection fullWidth backgroundColor='#efefef'>
+        <EColumn>
+          <EImage src='https://static.wixstatic.com/media/5cb24728abef45dabebe7edc1d97ddd2.jpg' />
+        </EColumn>
+      </ESection>
+      <ESection>
+        <EColumn>
+          <EButton
+            padding='20px'
+            backgroundColor='#346DB7'
+            href='https://www.wix.com/'
+          >
+            I like it!
+          </EButton>
+        </EColumn>
+      </ESection>
+    </EBody>
+  </EMail>,
+  { validationLevel: 'soft' }
+);
+```
+
+And as the result you will get a nice looking email HTML (works in mobile too!)
+
+![preview](https://user-images.githubusercontent.com/10008149/41058394-59b8ce9e-69d2-11e8-9eb9-c294f35bae9f.png)
+
+## Options
+
+Following are the options you can pass when rendering to HTML, these are the default values:
+
+```js
+{
+  fonts: {
+    'Open Sans':
+      'https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700',
+    'Droid Sans':
+      'https://fonts.googleapis.com/css?family=Droid+Sans:300,400,500,700',
+    Lato: 'https://fonts.googleapis.com/css?family=Lato:300,400,500,700',
+    Roboto: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700',
+    Ubuntu: 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700',
+  },
+  keepComments: true,
+  beautify: false,
+  minify: false,
+  minifyOptions: {},
+  validationLevel: 'soft',
+  filePath: '.',
+  mjmlConfigPath: '.',
+  useMjmlConfigOptions: false,
+  juicePreserveTags: null,
+  juiceOptions: {},
+  skeleton: '',
+  actualPath: '.',
+  ignoreIncludes: false,
+  preprocessors: [],
+}
+```
+
+If you want to override these, you can pass an object to `useEmail` as a second argument. See the [MJML docs](https://documentation.mjml.io/#inside-node-js) for the full list of options you can set.
+
+## Extensions
+
+```js
+import {
+  EComment
+} from '@react-mailkit/extensions';
+
+<EComment>Built with ... at ...</EComment>
+// <!--Built with ... at ...-->
+
+<EComment condition="if gte mso 9">MSO conditionals</EComment>
+// <!--[if gte mso 9]>MSO conditionals<![endif]-->
+
+<EComment condition="if IE">MSO conditionals</EComment>
+// <!--[if IE]>MSO conditionals<![endif]-->
+```
+
+## Limitations
+
+Currently `mjml` and `fastmail` libraries are meant to be run inside a node.
+
+## Example project
+
+You can find an example project here
+[https://github.com/wix-incubator/fastmail-example](https://github.com/wix-incubator/mjml-react-example)
+
+## 🔨 Setup
+
+## ⌨️ Typescript
+
+## 🤝 Contributing
+
+## 📝 License

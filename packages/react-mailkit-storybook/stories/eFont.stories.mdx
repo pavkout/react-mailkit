@@ -1,0 +1,40 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import { EFont } from '@react-mailkit/core';
+
+<Meta title='Email Design System/Standard Head components/eFont' />
+
+# EFont
+
+This tag imports fonts. The tag has effect only if the template uses the font, too. The href attribute points to a hosted css file; that file contains a @font-face declaration.
+Example: https://fonts .googleapis.com/css?family=Raleway
+
+### Import
+
+```js
+import { EFont } from 'fastmail';
+```
+
+### Examples
+
+```html
+<EMail>
+  <EHead>
+    <EFont
+      name="Raleway"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+  </EHead>
+  <EBody>
+    <ESection>
+      <EColumn>
+        <EText font-family="Raleway, Arial"> Hello World! </EText>
+      </EColumn>
+    </ESection>
+  </EBody>
+</EMail>
+```
+
+### Props
+
+<ArgsTable of={EFont} />

@@ -1,0 +1,36 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import { EBreakpoint } from '@react-mailkit/core';
+
+<Meta title='Email Design System/Standard Head components/eBreakpoint' />
+
+# EBreakpoint
+
+This tag allows you to control on which breakpoint the layout should go desktop/mobile.
+
+### Import
+
+```js
+import { EBreakpoint } from 'fastmail';
+```
+
+### Examples
+
+```html
+<EMail>
+  <EHead>
+    <EBreakpoint width="320px" />
+  </EHead>
+  <EBody>
+    <ESection>
+      <EColumn>
+        <EText> Hello World! </EText>
+      </EColumn>
+    </ESection>
+  </EBody>
+</EMail>
+```
+
+### Props
+
+<ArgsTable of={EBreakpoint} />

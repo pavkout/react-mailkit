@@ -1,0 +1,60 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import { EInclude } from '@react-mailkit/core';
+
+<Meta title='Email Design System/Components/eInclude' />
+
+# EInclude
+
+The mjml-core package allows you to include external mjml files to build your email template.
+You can wrap your external mjml files inside the default mjml > mj-body tags to make it easier to preview outside the main template.
+The MJML engine will then replace your included files before starting the rendering process.
+
+Other file types
+You can include external css files. They will be inserted the same way as when using a mj-style.
+You need to specify that you're including a css file using the type="css" attribute.
+If you want the css to be inlined, you can use the css-inline="inline" attribute.
+
+You can also include external html files. They will be inserted the same way as when using a mj-raw.
+You need to specify that you're including a html file using the type="html" attribute.
+
+### Import
+
+```js
+import { EInclude } from 'fastmail';
+```
+
+### Examples
+
+```html
+<!-- header.mjml -->
+<ESection>
+  <EColumn>
+    <EText>This is a header</EText>
+  </EColumn>
+</ESection>
+```
+
+```html
+<!-- main.mjml -->
+<EMail>
+  <EBody>
+    <EInclude path="./header.mjml" />
+  </EBody>
+</EMail>
+```
+
+```html
+<!-- main.mjml -->
+<EInclude path="./styles.css" type="css" />
+<EInclude path="./inline-styles.css" type="css" cssInline="inline" />
+```
+
+```html
+<!-- main.mjml -->
+<EInclude path="./partial.html" type="html" />
+```
+
+### Props
+
+<ArgsTable of={EInclude} />
