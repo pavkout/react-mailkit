@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-table
+  table-layout="fixed"
+>
+  <tr
+    style={
+      Object {
+        "borderBottom": "1px solid #ecedee",
+        "padding": "15px 0",
+        "textAlign": "left",
+      }
+    }
+  >
+    <th
+      style={
+        Object {
+          "padding": "0 15px 0 0",
+        }
+      }
+    >
+      Year
+    </th>
+    <th
+      style={
+        Object {
+          "padding": "0 15px",
+        }
+      }
+    >
+      Language
+    </th>
+    <th
+      style={
+        Object {
+          "padding": "0 0 0 15px",
+        }
+      }
+    >
+      Inspired from
+    </th>
+  </tr>
+  <tr>
+    <td
+      style={
+        Object {
+          "padding": "0 15px 0 0",
+        }
+      }
+    >
+      1995
+    </td>
+    <td
+      style={
+        Object {
+          "padding": "0 15px",
+        }
+      }
+    >
+      PHP
+    </td>
+    <td
+      style={
+        Object {
+          "padding": "0 0 0 15px",
+        }
+      }
+    >
+      C, Shell Unix
+    </td>
+  </tr>
+  <tr>
+    <td
+      style={
+        Object {
+          "padding": "0 15px 0 0",
+        }
+      }
+    >
+      1995
+    </td>
+    <td
+      style={
+        Object {
+          "padding": "0 15px",
+        }
+      }
+    >
+      JavaScript
+    </td>
+    <td
+      style={
+        Object {
+          "padding": "0 0 0 15px",
+        }
+      }
+    >
+      Scheme, Self
+    </td>
+  </tr>
+</mj-table>
+`;
