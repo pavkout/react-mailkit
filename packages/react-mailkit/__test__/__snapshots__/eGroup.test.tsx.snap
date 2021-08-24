@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-group
+  width="600px"
+>
+  <mj-column>
+    <mj-image
+      height="185px"
+      padding="0"
+      src="https://mjml.io/assets/img/easy-and-quick.png"
+      width="137px"
+    />
+    <mj-text
+      align="center"
+    >
+      <h2>
+        Easy and quick
+      </h2>
+      <p>
+        Write less code, save time and code more efficiently with MJML’s semantic syntax.
+      </p>
+    </mj-text>
+  </mj-column>
+  <mj-column>
+    <mj-image
+      height="185px"
+      padding="0"
+      src="https://mjml.io/assets/img/responsive.png"
+      width="166px"
+    />
+    <mj-text
+      align="center"
+    >
+      <h2>
+        Responsive
+      </h2>
+      <p>
+        MJML is responsive by design on most-popular email clients, even Outlook.
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-group>
+`;
