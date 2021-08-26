@@ -2,11 +2,12 @@
   "name": "@react-mailkit/cli",
   "version": "0.0.1",
   "license": "MIT",
+  "sideEffects": false,
   "private": true,
   "description": "A package to convert a MJML template from MJML format to react-mailkit format",
-  "main": "src/mjml2fastmail.js",
+  "main": "src/mailkit.js",
   "bin": {
-    "mjml2fastmail": "src/cli.js"
+    "mailkit": "src/cli.js"
   },
   "scripts": {
     "build": "babel src -d lib",

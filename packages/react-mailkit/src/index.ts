@@ -12,7 +12,7 @@ import json2mjml from 'json2mjml';
 import mjml2json from 'mjml2json';
 
 // @ts-ignore: Unreachable code error
-import mjml2fastmail from '@react-mailkit/cli';
+import mailkit from '@react-mailkit/cli/src/mailkit';
 
 import { convertToMjml } from './utils';
 
@@ -41,7 +41,7 @@ export const jsonToMjml = (json: MJMLJsonObject) => json2mjml(json);
  * @param mjml The given mjml.
  * @returns return the converted mjml with fastmail syntax.
  */
-export const mjmlTofastmail = (mjml: any) => mjml2fastmail(mjml);
+export const mjmlToMailkit = (mjml: any) => mailkit(mjml);
 
 /**
  * Convert the given mjml to json.

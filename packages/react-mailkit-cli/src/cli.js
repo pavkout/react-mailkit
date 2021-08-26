@@ -3,14 +3,14 @@
 import fs from 'fs'
 import program from 'commander'
 import mjml2json from 'mjml2json'
-import { json2xml } from './mjml2fastmail'
+import { json2xml } from './mailkit'
 import { version } from '../package.json'
 
 program.version(version).usage('<input-file> <output-file>').parse(process.argv)
 
 if (program.args.length !== 2) {
-	program.outputHelp()
-	process.exit(1)
+  program.outputHelp()
+  process.exit(1)
 }
 
 const [inputFilename, outputFilename] = program.args
