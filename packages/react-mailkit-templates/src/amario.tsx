@@ -176,7 +176,7 @@ const email = (
         paddingBottom='20px'
         paddingTop='20px'
       >
-        <EColumn verticalAlign='top' width='25%'></EColumn>
+        <EColumn verticalAlign='top' width='25%' />
         <EColumn verticalAlign='top' width='50%'>
           <EText
             align='center'
@@ -250,7 +250,7 @@ const email = (
             LEARN MORE
           </EButton>
         </EColumn>
-        <EColumn verticalAlign='top' width='25%'></EColumn>
+        <EColumn verticalAlign='top' width='25%' />
       </ESection>
       <ESection
         backgroundColor='#ffffff'

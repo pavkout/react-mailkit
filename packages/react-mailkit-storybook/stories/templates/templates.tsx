@@ -3,6 +3,9 @@ import styled, { keyframes } from 'styled-components';
 import map from 'lodash.map';
 import camelCase from 'lodash.camelcase';
 import capitalize from 'lodash.capitalize';
+import upperfirst from 'lodash.upperfirst';
+
+import * as T from '@react-mailkit/templates';
 
 const Slider = styled.div`
   background: white;
@@ -91,41 +94,17 @@ const PreviewHeader = styled.h1`
   margin: 15px 0;
 `;
 
-const templates = [
-  'Amario',
-  'Arturia',
-  'Austin',
-  'Black Friday',
-  'Card',
-  'Christmas',
-  'hAndm',
-  'Happy New Year',
-  'One Page',
-  'Pizza',
-  'Proof',
-  'Racoon',
-  'Reactivation Email',
-  'Real Estate',
-  'Recast',
-  'Receipt Email',
-  'Referral Email',
-  'Ticket Shop',
-  'Ugg Royale',
-  'Welcome Email',
-  'Worldly'
-];
-
 export const Templates: FC<any> = () => {
   const [selectedTemplate, setSelectedTemplate] = useState('Amario');
 
-  const CompTag = require(`./${camelCase(selectedTemplate)}`).default;
+  const CompTag = T[upperfirst(camelCase(selectedTemplate))];
 
   return (
     <>
       <SliderHeader>Choose and see the selected template</SliderHeader>
       <Slider>
         <SlideTrack>
-          {map(templates, (t: string, index: number) => (
+          {map(T.templates, (t: string, index: number) => (
             <SliderItemsContainer
               key={index}
               onClick={() => setSelectedTemplate(t)}

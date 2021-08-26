@@ -25,7 +25,7 @@ const email = (
             width='144px'
           ></EImage>
         </EColumn>
-        <EColumn></EColumn>
+        <EColumn />
         <EColumn>
           <EText
             align='left'
