@@ -2,5 +2,15 @@
   "name": "@react-mailkit/example",
   "version": "0.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "sideEffects": false,
+  "private": true,
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "dependencies": {
+    "@react-mailkit/core": "0.0.1"
+  }
 }

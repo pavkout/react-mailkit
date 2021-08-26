@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "module": "ES2015",
+    "jsx": "react",
     "allowJs": true,
     "noEmit": false,
     "emitDeclarationOnly": true,
@@ -10,13 +11,6 @@
     "rootDir": "./src",
     "baseUrl": "./"
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "__stories__",
-    "stories",
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "__stories__", "stories"]
 }
