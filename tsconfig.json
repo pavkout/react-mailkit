@@ -16,25 +16,14 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
-      "@react-mailkit/*": [
-        "packages/*/src"
-      ],
-      "*": [
-        "node_modules",
-        "packages"
-      ]
+      "@react-mailkit/*": ["packages/*/src"],
+      "*": ["node_modules", "packages"]
     }
   },
   "awesomeTypescriptLoaderOptions": {
     "useBabel": true,
     "babelCore": "@babel/core"
   },
-  "include": [
-    "packages",
-    "jest-dom/extend-expect"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["packages", "jest-dom/extend-expect"],
+  "exclude": ["node_modules", "dist"]
 }
