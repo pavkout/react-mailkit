@@ -3,39 +3,39 @@
 exports[`should be correct output renders correctly 1`] = `
 <mj-raw>
   <div
-    className="sc-bdnxRM jIcTfj rating"
+    className="sc-bdnxRM hcEyDz rating"
     size={36}
   >
     <a
-      className="sc-gtsrHT hoCMnG"
+      className="sc-gtsrHT csBpCe"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=5"
       title="5"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT hoCMnG"
+      className="sc-gtsrHT csBpCe"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=4"
       title="4"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT hoCMnG"
+      className="sc-gtsrHT csBpCe"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=3"
       title="3"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT hoCMnG"
+      className="sc-gtsrHT csBpCe"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=2"
       title="2"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT hoCMnG"
+      className="sc-gtsrHT csBpCe"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=1"
       title="1"
     >
