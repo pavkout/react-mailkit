@@ -1,7 +1,9 @@
-import resolve from '@rollup/plugin-node-resolve';
+import resolve, { nodeResolve } from '@rollup/plugin-node-resolve';
+import nodePolyfills from 'rollup-plugin-polyfill-node';
 import commonjs from '@rollup/plugin-commonjs';
 import { babel } from '@rollup/plugin-babel';
 import json from '@rollup/plugin-json';
+import dts from 'rollup-plugin-dts';
 
 import pkg from './package.json';
 
@@ -37,9 +39,13 @@ export default (async () => [
     },
     // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
     // https://rollupjs.org/guide/en/#external
-    external: ['mjml', 'react'],
+    external: [
+      ...Object.keys(pkg.dependencies || {}),
+      ...Object.keys(pkg.devDependencies || {})
+    ],
     plugins: [
       json(),
+      nodePolyfills(),
       // Allows node_modules resolution
       resolve({ extensions }),
       // Allow bundling cjs modules. Rollup doesn't understand cjs
@@ -65,7 +71,10 @@ export default (async () => [
     input: './src/index.ts',
     // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
     // https://rollupjs.org/guide/en/#external
-    external: ['mjml', 'react'],
+    external: [
+      ...Object.keys(pkg.dependencies || {}),
+      ...Object.keys(pkg.devDependencies || {})
+    ],
     output: [
       {
         file: pkg.main,
@@ -82,8 +91,10 @@ export default (async () => [
     ],
     plugins: [
       json(),
+      nodePolyfills(),
       // Allows node_modules resolution
       resolve({ extensions }),
+      nodeResolve(),
       // Allow bundling cjs modules. Rollup doesn't understand cjs
       commonjs(),
       // Compile TypeScript/JavaScript files
@@ -95,6 +106,12 @@ export default (async () => [
       // Only in production mode
       isProduction && (await import('rollup-plugin-terser')).terser()
     ]
+  },
+  {
+    // path to your declaration files root
+    input: './dist/dts/index.d.ts',
+    output: [{ file: pkg.types, format: 'umd' }],
+    plugins: [dts()]
   }
 ])();
 

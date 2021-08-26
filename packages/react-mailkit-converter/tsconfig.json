@@ -1,8 +1,8 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "module": "ES2015",
-    "allowJs": true,
+    "module": "commonjs",
+    "target": "es5",
     "noEmit": false,
     "emitDeclarationOnly": true,
     "declaration": true,
@@ -10,13 +10,13 @@
     "rootDir": "./src",
     "baseUrl": "./"
   },
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "dist",
     "__stories__",
     "stories",
+    "coverage",
+    "jest"
   ]
 }

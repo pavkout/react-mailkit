@@ -6,7 +6,7 @@ import { foreground, red, lightGrey } from './colors';
 import { LiveProvider, LiveError, LivePreview } from 'react-live';
 // import { CodeEditorEditable } from 'react-code-editor-editable';
 // import 'highlight.js/styles/nord.css';
-import mjml2fastmail from '@react-mailkit/cli';
+import mailkit from '@react-mailkit/cli/src/mailkit';
 import { split as SplitEditor } from 'react-ace';
 import 'ace-builds/src-noconflict/mode-jsx';
 import 'ace-builds/src-noconflict/theme-monokai';
@@ -185,7 +185,7 @@ const LiveEdit = ({ noInline = false, code, scope, onChange }: Props) => {
           showPrintMargin={true}
           showGutter={true}
           onChange={value => onChange(value[0])}
-          value={[code, code === '' ? code : mjml2fastmail(code)]}
+          value={[code, code === '' ? code : mailkit(code)]}
           name='converter'
           editorProps={{ $blockScrolling: true }}
           style={{
@@ -215,7 +215,7 @@ const LiveEdit = ({ noInline = false, code, scope, onChange }: Props) => {
           showPrintMargin={true}
           showGutter={true}
           highlightActiveLine={true}
-          value={code === '' ? code : mjml2fastmail(code)}
+          value={code === '' ? code : mailkit(code)}
           style={{
             width: '600px',
             height: '800px',
