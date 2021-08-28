@@ -1,37 +1,39 @@
 import { create } from '@storybook/theming';
+import logo from './logo.png';
 
 export const theme = create({
-  base: 'dark'
+  base: 'dark',
 
-  // colorPrimary: 'hotpink',
-  // colorSecondary: 'deepskyblue',
+  colorPrimary: '#fff',
+  colorSecondary: '#fff',
 
-  // // UI
-  // appBg: '#060606',
-  // appContentBg: '#0c0c0b',
-  // appBorderColor: '#121211',
-  // appBorderRadius: 4,
+  // UI
+  appBg: '#222629',
+  appContentBg: '#222629',
+  appBorderColor: '#222629',
+  appBorderRadius: 6,
 
-  // // Typography
-  // fontBase: '"Open Sans", sans-serif',
-  // fontCode: '"Fira code", "Fira Mono", "monospace"',
+  // Typography
+  fontBase:
+    "'InterDisplay var', 'Inter', -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', sans-serif",
+  fontCode: '"Fira code", "Fira Mono", "monospace"',
 
-  // // Text colors
-  // textColor: '#D6ED17FF',
-  // textInverseColor: 'rgba(255,255,255,0.9)',
+  // Text colors
+  textColor: '#86c232',
+  textInverseColor: '#86c232',
 
-  // // Toolbar default and active colors
-  // barTextColor: '#D6ED17FF',
-  // barSelectedColor: '#D6ED17FF',
-  // barBg: '#181816',
+  // Toolbar default and active colors
+  barTextColor: '#86c232',
+  barSelectedColor: '#86c232',
+  barBg: '#222629',
 
-  // // Form colors
-  // inputBg: '#121211',
-  // inputBorder: '#101820FF',
-  // inputTextColor: '#D6ED17FF',
-  // inputBorderRadius: 4,
+  // Form colors
+  inputBg: '#222629',
+  inputBorder: '#222629',
+  inputTextColor: '#86c232',
+  inputBorderRadius: 6,
 
-  // brandTitle: 'react-mailkit storybook',
-  // brandUrl: 'https://react-mailkit.io',
-  // brandImage: 'https://place-hold.it/350x50',
+  brandTitle: 'react-mailkit storybook',
+  brandUrl: 'https://react-mailkit.io',
+  brandImage: logo
 });
