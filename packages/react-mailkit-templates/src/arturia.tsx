@@ -12,7 +12,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const arturiaMarkup = (
   <EMail>
     <EBody backgroundColor='#F2F2F2'>
       <ESection paddingBottom='0px'>
@@ -294,8 +294,8 @@ const email = (
   </EMail>
 );
 
-export const Arturia: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Arturia: FC<any> = () => {
+  const { html } = useEmail(arturiaMarkup, {
     validationLevel: 'soft'
   });
 

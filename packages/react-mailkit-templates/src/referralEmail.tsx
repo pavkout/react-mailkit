@@ -16,7 +16,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const referralEmailMarkup = (
   <EMail>
     <EHead>
       <EAttributes>
@@ -100,8 +100,8 @@ const email = (
   </EMail>
 );
 
-export const ReferralEmail: FC<any> = () => {
-  const { html } = useEmail(email, {
+const ReferralEmail: FC<any> = () => {
+  const { html } = useEmail(referralEmailMarkup, {
     validationLevel: 'soft'
   });
 

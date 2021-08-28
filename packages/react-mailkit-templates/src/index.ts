@@ -1,24 +1,27 @@
-export { default as Amario } from './amario';
-export { default as Arturia } from './arturia';
-export { default as Austin } from './austin';
-export { default as BlackFriday } from './blackFriday';
-export { default as Card } from './card';
-export { default as Christmas } from './christmas';
-export { default as HAndm } from './hAndm';
-export { default as HappyNewYear } from './happyNewYear';
-export { default as OnePage } from './onePage';
-export { default as Pizza } from './pizza';
-export { default as Proof } from './proof';
-export { default as Racoon } from './racoon';
-export { default as ReactivationEmail } from './reactivationEmail';
-export { default as RealEstate } from './realEstate';
-export { default as Recast } from './recast';
-export { default as ReceiptEmail } from './receiptEmail';
-export { default as ReferralEmail } from './referralEmail';
-export { default as TicketShop } from './ticketShop';
-export { default as UggRoyale } from './uggRoyale';
-export { default as WelcomeEmail } from './welcomeEmail';
-export { default as Worldly } from './worldly';
+export { default as Amario, amarioMarkup } from './amario';
+export { default as Arturia, arturiaMarkup } from './arturia';
+export { default as Austin, austinMarkup } from './austin';
+export { default as BlackFriday, blackFridayMarkup } from './blackFriday';
+export { default as Card, cardMarkup } from './card';
+export { default as Christmas, christmasMarkup } from './christmas';
+export { default as HAndm, hAndMMarkup } from './hAndm';
+export { default as HappyNewYear, happyNewYearMarkup } from './happyNewYear';
+export { default as OnePage, onePageMarkup } from './onePage';
+export { default as Pizza, pizzaMarkup } from './pizza';
+export { default as Proof, proofMarkup } from './proof';
+export { default as Racoon, racoonMarkup } from './racoon';
+export {
+  default as ReactivationEmail,
+  reactivationEmailMarkup
+} from './reactivationEmail';
+export { default as RealEstate, realEstateMarkup } from './realEstate';
+export { default as Recast, recastMarkup } from './recast';
+export { default as ReceiptEmail, receiptEmailMarkup } from './receiptEmail';
+export { default as ReferralEmail, referralEmailMarkup } from './referralEmail';
+export { default as TicketShop, ticketShopMarkup } from './ticketShop';
+export { default as UggRoyale, uggRoyaleMarkup } from './uggRoyale';
+export { default as WelcomeEmail, welcomeEmailMarkup } from './welcomeEmail';
+export { default as Worldly, worldlyMarkup } from './worldly';
 
 export const templates = [
   'Amario',

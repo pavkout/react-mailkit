@@ -19,7 +19,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const worldlyMarkup = (
   <EMail>
     <EHead>
       <EAttributes>
@@ -288,8 +288,8 @@ const email = (
   </EMail>
 );
 
-export const Worldly: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Worldly: FC<any> = () => {
+  const { html } = useEmail(worldlyMarkup, {
     validationLevel: 'soft'
   });
 

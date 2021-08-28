@@ -13,7 +13,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const christmasMarkup = (
   <EMail>
     <EBody backgroundColor='#F4F4F4'>
       <ESection
@@ -401,8 +401,8 @@ const email = (
   </EMail>
 );
 
-export const Christmas: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Christmas: FC<any> = () => {
+  const { html } = useEmail(christmasMarkup, {
     validationLevel: 'soft'
   });
 

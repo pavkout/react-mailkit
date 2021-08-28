@@ -11,7 +11,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const blackFridayMarkup = (
   <EMail>
     <EBody backgroundColor='#F4F4F4'>
       <ESection
@@ -201,8 +201,8 @@ const email = (
   </EMail>
 );
 
-export const BlackFriday: FC<any> = () => {
-  const { html } = useEmail(email, {
+const BlackFriday: FC<any> = () => {
+  const { html } = useEmail(blackFridayMarkup, {
     validationLevel: 'soft'
   });
 

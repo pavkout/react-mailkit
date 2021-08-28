@@ -19,7 +19,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const hAndMMarkup = (
   <EMail>
     <EHead>
       <ETitle>H&M Home- A stylish holiday at home</ETitle>
@@ -747,8 +747,8 @@ const email = (
   </EMail>
 );
 
-export const HAndM: FC<any> = () => {
-  const { html } = useEmail(email, {
+const HAndM: FC<any> = () => {
+  const { html } = useEmail(hAndMMarkup, {
     validationLevel: 'soft'
   });
 

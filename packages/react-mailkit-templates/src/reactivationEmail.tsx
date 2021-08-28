@@ -15,7 +15,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const reactivationEmailMarkup = (
   <EMail>
     <EHead>
       <EAttributes>
@@ -165,8 +165,8 @@ const email = (
   </EMail>
 );
 
-export const ReactivationEmail: FC<any> = () => {
-  const { html } = useEmail(email, {
+const ReactivationEmail: FC<any> = () => {
+  const { html } = useEmail(reactivationEmailMarkup, {
     validationLevel: 'soft'
   });
 

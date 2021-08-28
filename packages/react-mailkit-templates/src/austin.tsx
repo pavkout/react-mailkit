@@ -22,7 +22,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const austinMarkup = (
   <EMail>
     <EHead>
       <ETitle>Discount Light</ETitle>
@@ -391,8 +391,8 @@ const email = (
   </EMail>
 );
 
-export const Austin: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Austin: FC<any> = () => {
+  const { html } = useEmail(austinMarkup, {
     validationLevel: 'soft'
   });
 

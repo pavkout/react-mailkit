@@ -18,7 +18,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const pizzaMarkup = (
   <EMail>
     <EHead>
       <EAttributes>
@@ -141,8 +141,8 @@ const email = (
   </EMail>
 );
 
-export const Pizza: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Pizza: FC<any> = () => {
+  const { html } = useEmail(pizzaMarkup, {
     validationLevel: 'soft'
   });
 

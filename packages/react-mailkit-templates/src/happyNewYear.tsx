@@ -10,7 +10,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const happyNewYearMarkup = (
   <EMail>
     <EBody backgroundColor='#F4F4F4'>
       <ESection
@@ -124,8 +124,8 @@ const email = (
   </EMail>
 );
 
-export const HappyNewYear: FC<any> = () => {
-  const { html } = useEmail(email, {
+const HappyNewYear: FC<any> = () => {
+  const { html } = useEmail(happyNewYearMarkup, {
     validationLevel: 'soft'
   });
 

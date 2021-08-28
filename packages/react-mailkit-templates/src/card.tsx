@@ -17,7 +17,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const cardMarkup = (
   <EMail>
     <EHead>
       <ETitle>Say hello to card</ETitle>
@@ -165,8 +165,8 @@ const email = (
   </EMail>
 );
 
-export const Card: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Card: FC<any> = () => {
+  const { html } = useEmail(cardMarkup, {
     validationLevel: 'soft'
   });
 

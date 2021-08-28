@@ -15,7 +15,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const racoonMarkup = (
   <EMail>
     <EBody backgroundColor='#d6dde5'>
       <ESection backgroundColor='#ffffff'>
@@ -681,8 +681,8 @@ const email = (
   </EMail>
 );
 
-export const Racoon: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Racoon: FC<any> = () => {
+  const { html } = useEmail(racoonMarkup, {
     validationLevel: 'soft'
   });
 

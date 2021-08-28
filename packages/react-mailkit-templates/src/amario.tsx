@@ -13,7 +13,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const amarioMarkup = (
   <EMail>
     <EBody backgroundColor='#d6dde5'>
       <ESection paddingBottom='20px' paddingTop='20px'>
@@ -626,8 +626,8 @@ const email = (
   </EMail>
 );
 
-export const Amario: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Amario: FC<any> = () => {
+  const { html } = useEmail(amarioMarkup, {
     validationLevel: 'soft'
   });
 

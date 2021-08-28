@@ -17,7 +17,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const recastMarkup = (
   <EMail>
     <EHead>
       <ETitle>Hello world</ETitle>
@@ -395,8 +395,8 @@ const email = (
   </EMail>
 );
 
-export const Recast: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Recast: FC<any> = () => {
+  const { html } = useEmail(recastMarkup, {
     validationLevel: 'soft'
   });
 

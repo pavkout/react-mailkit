@@ -21,7 +21,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const uggRoyaleMarkup = (
   <EMail>
     <EHead>
       <ETitle> UGG Royale </ETitle>
@@ -612,8 +612,8 @@ const email = (
   </EMail>
 );
 
-export const UggRoyale: FC<any> = () => {
-  const { html } = useEmail(email, {
+const UggRoyale: FC<any> = () => {
+  const { html } = useEmail(uggRoyaleMarkup, {
     validationLevel: 'soft'
   });
 

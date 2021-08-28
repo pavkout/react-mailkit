@@ -11,7 +11,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const proofMarkup = (
   <EMail>
     <EBody backgroundColor='#ffffff'>
       <ESection>
@@ -143,8 +143,8 @@ const email = (
   </EMail>
 );
 
-export const Proof: FC<any> = () => {
-  const { html } = useEmail(email, {
+const Proof: FC<any> = () => {
+  const { html } = useEmail(proofMarkup, {
     validationLevel: 'soft'
   });
 

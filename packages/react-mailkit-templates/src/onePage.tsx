@@ -12,7 +12,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const onePageMarkup = (
   <EMail>
     <EBody backgroundColor='#d7dde5'>
       <ESection fullWidth='full-width'>
@@ -288,8 +288,8 @@ const email = (
   </EMail>
 );
 
-export const OnePage: FC<any> = () => {
-  const { html } = useEmail(email, {
+const OnePage: FC<any> = () => {
+  const { html } = useEmail(onePageMarkup, {
     validationLevel: 'soft'
   });
 

@@ -11,7 +11,7 @@ import {
   useEmail
 } from '@react-mailkit/core';
 
-const email = (
+export const welcomeEmailMarkup = (
   <EMail>
     <EBody backgroundColor='#ffffff'>
       <ESection backgroundColor='#ffffff' paddingBottom='0px' paddingTop='0'>
@@ -104,8 +104,8 @@ const email = (
   </EMail>
 );
 
-export const WelcomeEmail: FC<any> = () => {
-  const { html } = useEmail(email, {
+const WelcomeEmail: FC<any> = () => {
+  const { html } = useEmail(welcomeEmailMarkup, {
     validationLevel: 'soft'
   });
 
