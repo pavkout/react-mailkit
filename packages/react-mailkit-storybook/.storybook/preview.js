@@ -26,10 +26,7 @@ export const parameters = {
           'Standard Head components',
           'Standard Body components',
           'Custom Body components'
-        ],
-        'Templates',
-        'Playground',
-        ['Try It Live', 'Mjml To react-mailkit']
+        ]
       ]
     }
   }
