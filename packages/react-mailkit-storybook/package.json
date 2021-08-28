@@ -13,10 +13,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@react-mailkit/core": "0.0.1",
-    "@react-mailkit/live": "0.0.1",
-    "@react-mailkit/converter": "0.0.1",
-    "@react-mailkit/templates": "0.0.1"
+    "@react-mailkit/core": "0.0.1"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.3.4",
