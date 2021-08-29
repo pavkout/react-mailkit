@@ -5,7 +5,7 @@ export const theme = create({
   base: 'dark',
 
   colorPrimary: '#fff',
-  colorSecondary: '#fff',
+  colorSecondary: '#222629',
 
   // UI
   appBg: '#222629',
