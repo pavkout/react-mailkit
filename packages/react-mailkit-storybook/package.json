@@ -12,10 +12,9 @@
     "clean": "rimraf dist",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch",
-    "predeploy": "yarn build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static",
+    "deploy-storybook": "yarn build-storybook && gh-pages -d storybook-static",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "rimfar storybook-static && build-storybook"
   },
   "dependencies": {
     "react-mailkit": "0.0.2"

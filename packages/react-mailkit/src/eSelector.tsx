@@ -10,18 +10,18 @@ import { normalizeProps } from './normalizers';
 export type ISelectorChildren = GoC<ReactElement<IHtmlAttributeProps>>;
 
 export type ISelectorProps = {
-	/**
-	 * Using the css selector
-	 */
-	path?: string;
-	/**
-	 * Children
-	 */
-	children: ISelectorChildren;
+  /**
+   * Using the css selector
+   */
+  path?: string;
+  /**
+   * Children
+   */
+  children: ISelectorChildren;
 };
 
-export const ESelector: FC<ISelectorProps> = (props) => {
-	const { children, ...rest } = props;
+export const ESelector: FC<ISelectorProps> = props => {
+  const { children, ...rest } = props;
 
-	return createElement('mj-selector', normalizeProps(rest), children);
+  return createElement('mj-selector', normalizeProps(rest), children);
 };
