@@ -1,4 +1,5 @@
 import { Meta } from '@storybook/addon-docs/blocks';
+import IntroExample from './introExample';
 
 <Meta title='Overview/Introduction' />
 
@@ -103,16 +104,26 @@ import { Meta } from '@storybook/addon-docs/blocks';
     display: inline-block;
   }
 
-  
+  .brand-img {
+    margin: 0 10px;
+  }
 `}</style>
 
 # Welcome to react-mailkit
 
 <img
+  className='brand-img'
   src='https://cdn.worldvectorlogo.com/logos/mjml-by-mailjet.svg'
   height='64'
-/> &middot; <img
+/>
+<img
+  className='brand-img'
   src='https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark-700x235.png'
+  height='64'
+/>
+<img
+  className='brand-img'
+  src='https://www.techgeeknext.com/img/typescript/typescript-logo.png'
   height='64'
 />
 
@@ -121,7 +132,7 @@ import { Meta } from '@storybook/addon-docs/blocks';
 `MJML` is a markup language created by [Mailjet](https://www.mailjet.com/).
 So in order to create emails on the fly we created a library with `React` components.
 
-## How it works
+## 🔨 How it works
 
 Install the required dependencies first:
 
@@ -151,42 +162,73 @@ import {
   EBody,
   ESection,
   EColumn,
-  EButton,
-  EImage
+  ECarousel,
+  ECarouselImage
 } from '@react-mailkit/core';
 
 const { html, errors } = useEmail(
   <EMail>
     <EHead>
-      <ETitle>Last Minute Offer</ETitle>
-      <EPreview>Last Minute Offer...</EPreview>
+      <ETitle>Example</ETitle>
+      <EPreview>Example</EPreview>
     </EHead>
-    <EBody width={500}>
-      <ESection fullWidth backgroundColor='#efefef'>
-        <EColumn>
-          <EImage src='https://static.wixstatic.com/media/5cb24728abef45dabebe7edc1d97ddd2.jpg' />
-        </EColumn>
-      </ESection>
+    <EBody width={600}>
       <ESection>
-        <EColumn>
-          <EButton
-            padding='20px'
-            backgroundColor='#346DB7'
-            href='https://www.wix.com/'
+        <EColumn width='550px'>
+          <ECarousel
+            iconWidth='16px'
+            leftIcon='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/arrow-left.png'
+            rightIcon='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/arrow-right.png'
+            tbBorder='0px'
+            tbBorderRadius='0px'
+            tbHoverBorderColor='red'
+            tbWidth='50px'
           >
-            I like it!
-          </EButton>
+            <ECarouselImage
+              alt='Side view of the Royal in Baby Pink'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product1.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/BPNK.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product2.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/NOPK.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product3.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/BBLU.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              alt='Side view of the Royal in Black'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product4.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/BLK.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              alt='Side view of the Royal in Seal'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product5.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/SEL.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              alt='Side view of the Royal in White'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product6.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/WHT.gif'
+            ></ECarouselImage>
+          </ECarousel>
         </EColumn>
       </ESection>
     </EBody>
-  </EMail>,
-  { validationLevel: 'soft' }
+  </EMail>
 );
 ```
 
 And as the result you will get a nice looking email HTML (works in mobile too!)
 
-![preview](https://user-images.githubusercontent.com/10008149/41058394-59b8ce9e-69d2-11e8-9eb9-c294f35bae9f.png)
+<IntroExample />
 
 ## Options
 
@@ -222,12 +264,10 @@ Following are the options you can pass when rendering to HTML, these are the def
 
 If you want to override these, you can pass an object to `useEmail` as a second argument. See the [MJML docs](https://documentation.mjml.io/#inside-node-js) for the full list of options you can set.
 
-## Extensions
+## Comment
 
 ```js
-import {
-  EComment
-} from '@react-mailkit/extensions';
+import { EComment } from '@react-mailkit/core';
 
 <EComment>Built with ... at ...</EComment>
 // <!--Built with ... at ...-->
@@ -239,19 +279,15 @@ import {
 // <!--[if IE]>MSO conditionals<![endif]-->
 ```
 
-## Limitations
-
-Currently `mjml` and `react-mailkit` libraries are meant to be run inside a node.
-
 ## Example project
 
 You can find an example project here
-[https://github.com/@react-mailkit/example](https://github.com/react-mailkit-example)
-
-## 🔨 Setup
+[https://github.com/pavkout/react-mailkit/packages/react-mailkit-example](https://github.com/pavkout/react-mailkit/packages/react-mailkit-example)
 
 ## ⌨️ Typescript
 
-## 🤝 Contributing
+We use Typescript and extract types.
 
 ## 📝 License
+
+MIT
