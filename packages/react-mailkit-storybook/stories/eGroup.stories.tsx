@@ -1,13 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import {
-  EGroup,
-  IGroupProps,
-  EColumn,
-  EImage,
-  EText
-} from '@react-mailkit/core';
+import { EGroup, IGroupProps, EColumn, EImage, EText } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eGroup',

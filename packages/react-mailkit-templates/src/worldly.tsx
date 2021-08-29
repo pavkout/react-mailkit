@@ -17,7 +17,7 @@ import {
   ENavbar,
   ENavbarLink,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const worldly = (
   <EMail>

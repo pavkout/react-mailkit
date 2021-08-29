@@ -15,7 +15,7 @@ import {
   EDivider,
   ETable,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const recast = (
   <EMail>

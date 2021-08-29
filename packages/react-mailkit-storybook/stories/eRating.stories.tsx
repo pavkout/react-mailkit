@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { ERating, IRatingProps } from '@react-mailkit/core';
+import { ERating, IRatingProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eRating',

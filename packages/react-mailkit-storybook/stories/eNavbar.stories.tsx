@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { ENavbar, INavbarProps, ENavbarLink } from '@react-mailkit/core';
+import { ENavbar, INavbarProps, ENavbarLink } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eNavbar',

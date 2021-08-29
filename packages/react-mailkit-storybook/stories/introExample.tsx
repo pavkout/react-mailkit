@@ -10,7 +10,7 @@ import {
   EColumn,
   ECarousel,
   ECarouselImage
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const IntroExample = () => {
   const email = (

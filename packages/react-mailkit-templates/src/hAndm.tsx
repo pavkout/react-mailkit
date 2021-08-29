@@ -17,7 +17,7 @@ import {
   EButton,
   EDivider,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const hAndM = (
   <EMail>

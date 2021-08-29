@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Email } from '../stories/helpers/email';
-import { useEmail } from '@react-mailkit/core';
+import { useEmail } from 'react-mailkit';
 import { theme } from './theme';
 
 export const parameters = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EBarcode, IBarcodeProps } from '@react-mailkit/core';
+import { EBarcode, IBarcodeProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eBarcode',

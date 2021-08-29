@@ -8,7 +8,7 @@ import {
   EColumn,
   EImage,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const happyNewYear = (
   <EMail>

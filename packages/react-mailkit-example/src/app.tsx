@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEmail } from '@react-mailkit/core';
+import { useEmail } from 'react-mailkit';
 import { email } from './email';
 
 const App = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { ESocial, ISocialProps, ESocialElement } from '@react-mailkit/core';
+import { ESocial, ISocialProps, ESocialElement } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eSocial',

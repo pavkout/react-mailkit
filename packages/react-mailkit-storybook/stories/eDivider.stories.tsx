@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EDivider, IDividerProps } from '@react-mailkit/core';
+import { EDivider, IDividerProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eDivider',

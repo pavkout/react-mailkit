@@ -5,18 +5,20 @@
   "license": "MIT",
   "repository": "git@github.com:pavkout/react-mailkit.git",
   "author": "Pavlos Koutoglou <pkoutoglou@gmail.com>",
-  "homepage": "https://www.react-mailkit.io",
+  "homepage": "http://pavkout.github.io/react-mailkit",
   "sideEffects": false,
   "private": true,
   "scripts": {
     "clean": "rimraf dist",
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch",
+    "predeploy": "yarn build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@react-mailkit/core": "0.0.1"
+    "react-mailkit": "0.0.2"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.3.4",
@@ -26,6 +28,7 @@
     "@storybook/addon-essentials": "^6.3.4",
     "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^6.3.4",
-    "@storybook/react": "^6.3.7"
+    "@storybook/react": "^6.3.7",
+    "gh-pages": "^3.2.3"
   }
 }

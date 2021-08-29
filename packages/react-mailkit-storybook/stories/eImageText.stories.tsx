@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EImageText, IImageTextProps } from '@react-mailkit/core';
+import { EImageText, IImageTextProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eImageText',

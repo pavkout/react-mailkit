@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EHero, IHeroProps, EText, EButton } from '@react-mailkit/core';
+import { EHero, IHeroProps, EText, EButton } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eHero',

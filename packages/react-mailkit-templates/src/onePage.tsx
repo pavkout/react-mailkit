@@ -10,7 +10,7 @@ import {
   EButton,
   EDivider,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const onePage = (
   <EMail>

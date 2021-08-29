@@ -1,11 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import {
-  ECarouselImage,
-  ICarouselImageProps,
-  ECarousel
-} from '@react-mailkit/core';
+import { ECarouselImage, ICarouselImageProps, ECarousel } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eCarouselImage',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EMap, IMapProps } from '@react-mailkit/core';
+import { EMap, IMapProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eMap',

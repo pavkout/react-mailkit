@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EYoutube, IYoutubeProps } from '@react-mailkit/core';
+import { EYoutube, IYoutubeProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eYoutube',

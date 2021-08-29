@@ -106,6 +106,7 @@ import IntroExample from './introExample';
 
   .brand-img {
     margin: 0 10px;
+    height: 64px;
   }
 `}</style>
 
@@ -164,7 +165,7 @@ import {
   EColumn,
   ECarousel,
   ECarouselImage
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const { html, errors } = useEmail(
   <EMail>
@@ -267,7 +268,7 @@ If you want to override these, you can pass an object to `useEmail` as a second 
 ## Comment
 
 ```js
-import { EComment } from '@react-mailkit/core';
+import { EComment } from 'react-mailkit';
 
 <EComment>Built with ... at ...</EComment>
 // <!--Built with ... at ...-->

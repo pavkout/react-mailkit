@@ -20,7 +20,7 @@ import {
   EDivider,
   EWrapper,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const austin = (
   <EMail>

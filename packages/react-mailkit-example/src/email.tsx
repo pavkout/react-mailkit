@@ -18,7 +18,7 @@ import {
   ERaw,
   ECarousel,
   ECarouselImage
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 export const email = (
   <EMail>

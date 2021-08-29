@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { ESection, ISectionProps, EColumn, EText } from '@react-mailkit/core';
+import { ESection, ISectionProps, EColumn, EText } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eSection',

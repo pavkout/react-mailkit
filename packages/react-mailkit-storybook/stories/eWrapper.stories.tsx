@@ -9,7 +9,7 @@ import {
   EImage,
   EText,
   EDivider
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eWrapper',

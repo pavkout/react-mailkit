@@ -8,7 +8,7 @@ import {
   EImage,
   EColumn,
   IColumnProps
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eColumn',

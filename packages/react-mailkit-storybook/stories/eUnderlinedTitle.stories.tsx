@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EUnderlinedTitle, IUnderlinedTitleProps } from '@react-mailkit/core';
+import { EUnderlinedTitle, IUnderlinedTitleProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eUnderlinedTitle',

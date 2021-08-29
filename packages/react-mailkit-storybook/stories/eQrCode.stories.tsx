@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EQrCode, IQrCodeProps } from '@react-mailkit/core';
+import { EQrCode, IQrCodeProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eQrCode',

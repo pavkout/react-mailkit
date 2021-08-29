@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { ETable, ITableProps } from '@react-mailkit/core';
+import { ETable, ITableProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Standard Body components/eTable',

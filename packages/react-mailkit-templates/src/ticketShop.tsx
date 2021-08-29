@@ -16,7 +16,7 @@ import {
   EButton,
   EGroup,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const ticketShop = (
   <EMail>

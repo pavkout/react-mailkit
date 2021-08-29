@@ -9,7 +9,7 @@ import {
   EImage,
   EButton,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const proof = (
   <EMail>

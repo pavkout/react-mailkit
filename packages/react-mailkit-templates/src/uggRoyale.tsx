@@ -19,7 +19,7 @@ import {
   ECarousel,
   ECarouselImage,
   useEmail
-} from '@react-mailkit/core';
+} from 'react-mailkit';
 
 const uggRoyale = (
   <EMail>

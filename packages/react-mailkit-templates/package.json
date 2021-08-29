@@ -22,6 +22,6 @@
     "dev": "yarn clean && yarn build:types && yarn dev:ts"
   },
   "dependencies": {
-    "@react-mailkit/core": "0.0.1"
+    "react-mailkit": "0.0.2"
   }
 }

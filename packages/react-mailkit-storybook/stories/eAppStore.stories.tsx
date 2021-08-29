@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EAppStore, IAppStoreProps } from '@react-mailkit/core';
+import { EAppStore, IAppStoreProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eAppStore',

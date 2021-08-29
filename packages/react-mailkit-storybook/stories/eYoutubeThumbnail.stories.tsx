@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { EYoutubeThumbnail, IYoutubeThumbnailProps } from '@react-mailkit/core';
+import { EYoutubeThumbnail, IYoutubeThumbnailProps } from 'react-mailkit';
 
 export default {
   title: 'Email Design System/Custom Body components/eYoutubeThumbnail',
