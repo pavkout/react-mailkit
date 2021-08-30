@@ -14,20 +14,24 @@
     "type-check:watch": "yarn type-check -- --watch",
     "deploy-storybook": "yarn build-storybook && gh-pages -d storybook-static",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "rimfar storybook-static && build-storybook"
+    "build-storybook": "rimraf storybook-static && build-storybook"
   },
   "dependencies": {
     "react-mailkit": "0.0.2"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.4",
-    "@storybook/addon-actions": "^6.3.4",
-    "@storybook/addon-controls": "^6.3.4",
-    "@storybook/addon-docs": "^6.3.4",
-    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-a11y": "^6.3.7",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-controls": "^6.3.7",
+    "@storybook/addon-docs": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-knobs": "^6.3.0",
-    "@storybook/addon-links": "^6.3.4",
+    "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
+    "@types/storybook__addon-actions": "^5.2.1",
+    "@types/storybook__addon-knobs": "^5.2.1",
+    "@types/storybook__addon-links": "^5.2.1",
+    "@types/storybook__react": "^5.2.1",
     "gh-pages": "^3.2.3"
   }
 }
