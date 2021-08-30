@@ -12,6 +12,8 @@
   <a href="www.react-mailkit.io">www.react-mailkit.io</a>
 </div>
 
+## Documentation
+
 ### You can see more docs and examples in our [Storybook](https://pavkout.github.io/react-mailkit).
 
 ## What We Use
@@ -48,6 +50,14 @@ You can find an example project
 
 - Finalize the CLI in order to convert mjml to react-mailkit.
 - Add more custom components
+
+## Reporting Bugs
+
+Have a bug or a feature request? Please open a new
+[bug report](https://github.com/pavkout/react-mailkit/issues).
+
+Before opening a new issue, please search through any [existing issues](https://github.com/pavkout/react-mailkit/issues)
+to avoid submitting duplicates.
 
 ## License Information
 
