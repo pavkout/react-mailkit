@@ -148,12 +148,12 @@ const defaultProps: Partial<IMapProps> = {
   width: 600,
   height: 300,
   format: 'png',
-  maptype: 'roadmap',
+  mapType: 'roadmap',
   alt: 'Static Image Map'
 };
 
 export const EMap: FC<IMapProps> = props => {
-  const { key, scale, format, maptype, height, width, markers, size, alt } =
+  const { key, scale, format, mapType, height, width, markers, size, alt } =
     props;
 
   if (!key) {
@@ -165,7 +165,7 @@ export const EMap: FC<IMapProps> = props => {
     scale,
     size: size || `${width}x${height}`,
     format,
-    maptype,
+    maptype: mapType,
     markers
   });
 
