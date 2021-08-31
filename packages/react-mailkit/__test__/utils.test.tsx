@@ -42,33 +42,35 @@ describe('should be correct output from utils', () => {
   });
 
   it('should toPx of 10 be 10px', () => {
-    expect(toPx('width', 10)).toStrictEqual('10px');
+    expect(toPx({ value: 10 })).toStrictEqual('10px');
   });
 
   it('should toPx of 25px be 25px', () => {
-    expect(toPx('width', '25px')).toStrictEqual('25px');
+    expect(toPx({ value: '25px' })).toStrictEqual('25px');
   });
 
   it('should boolToString of full-width be full-width', () => {
-    expect(boolToString('full-width', 'full-width')).toStrictEqual(
-      'full-width'
-    );
+    expect(
+      boolToString({ name: 'full-width', value: 'full-width' })
+    ).toStrictEqual('full-width');
   });
 
   it('should boolToString of inline be inline', () => {
-    expect(boolToString('inline', 'inline')).toStrictEqual('inline');
+    expect(boolToString({ name: 'inline', value: 'inline' })).toStrictEqual(
+      'inline'
+    );
   });
 
   it('should toColor of red be red', () => {
-    expect(toColor('color', 'red')).toStrictEqual('red');
+    expect(toColor({ value: 'red' })).toStrictEqual('red');
   });
 
   it('should toColor of #ffffff be #ffffff', () => {
-    expect(toColor('color', '#ffffff')).toStrictEqual('#ffffff');
+    expect(toColor({ value: '#ffffff' })).toStrictEqual('#ffffff');
   });
 
   it('should toColor of #ffffff80 be rgba(255, 255, 255, 0.5)', () => {
-    expect(toColor('color', '#ffffff80')).toStrictEqual(
+    expect(toColor({ value: '#ffffff80' })).toStrictEqual(
       'rgba(255, 255, 255, 0.5)'
     );
   });
