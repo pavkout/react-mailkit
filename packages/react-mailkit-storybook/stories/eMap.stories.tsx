@@ -12,7 +12,7 @@ export default {
         category: 'Google Map Key'
       }
     },
-    maptype: {
+    mapType: {
       table: {
         category: 'Map Type'
       },

@@ -55,7 +55,7 @@ export default {
       },
       control: { type: 'select' }
     },
-    srcset: {
+    srcSet: {
       table: {
         category: 'Hyperlink'
       }

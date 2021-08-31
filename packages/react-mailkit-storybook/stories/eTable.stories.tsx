@@ -67,12 +67,12 @@ export default {
         category: 'Extra Class'
       }
     },
-    cellpadding: {
+    cellPadding: {
       table: {
         category: 'Sizes'
       }
     },
-    cellspacing: {
+    cellSpacing: {
       table: {
         category: 'Sizes'
       }
