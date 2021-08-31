@@ -12,7 +12,7 @@ import { BackgroundPosition } from './propTypes/positionUnit';
 import { normalizeProps } from './normalizers';
 
 // Accepted types for Section component
-export type IWrappernChildren = GoC<ReactElement<ISectionProps>>;
+export type IWrapperChildren = GoC<ReactElement<ISectionProps>>;
 
 export type IWrapperProps = {
   /**
@@ -59,7 +59,7 @@ export type IWrapperProps = {
   /**
    * Children
    */
-  children: IWrappernChildren;
+  children: IWrapperChildren;
 } & IPaddingProps &
   IBorderProps &
   IMJClass;

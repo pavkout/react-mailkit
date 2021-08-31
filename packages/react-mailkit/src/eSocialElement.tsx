@@ -117,7 +117,7 @@ export type ISocialElementProps = {
   /**
    * Set a different image source based on the viewport
    */
-  srcset?: string;
+  srcSet?: string;
   /**
    * Specify the rel attribute for the link
    */

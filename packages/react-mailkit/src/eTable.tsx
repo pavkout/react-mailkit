@@ -17,11 +17,11 @@ export type ITableProps = {
   /**
    * Space between cells
    */
-  cellpadding?: px;
+  cellPadding?: px;
   /**
    * Space between cell and border
    */
-  cellspacing?: px;
+  cellSpacing?: px;
   /**
    * Text header & footer color
    */

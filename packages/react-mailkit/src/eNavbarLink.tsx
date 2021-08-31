@@ -65,7 +65,7 @@ export type INavbarLinkProps = {
    */
   textTransform?: ITextTransform;
   /**
-   *
+   * Children
    */
   children?: string | ReactElement | ReactElement[];
 } & IPaddingProps &

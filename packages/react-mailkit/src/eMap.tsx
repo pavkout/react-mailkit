@@ -49,7 +49,7 @@ export type IMapProps = {
    * @memberof GoogleMapImageProps
    * @default roadmap
    */
-  maptype?: 'roadmap' | 'satellite' | 'terrain' | 'hybrid';
+  mapType?: 'roadmap' | 'satellite' | 'terrain' | 'hybrid';
   /**
    * The language to use for the text on the map
    *

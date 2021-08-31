@@ -66,7 +66,7 @@ export type IImageProps = {
   /**
    * Enables to set a different image source based on the viewport
    */
-  srcset?: string;
+  srcSet?: string;
   /**
    * Link target on click
    */
@@ -78,7 +78,7 @@ export type IImageProps = {
   /**
    * Reference to image map, be careful, it isn't supported everywhere
    */
-  usemap?: string;
+  useMap?: string;
 } & IBorderProps &
   IPaddingProps &
   IMJClass;

@@ -77,11 +77,11 @@ export type ISocialProps = {
   /**
    * Padding around the icons
    */
-  iconPadding?: string;
+  iconPadding?: px;
   /**
    * Padding around the texts
    */
-  textPadding?: string;
+  textPadding?: px;
   /**
    * underline/overline/none
    */

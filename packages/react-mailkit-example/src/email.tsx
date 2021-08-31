@@ -394,7 +394,7 @@ export const email = (
             fontFamily='Open Sans, Arial'
             fontSize='16px'
             fontWeight='bold'
-            letterSpacing='2px'
+            letterSpacing={2}
             textTransform='uppercase'
           >
             free shipping. free returns *
