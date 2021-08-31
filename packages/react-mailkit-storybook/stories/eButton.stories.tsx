@@ -198,9 +198,9 @@ BackgroundColor.args = {
   backgroundColor: '#86c232'
 };
 
-export const ContainerBackgroundColor = Template.bind({});
+export const ContainerColor = Template.bind({});
 
-ContainerBackgroundColor.args = {
+ContainerColor.args = {
   color: '#86c232',
   backgroundColor: '#fff',
   containerBackgroundColor: '#86c232'
