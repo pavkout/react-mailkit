@@ -14,21 +14,23 @@ import { GoC } from './propTypes/global';
 
 // Accepted types for Head component
 export type IHeadChildren =
-	| ReactElement<IPreviewProps>
-	| ReactElement<IAttributesProps>
-	| ReactElement<IHtmlAttributesProps>
-	| ReactElement<ITitleProps>
-	| ReactElement<IBreakpointProps>
-	| GoC<ReactElement<IStyleProps>>
-	| GoC<ReactElement<IFontProps>>
-	| GoC<ReactElement<IRawProps>>;
+  | ReactElement<IPreviewProps>
+  | ReactElement<IAttributesProps>
+  | ReactElement<IHtmlAttributesProps>
+  | ReactElement<ITitleProps>
+  | ReactElement<IBreakpointProps>
+  | GoC<ReactElement<IStyleProps>>
+  | GoC<ReactElement<IFontProps>>
+  | GoC<ReactElement<IRawProps>>;
 
 export type IHeadProps = {
-	/**
-	 * Children
-	 */
-	children: IHeadChildren;
+  /**
+   * Children
+   */
+  children: IHeadChildren;
 };
 
-export const EHead: FC<IHeadProps> = (props) =>
-	createElement('mj-head', null, props.children);
+export const EHead: FC<IHeadProps> = props =>
+  createElement('mj-head', null, props.children);
+
+EHead.displayName = 'EHead';

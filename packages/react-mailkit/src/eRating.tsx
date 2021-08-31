@@ -92,3 +92,5 @@ export const ERating = (props: IRatingProps) => {
 };
 
 ERating.defaultProps = defaultProps;
+
+ERating.displayName = 'ERating';

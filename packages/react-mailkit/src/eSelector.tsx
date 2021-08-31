@@ -25,3 +25,5 @@ export const ESelector: FC<ISelectorProps> = props => {
 
   return createElement('mj-selector', normalizeProps(rest), children);
 };
+
+ESelector.displayName = 'ESelector';

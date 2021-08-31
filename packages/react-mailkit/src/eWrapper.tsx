@@ -15,57 +15,59 @@ import { normalizeProps } from './normalizers';
 export type IWrappernChildren = GoC<ReactElement<ISectionProps>>;
 
 export type IWrapperProps = {
-	/**
-	 * Section color
-	 */
-	backgroundColor?: string;
-	/**
-	 * CSS background position (see outlook limitations in mj-section doc)
-	 * percent / 'left','top',... (2 values max)
-	 */
-	backgroundPosition?: BackgroundPosition;
-	/**
-	 * CSS background position x (percent / keyword)
-	 */
-	backgroundPositionX?: CSS.Property.BackgroundPositionX;
-	/**
-	 * CSS background position y (percent / keyword)
-	 */
-	backgroundPositionY?: CSS.Property.BackgroundPositionY;
-	/**
-	 * CSS background repeat
-	 */
-	backgroundRepeat?: CSS.Property.BackgroundRepeat;
-	/**
-	 * CSS background size
-	 */
-	backgroundSize?: px | 'cover' | 'contain';
-	/**
-	 * Background url
-	 */
-	backgroundUrl?: string;
-	/**
-	 * Class name, added to the root HTML element created
-	 */
-	cssClass?: string;
-	/**
-	 * Make the wrapper full-width
-	 */
-	fullWidth?: string;
-	/**
-	 * CSS text-align
-	 */
-	textAlign?: CSS.Property.TextAlign;
-	/**
-	 * Children
-	 */
-	children: IWrappernChildren;
+  /**
+   * Section color
+   */
+  backgroundColor?: string;
+  /**
+   * CSS background position (see outlook limitations in mj-section doc)
+   * percent / 'left','top',... (2 values max)
+   */
+  backgroundPosition?: BackgroundPosition;
+  /**
+   * CSS background position x (percent / keyword)
+   */
+  backgroundPositionX?: CSS.Property.BackgroundPositionX;
+  /**
+   * CSS background position y (percent / keyword)
+   */
+  backgroundPositionY?: CSS.Property.BackgroundPositionY;
+  /**
+   * CSS background repeat
+   */
+  backgroundRepeat?: CSS.Property.BackgroundRepeat;
+  /**
+   * CSS background size
+   */
+  backgroundSize?: px | 'cover' | 'contain';
+  /**
+   * Background url
+   */
+  backgroundUrl?: string;
+  /**
+   * Class name, added to the root HTML element created
+   */
+  cssClass?: string;
+  /**
+   * Make the wrapper full-width
+   */
+  fullWidth?: string;
+  /**
+   * CSS text-align
+   */
+  textAlign?: CSS.Property.TextAlign;
+  /**
+   * Children
+   */
+  children: IWrappernChildren;
 } & IPaddingProps &
-	IBorderProps &
-	IMJClass;
+  IBorderProps &
+  IMJClass;
 
-export const EWrapper: FC<IWrapperProps> = (props) => {
-	const { children, ...rest } = props;
+export const EWrapper: FC<IWrapperProps> = props => {
+  const { children, ...rest } = props;
 
-	return createElement('mj-wrapper', normalizeProps(rest), children);
+  return createElement('mj-wrapper', normalizeProps(rest), children);
 };
+
+EWrapper.displayName = 'EWrapper';

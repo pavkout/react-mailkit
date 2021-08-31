@@ -7,3 +7,5 @@ export type IAllProps = IAllChildProps;
 
 export const EAll: FC<IAllProps> = props =>
   createElement('mj-all', normalizeProps(props), null);
+
+EAll.displayName = 'EAll';

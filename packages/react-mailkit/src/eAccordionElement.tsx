@@ -11,23 +11,25 @@ import { IMJClass } from './propTypes/globalProps';
 
 // Accepted types for AccordionElement component
 export type IAccordionElementChildren =
-	| ReactElement<IAccordionTitleProps>
-	| GoC<ReactElement<IAccordionTextProps>>;
+  | ReactElement<IAccordionTitleProps>
+  | GoC<ReactElement<IAccordionTextProps>>;
 
 export type IAccordionElementProps = {
-	/**
-	 * Background color
-	 */
-	backgroundColor?: string;
-	/**
-	 * Children
-	 */
-	children: IAccordionElementChildren;
+  /**
+   * Background color
+   */
+  backgroundColor?: string;
+  /**
+   * Children
+   */
+  children: IAccordionElementChildren;
 } & IDefaultAccordionProps &
-	IMJClass;
+  IMJClass;
 
-export const EAccordionElement: FC<IAccordionElementProps> = (props) => {
-	const { children, ...rest } = props;
+export const EAccordionElement: FC<IAccordionElementProps> = props => {
+  const { children, ...rest } = props;
 
-	return createElement('mj-accordion-element', normalizeProps(rest), children);
+  return createElement('mj-accordion-element', normalizeProps(rest), children);
 };
+
+EAccordionElement.displayName = 'EAccordionElement';

@@ -4,14 +4,16 @@ import { normalizeProps } from './normalizers';
 import { GoC } from './propTypes/global';
 
 export type IRawProps = {
-	/**
-	 * Children
-	 */
-	children: string | GoC<ReactElement>;
+  /**
+   * Children
+   */
+  children: string | GoC<ReactElement>;
 };
 
-export const ERaw: FC<IRawProps> = (props) => {
-	const { children, ...rest } = props;
+export const ERaw: FC<IRawProps> = props => {
+  const { children, ...rest } = props;
 
-	return createElement('mj-raw', normalizeProps(rest), children);
+  return createElement('mj-raw', normalizeProps(rest), children);
 };
+
+ERaw.displayName = 'ERaw';

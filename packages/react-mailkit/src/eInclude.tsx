@@ -15,19 +15,21 @@ import { createElement, FC } from 'react';
 import { normalizeProps } from './normalizers';
 
 export type IIncludeProps = {
-	/**
-	 * The path of include file.
-	 */
-	path?: string;
-	/**
-	 * The type of include file. Ex. css, javascript, html e.t.c
-	 */
-	type?: string;
-	/**
-	 * Inline
-	 */
-	cssInline: 'inline';
+  /**
+   * The path of include file.
+   */
+  path?: string;
+  /**
+   * The type of include file. Ex. css, javascript, html e.t.c
+   */
+  type?: string;
+  /**
+   * Inline
+   */
+  cssInline: 'inline';
 };
 
-export const EInclude: FC<IIncludeProps> = (props) =>
-	createElement('mj-include', normalizeProps(props), null);
+export const EInclude: FC<IIncludeProps> = props =>
+  createElement('mj-include', normalizeProps(props), null);
+
+EInclude.displayName = 'EInclude';

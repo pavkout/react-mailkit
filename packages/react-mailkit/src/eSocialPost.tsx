@@ -85,3 +85,5 @@ export const ESocialPost: FC<ISocialPostProps> = props => {
 };
 
 ESocialPost.defaultProps = defaultProps;
+
+ESocialPost.displayName = 'ESocialPost';

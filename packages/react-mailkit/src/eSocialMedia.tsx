@@ -37,3 +37,5 @@ export const ESocialMedia = (props: ISocialMediaProps) => {
     </ESocial>
   );
 };
+
+ESocialMedia.displayName = 'ESocialMedia';

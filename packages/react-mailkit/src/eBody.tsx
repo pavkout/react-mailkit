@@ -13,32 +13,34 @@ import { normalizeProps } from './normalizers';
 
 // Accepted types for Body component
 export type IBodyChildren =
-	| GoC<ReactElement<ISectionProps>>
-	| GoC<ReactElement<IRawProps>>
-	| GoC<ReactElement<IHeroProps>>
-	| GoC<ReactElement<IWrapperProps>>;
+  | GoC<ReactElement<ISectionProps>>
+  | GoC<ReactElement<IRawProps>>
+  | GoC<ReactElement<IHeroProps>>
+  | GoC<ReactElement<IWrapperProps>>;
 
 export type IBodyProps = {
-	/**
-	 * The general background color
-	 */
-	backgroundColor?: string;
-	/**
-	 * Class name, added to the root HTML element created
-	 */
-	cssClass?: string;
-	/**
-	 * Email's width
-	 */
-	width?: px;
-	/**
-	 * Children
-	 */
-	children: IBodyChildren;
+  /**
+   * The general background color
+   */
+  backgroundColor?: string;
+  /**
+   * Class name, added to the root HTML element created
+   */
+  cssClass?: string;
+  /**
+   * Email's width
+   */
+  width?: px;
+  /**
+   * Children
+   */
+  children: IBodyChildren;
 } & IMJClass;
 
-export const EBody: FC<IBodyProps> = (props) => {
-	const { children, ...rest } = props;
+export const EBody: FC<IBodyProps> = props => {
+  const { children, ...rest } = props;
 
-	return createElement('mj-body', normalizeProps(rest), children);
+  return createElement('mj-body', normalizeProps(rest), children);
 };
+
+EBody.displayName = 'EBody';

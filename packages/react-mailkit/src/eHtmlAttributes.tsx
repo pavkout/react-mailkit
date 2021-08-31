@@ -9,11 +9,13 @@ import { GoC } from './propTypes/global';
 export type IHtmlAttributesChildren = GoC<ReactElement<ISelectorProps>>;
 
 export type IHtmlAttributesProps = {
-	/**
-	 * Children
-	 */
-	children: IHtmlAttributesChildren;
+  /**
+   * Children
+   */
+  children: IHtmlAttributesChildren;
 };
 
-export const EHtmlAttributes: FC<IHtmlAttributesProps> = (props) =>
-	createElement('mj-html-attributes', null, props.children);
+export const EHtmlAttributes: FC<IHtmlAttributesProps> = props =>
+  createElement('mj-html-attributes', null, props.children);
+
+EHtmlAttributes.displayName = 'EHtmlAttributes';
