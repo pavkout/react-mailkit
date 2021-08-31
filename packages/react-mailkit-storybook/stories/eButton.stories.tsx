@@ -189,11 +189,50 @@ export default {
 } as Meta;
 
 const Template: Story<IButtonProps> = args => (
-  <EButton {...args}>I'm a Button</EButton>
+  <EButton {...args}>Button</EButton>
 );
 
-export const Overview = Template.bind({});
+export const BackgroundColor = Template.bind({});
 
-Overview.args = {
-  backgroundColor: '#8305f2'
+BackgroundColor.args = {
+  backgroundColor: '#86c232'
+};
+
+export const ContainerBackgroundColor = Template.bind({});
+
+ContainerBackgroundColor.args = {
+  color: '#86c232',
+  backgroundColor: '#fff',
+  containerBackgroundColor: '#86c232'
+};
+
+export const Border = Template.bind({});
+
+Border.args = {
+  color: '#86c232',
+  backgroundColor: '#fff',
+  border: '1px solid #86c232',
+  borderRadius: 25
+};
+
+export const BorderRadius = Template.bind({});
+
+BorderRadius.args = {
+  backgroundColor: '#86c232',
+  BorderRadius: 10
+};
+
+export const Size = Template.bind({});
+
+Size.args = {
+  width: 300,
+  backgroundColor: '#86c232'
+};
+
+export const TextAlign = Template.bind({});
+
+TextAlign.args = {
+  width: 200,
+  backgroundColor: '#86c232',
+  textAlign: 'right'
 };

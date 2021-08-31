@@ -128,14 +128,9 @@ import IntroExample from './introExample';
   height='64'
 />
 
-[Mjml](https://mjml.io/) is the best responsive mail framework, I love it <3. I created this project to have a React library that use the mjml API to convert a mjml template into valid html ready to use.
+[Mjml](https://mjml.io/) is the best responsive mail framework, I ❤ it. It's a markup language created by [Mailjet](https://www.mailjet.com/).
 
-`MJML` is a markup language created by [Mailjet](https://www.mailjet.com/).
-So in order to create emails on the fly we created a library with `React` components.
-
-## 🔨 How it works
-
-Install the required dependencies first:
+I created this project to have a React library that use the mjml API to convert a mjml template into valid html ready to use.
 
 ## 📦 Install
 
@@ -150,8 +145,6 @@ npm install react-mailkit
 ```
 
 ## 🚀 Usage
-
-And afterwards write a code like a pro:
 
 ```js
 import {
@@ -227,9 +220,24 @@ const { html, errors } = useEmail(
 );
 ```
 
-And as the result you will get a nice looking email HTML (works in mobile too!)
+And this is the result (works in mobile too!)
 
 <IntroExample />
+
+## Comment
+
+```js
+import { EComment } from 'react-mailkit';
+
+<EComment>Built with ... at ...</EComment>
+// <!--Built with ... at ...-->
+
+<EComment condition="if gte mso 9">MSO conditionals</EComment>
+// <!--[if gte mso 9]>MSO conditionals<![endif]-->
+
+<EComment condition="if IE">MSO conditionals</EComment>
+// <!--[if IE]>MSO conditionals<![endif]-->
+```
 
 ## Options
 
@@ -264,21 +272,6 @@ Following are the options you can pass when rendering to HTML, these are the def
 ```
 
 If you want to override these, you can pass an object to `useEmail` as a second argument. See the [MJML docs](https://documentation.mjml.io/#inside-node-js) for the full list of options you can set.
-
-## Comment
-
-```js
-import { EComment } from 'react-mailkit';
-
-<EComment>Built with ... at ...</EComment>
-// <!--Built with ... at ...-->
-
-<EComment condition="if gte mso 9">MSO conditionals</EComment>
-// <!--[if gte mso 9]>MSO conditionals<![endif]-->
-
-<EComment condition="if IE">MSO conditionals</EComment>
-// <!--[if IE]>MSO conditionals<![endif]-->
-```
 
 ## Example project
 

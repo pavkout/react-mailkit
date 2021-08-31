@@ -6,16 +6,16 @@ import { EInclude } from 'react-mailkit';
 
 # EInclude
 
-The mjml-core package allows you to include external mjml files to build your email template.
-You can wrap your external mjml files inside the default mjml > mj-body tags to make it easier to preview outside the main template.
+The react-mailkit package allows you to include external mjml files to build your email template.
+You can wrap your external react-mailkit component files inside the default `EBody` tags to make it easier to preview outside the main template.
 The MJML engine will then replace your included files before starting the rendering process.
 
 Other file types
-You can include external css files. They will be inserted the same way as when using a mj-style.
+You can include external css files. They will be inserted the same way as when using a `EStyle`.
 You need to specify that you're including a css file using the type="css" attribute.
 If you want the css to be inlined, you can use the css-inline="inline" attribute.
 
-You can also include external html files. They will be inserted the same way as when using a mj-raw.
+You can also include external html files. They will be inserted the same way as when using a `ERaw`.
 You need to specify that you're including a html file using the type="html" attribute.
 
 ### Import
@@ -27,7 +27,7 @@ import { EInclude } from 'react-mailkit';
 ### Examples
 
 ```html
-<!-- header.mjml -->
+<!-- header.tsx (or .jsx) -->
 <ESection>
   <EColumn>
     <EText>This is a header</EText>
@@ -36,7 +36,7 @@ import { EInclude } from 'react-mailkit';
 ```
 
 ```html
-<!-- main.mjml -->
+<!-- main.tsx (or .jsx) -->
 <EMail>
   <EBody>
     <EInclude path="./header.mjml" />
@@ -45,13 +45,13 @@ import { EInclude } from 'react-mailkit';
 ```
 
 ```html
-<!-- main.mjml -->
+<!-- main.tsx (or .jsx) -->
 <EInclude path="./styles.css" type="css" />
 <EInclude path="./inline-styles.css" type="css" cssInline="inline" />
 ```
 
 ```html
-<!-- main.mjml -->
+<!-- main.tsx (or .jsx) -->
 <EInclude path="./partial.html" type="html" />
 ```
 
