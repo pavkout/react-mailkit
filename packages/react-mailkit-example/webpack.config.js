@@ -10,7 +10,8 @@ module.exports = {
     fallback: { stream: false }
   },
   devServer: {
-    contentBase: path.join(__dirname, 'src'),
+    watchFiles: path.join(__dirname, 'src'),
+    static: path.join(__dirname, 'src'),
     hot: true,
     port: 3001,
     open: true,
