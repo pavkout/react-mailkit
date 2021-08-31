@@ -40,7 +40,7 @@ exports[`should be correct output renders correctly 1`] = `
       </mj-text>
       <mj-social
         align="left"
-        icon-size={24}
+        icon-size="24px"
         padding="10px 20px"
       >
         <mj-social-element

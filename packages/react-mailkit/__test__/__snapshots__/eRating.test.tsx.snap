@@ -1,41 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should be correct output renders correctly 1`] = `
+.c0 {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  font-size: 36px;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #dedede;
+  text-shadow: 1px 1px 1px #666666;
+}
+
+.c0 > a {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+
+.c0 > a:hover,
+.c0 > a:hover ~ a {
+  color: transparent;
+}
+
+.c0 > a:hover:before,
+.c0 > a:hover ~ a:before {
+  content: '\\2605';
+  position: absolute;
+  left: 1;
+  color: #fdd017;
+}
+
+.c1:hover {
+  color: #fdd017 !important;
+}
+
 <mj-raw>
   <div
-    className="sc-bdnxRM hcEyDz rating"
+    className="c0 rating"
     size={36}
   >
     <a
-      className="sc-gtsrHT csBpCe"
+      className="c1"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=5"
       title="5"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT csBpCe"
+      className="c1"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=4"
       title="4"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT csBpCe"
+      className="c1"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=3"
       title="3"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT csBpCe"
+      className="c1"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=2"
       title="2"
     >
       ★
     </a>
     <a
-      className="sc-gtsrHT csBpCe"
+      className="c1"
       href="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=1"
       title="1"
     >

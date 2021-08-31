@@ -3,7 +3,7 @@
 exports[`should be correct output renders correctly 1`] = `
 <mj-social
   font-size="15px"
-  icon-size={30}
+  icon-size="30px"
   mode="horizontal"
 >
   <mj-social-element
