@@ -49,7 +49,7 @@ export default (async () => [
       // Allows node_modules resolution
       resolve({ extensions }),
       // Allow bundling cjs modules. Rollup doesn't understand cjs
-      commonjs(),
+      commonjs({ include: /node_modules/ }),
       // Compile TypeScript/JavaScript files
       babel({
         exclude: 'node_modules/**',
@@ -96,7 +96,7 @@ export default (async () => [
       resolve({ extensions }),
       nodeResolve(),
       // Allow bundling cjs modules. Rollup doesn't understand cjs
-      commonjs(),
+      commonjs({ include: /node_modules/ }),
       // Compile TypeScript/JavaScript files
       babel({
         exclude: 'node_modules/**',
