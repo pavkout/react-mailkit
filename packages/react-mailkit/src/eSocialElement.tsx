@@ -20,9 +20,9 @@
 
 // Example :
 
-// <mj-social-element name="twitter-noshare" href="my-unchanged-url">
+// <ESocialElement name="twitter-noshare" href="my-unchanged-url">
 // 	Twitter
-// </mj-social-element>
+// </ESocialElement>
 
 import { createElement, FC, ReactElement } from 'react';
 
