@@ -7233,17 +7233,17 @@ copy-webpack-plugin@^9.0.1:
     serialize-javascript "^6.0.0"
 
 core-js-compat@^3.14.0, core-js-compat@^3.16.0, core-js-compat@^3.8.1:
-  version "3.16.4"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.16.4.tgz#cf28abe0e45a43645b04b2c1a073efa03d0b3b26"
-  integrity sha512-IzCSomxRdahCYb6G3HiN6pl3JCiM0NMunRcNa1pIeC7g17Vd6Ue3AT9anQiENPIm/svThUVer1pIbLMDERIsFw==
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.17.0.tgz#3047a5057911425b62940aa91aac7b11760014db"
+  integrity sha512-haEcBrfU3hu83JXWpcLHzeg8Ypf05LGK4GIjzLiYgFJYXuxrkdN2MrDBeHt/t5/ZFmIzLcdsT2x8Xw654wXsuw==
   dependencies:
     browserslist "^4.16.8"
     semver "7.0.0"
 
 core-js-pure@^3.16.0, core-js-pure@^3.8.2:
-  version "3.16.4"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.16.4.tgz#8b23122628d88c560f209812b9b2d9ebbce5e29c"
-  integrity sha512-bY1K3/1Jy9D8Jd12eoeVahNXHLfHFb4TXWI8SQ4y8bImR9qDPmGITBAfmcffTkgUvbJn87r8dILOTWW5kZzkgA==
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.17.0.tgz#c6c5a9c1c60bbbc772e76d176950390868a4557d"
+  integrity sha512-O5RvMRWW+I0hfR227mrIwU+gPLVaa4kPEq+9b8FcjuFed4QckOvYc94c2KSI/X5dlvcsj/V1Sp5F5cecYpNQOQ==
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -7256,9 +7256,9 @@ core-js@^2.4.0, core-js@^2.5.0:
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-js@^3.0.4, core-js@^3.14.0, core-js@^3.16.0, core-js@^3.6.5, core-js@^3.8.2:
-  version "3.16.4"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.4.tgz#0fb1029a554fc2688c0963d7c900e188188a78e0"
-  integrity sha512-Tq4GVE6XCjE+hcyW6hPy0ofN3hwtLudz5ZRdrlCnsnD/xkm/PWQRudzYHiKgZKUcefV6Q57fhDHjZHJP5dpfSg==
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.17.0.tgz#01a60285b6247b4865e6a394d528070ee964f8c3"
+  integrity sha512-zXT4rclS9jM6tikbAUKAGLonuRKOJ2ZvBnZCEOJAbzuTLw4kKcuA5plNt8juzdU6O/py/EgAehzvLh0VXEdBbQ==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -17848,6 +17848,11 @@ rollup-plugin-dts@^4.0.0:
     magic-string "^0.25.7"
   optionalDependencies:
     "@babel/code-frame" "^7.14.5"
+
+rollup-plugin-peer-deps-external@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-peer-deps-external/-/rollup-plugin-peer-deps-external-2.2.4.tgz#8a420bbfd6dccc30aeb68c9bf57011f2f109570d"
+  integrity sha512-AWdukIM1+k5JDdAqV/Cxd+nejvno2FVLVeZ74NKggm3Q5s9cbbcOgUPGdbxPi4BXu7xGaZ8HG12F+thImYu/0g==
 
 rollup-plugin-polyfill-node@^0.7.0:
   version "0.7.0"
