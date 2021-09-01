@@ -9,13 +9,13 @@ import mjml2html from 'mjml-browser';
 import json2mjml from 'json2mjml';
 
 // @ts-ignore: Unreachable code error
-import mailkit from '@react-mailkit/cli/src/mailkit';
+// import mailkit from '@react-mailkit/cli/src/mailkit';
 import { convertToMjml } from './utils';
 
 /**
  * This hook returns the mjml result plus the text from html.
  * @param email The given react-mailkit markup.
- * @param options Compailation options for mjml.
+ * @param options Compilation options for mjml.
  * @returns Object contain mjml result plus the text from html.
  */
 export const useEmail = (email: ReactElement, options?: MJMLParsingOptions) => {
@@ -36,6 +36,7 @@ export const jsonToMjml = (json: MJMLJsonObject) => json2mjml(json);
  * @param mjml The given mjml.
  * @returns return the converted mjml with react-mailkit syntax.
  */
-export const mjmlToMailkit = (mjml: any) => mailkit(mjml);
+// export const mjmlToMailkit = (mjml: any) => mailkit(mjml);
 
+export { convertToMjml };
 export * from './exports';
