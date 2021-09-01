@@ -1,4 +1,5 @@
 import resolve, { nodeResolve } from '@rollup/plugin-node-resolve';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import nodePolyfills from 'rollup-plugin-polyfill-node';
 import commonjs from '@rollup/plugin-commonjs';
 import { babel } from '@rollup/plugin-babel';
@@ -45,6 +46,7 @@ export default (async () => [
     ],
     plugins: [
       json(),
+      peerDepsExternal(),
       nodePolyfills(),
       // Allows node_modules resolution
       resolve({ extensions }),
@@ -91,6 +93,7 @@ export default (async () => [
     ],
     plugins: [
       json(),
+      peerDepsExternal(),
       nodePolyfills(),
       // Allows node_modules resolution
       resolve({ extensions }),
