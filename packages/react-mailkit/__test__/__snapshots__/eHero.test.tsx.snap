@@ -23,7 +23,7 @@ exports[`should be correct output renders correctly 1`] = `
   </mj-text>
   <mj-button
     align="center"
-    href="https://mjml.io/"
+    href="https://react-mailkit.io/"
   >
     ORDER YOUR TICKET NOW
   </mj-button>
