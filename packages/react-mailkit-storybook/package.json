@@ -20,15 +20,13 @@
     "react-mailkit": "0.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
     "@storybook/addon-a11y": "^6.3.7",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",
     "@storybook/react": "^6.3.7",
-    "@types/storybook__addon-actions": "^5.2.1",
-    "@types/storybook__addon-knobs": "^5.2.1",
-    "@types/storybook__addon-links": "^5.2.1",
-    "@types/storybook__react": "^5.2.1",
+    "babel-loader": "^8.2.2",
     "gh-pages": "^3.2.3"
   }
 }
