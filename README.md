@@ -48,7 +48,7 @@ You can find an example project
 
 ## TODO
 
-- Finalize the CLI in order to convert mjml to react-mailkit.
+- Add ability to convert the MJML format to react-mailkit via js and CLI. (Working)
 - Add more custom components
 
 ## Reporting Bugs
