@@ -26,7 +26,7 @@ export type IIncludeProps = {
   /**
    * Inline
    */
-  cssInline: 'inline';
+  cssInline?: 'inline';
 };
 
 export const EInclude: FC<IIncludeProps> = props =>
