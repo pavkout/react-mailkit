@@ -43,7 +43,7 @@ npm install react-mailkit
 
 ## 👨‍💻 Test
 
-Over 350 :arrow_up: unit tests
+Over 350 🆙 unit tests
 
 ## ✍️ Example project
 
