@@ -41,7 +41,11 @@ OR
 npm install react-mailkit
 ```
 
-## Example project
+## 👨‍💻 Test
+
+Over 350 :arrow_up: unit tests
+
+## ✍️ Example project
 
 You can find an example project
 [here](https://github.com/pavkout/react-mailkit/packages/react-mailkit-example)
