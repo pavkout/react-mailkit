@@ -27,12 +27,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^7.27.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.3",
-    "jest": "^27.0.3",
-    "prettier": "^2.3.0"
+    "eslint-config-airbnb-base": "^14.2.1"
   }
 }
