@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-body
+  background-color="#d9d9d9"
+  css-class="mjml-body-class"
+  width="500px"
+>
+  <mj-section>
+    <mj-column>
+      <mj-text>
+        React
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-body>
+`;

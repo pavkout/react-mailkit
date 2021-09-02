@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-section>
+  <mj-column>
+    <mj-text
+      align="center"
+      font-size="20px"
+    >
+      My Awesome Tilte
+    </mj-text>
+    <mj-divider
+      border-width="1px"
+    />
+  </mj-column>
+</mj-section>
+`;

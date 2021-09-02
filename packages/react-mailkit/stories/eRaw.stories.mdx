@@ -1,0 +1,47 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs';
+
+import { ERaw } from '../src/browser';
+
+<Meta title='Email Design System/Standard Body components/eRaw' />
+
+# ERaw
+
+Displays raw HTML that is not going to be parsed by the MJML engine. Anything left inside this tag should be raw, responsive HTML. If placed inside `<EHead>`, its content will be added at the end of the `<head>`.
+
+If you use ERaw to add templating language, and use the minify option, you might get a Parsing error, especially when using the < character. You can tell the minifier to ignore some content by wrapping it between two <!-- htmlmin:ignore --> tags.
+
+### Import
+
+```js
+import { ERaw } from 'react-mailkit';
+```
+
+### Examples
+
+```html
+<EMAil>
+  <EBody>
+    <ERaw>
+      <!-- Your content goes here -->
+    </ERaw>
+  </EBody>
+</EMAil>
+```
+
+```html
+<EMail>
+  <EBody>
+    <ERaw>
+      <!-- htmlmin:ignore -->{% if foo < 5 %}<!-- htmlmin:ignore -->
+    </ERaw>
+      <!-- Some mjml section -->
+    <ERaw>
+      {% endif %}
+    </ERaw>
+  </EBody>
+</mjml>
+```
+
+### Props
+
+<ArgsTable of={ERaw} />

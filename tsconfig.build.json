@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "paths": {
+      "@react-mailkit/*": ["./node_modules/@react-mailkit/*/src"]
+    }
+  },
+  "exclude": ["**/*.story.*", "**/*.test.*", "dist"],
+  "include": []
+}

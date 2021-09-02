@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-wrapper
+  background-color="#000000"
+  background-position="left bottom"
+  background-repeat="no-repeat"
+  background-size="contain"
+  background-url="https://www.marieclairemusic.com/wp-content/themes/music/images/player.png"
+  padding="15px 0"
+>
+  <mj-section
+    padding="0"
+  >
+    <mj-column
+      padding="0"
+    >
+      <mj-image
+        alt="Youtube Thumbnail"
+        border-radius="0px"
+        padding="0px"
+        src="https://img.youtube.com/vi/smGTQrwvOc8/maxresdefault.jpg"
+      />
+    </mj-column>
+  </mj-section>
+  <mj-section
+    full-width="full-width"
+    padding="0px"
+    text-align="left"
+  >
+    <mj-column
+      padding="0px"
+    >
+      <mj-spacer
+        height="45px"
+        padding="0px"
+      />
+    </mj-column>
+  </mj-section>
+</mj-wrapper>
+`;

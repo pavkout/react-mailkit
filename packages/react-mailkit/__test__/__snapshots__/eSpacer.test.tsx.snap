@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-section>
+  <mj-column>
+    <mj-text>
+      A first line of text
+    </mj-text>
+    <mj-spacer
+      container-background-color="#a21717"
+      height="100px"
+    />
+    <mj-text>
+      A second line of text
+    </mj-text>
+  </mj-column>
+</mj-section>
+`;

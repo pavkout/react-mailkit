@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-head>
+  <mj-preview>
+    Hello MJML
+  </mj-preview>
+  <mj-breakpoint
+    width="320px"
+  />
+  <mj-title>
+    Hello MJML
+  </mj-title>
+</mj-head>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-section
+  background-color="#ffffff"
+>
+  <mj-column>
+    <mj-text
+      color="#ffffff"
+      font-size="22px"
+    >
+      Hello react-mailkit
+    </mj-text>
+  </mj-column>
+</mj-section>
+`;

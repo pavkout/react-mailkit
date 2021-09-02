@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-hero
+  background-color="#2a3448"
+  background-height="469px"
+  background-url="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg"
+  background-width="600px"
+  height="469px"
+  mode="fixed-height"
+  padding="100px 0px"
+>
+  <mj-text
+    align="center"
+    color="#ffffff"
+    font-family="Helvetica"
+    font-size="45px"
+    font-weight="bold"
+    line-height="45px"
+    padding="20px"
+  >
+    GO TO SPACE
+  </mj-text>
+  <mj-button
+    align="center"
+    href="https://react-mailkit.io/"
+  >
+    ORDER YOUR TICKET NOW
+  </mj-button>
+</mj-hero>
+`;

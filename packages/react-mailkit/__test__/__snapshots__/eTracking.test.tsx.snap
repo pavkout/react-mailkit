@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-image
+  border="none"
+  height="1px"
+  padding="0"
+  src="www.google.com"
+  width="1px"
+/>
+`;

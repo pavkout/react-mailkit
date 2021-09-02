@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-column
+  width="250px"
+>
+  <mj-text
+    color="#626262"
+    font-family="Helvetica Neue"
+    font-size="20px"
+    font-style="italic"
+  >
+    My Awesome Text
+  </mj-text>
+</mj-column>
+`;

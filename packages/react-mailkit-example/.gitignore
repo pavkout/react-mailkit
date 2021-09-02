@@ -1,0 +1,5 @@
+node_modules
+build
+tsconfig.tsbuildinfo
+.DS_Store
+.vercel

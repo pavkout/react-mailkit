@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-image
+  height="150px"
+  src="http://bwipjs-api.metafloor.com/?bcid=code128&text=1234567890&includetext"
+  width="300px"
+/>
+`;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-image
+  align="center"
+  alt="avatar"
+  border-radius="5.2px"
+  height="40px"
+  padding="0px"
+  src="https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024"
+  width="40px"
+/>
+`;

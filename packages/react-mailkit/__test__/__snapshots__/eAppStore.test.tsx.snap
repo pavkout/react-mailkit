@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-image
+  height="40px"
+  href="https://raw.github.com/yjb94/google-play-badge-svg/master/img/en_get.svg?sanitize=true"
+  src="https://raw.github.com/yjb94/google-play-badge-svg/master/img/en_get.svg?sanitize=true"
+  target="_blank"
+  title="Android Store Button"
+  width="135px"
+/>
+`;

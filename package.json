@@ -1,8 +1,115 @@
 {
   "name": "react-mailkit",
-  "version": "0.0.2",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Create awesome and fully responsive emails without stress.",
   "repository": "git@github.com:pavkout/react-mailkit.git",
   "author": "Pavlos Koutoglou <pkoutoglou@gmail.com>",
-  "license": "MIT"
+  "contributors": [
+    "Pavlos Koutoglou"
+  ],
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "build:declarations": "lerna run --parallel 'build:declaration'",
+    "build": "lerna run --parallel 'build'",
+    "dev": "lerna run --parallel 'dev'",
+    "postbuild": "yarn build:declarations",
+    "prerelease": "yarn build",
+    "release": "lerna publish",
+    "test": "jest",
+    "tsc": "tsc",
+    "prepare": "husky install"
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
+  "peerDependencies": {
+    "react": "16.13.1>=",
+    "react-dom": "16.13.1>="
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.15.0",
+    "@babel/runtime-corejs3": "^7.15.3",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/enzyme": "^3.10.9",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^27.0.1",
+    "@types/lodash.camelcase": "^4.3.6",
+    "@types/lodash.capitalize": "^4.2.6",
+    "@types/lodash.map": "^4.6.13",
+    "@types/lodash.upperfirst": "^4.3.6",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.2.2",
+    "commitizen": "^4.2.4",
+    "css-loader": "^5.2.4",
+    "cz-lerna-changelog": "^2.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.2",
+    "image-webpack-loader": "^7.0.1",
+    "jest": "^27.1.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.1.2",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.capitalize": "^4.2.1",
+    "lodash.map": "^4.6.0",
+    "lodash.upperfirst": "^4.3.1",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.56.3",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-polyfill-node": "^0.7.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "style-loader": "^3.2.1",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "workbox-webpack-plugin": "^6.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  }
 }

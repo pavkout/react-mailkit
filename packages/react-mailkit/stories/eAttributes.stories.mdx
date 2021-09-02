@@ -1,0 +1,45 @@
+import { Meta, ArgsTable } from '@storybook/addon-docs';
+
+import { EAttributes } from '../src/browser';
+
+<Meta title='Email Design System/Standard Head components/eAttributes' />
+
+# EAttributes
+
+Inside `EAttributes`, a tag citing one component (like `EText`, see example) overrides default settings for listed attributes on the one component.
+
+An `EAll` is like the above, but affects all components via the one tag.
+
+`EClass` tags create a named group of attributes you can apply to components. To apply them, use `EClass="name"`.
+
+### Import
+
+```js
+import { EAttributes } from 'react-mailkit';
+```
+
+### Examples
+
+```html
+<EMail>
+  <EHead>
+    <EAttributes>
+      <EText padding="0" />
+      <EClass name="blue" color="blue" />
+      <EClass name="big" font-size="20px" />
+      <EAll font-family="Arial" />
+    </EAttributes>
+  </EHead>
+  <EBody>
+    <ESection>
+      <EColumn>
+        <EText mj-class="blue big"> Hello World! </EText>
+      </EColumn>
+    </ESection>
+  </EBody>
+</EMail>
+```
+
+### Props
+
+<ArgsTable of={EAttributes} />

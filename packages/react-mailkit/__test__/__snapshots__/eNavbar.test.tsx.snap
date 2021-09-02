@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-navbar>
+  <mj-navbar-link
+    color="#ffffff"
+    href="/gettings-started-onboard"
+  >
+    Getting started
+  </mj-navbar-link>
+  <mj-navbar-link
+    color="#ffffff"
+    href="/try-it-live"
+  >
+    Try it live
+  </mj-navbar-link>
+  <mj-navbar-link
+    color="#ffffff"
+    href="/templates"
+  >
+    Templates
+  </mj-navbar-link>
+  <mj-navbar-link
+    color="#ffffff"
+    href="/components"
+  >
+    Components
+  </mj-navbar-link>
+</mj-navbar>
+`;

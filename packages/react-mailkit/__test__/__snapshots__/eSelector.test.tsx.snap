@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be correct output renders correctly 1`] = `
+<mj-html-attributes>
+  <mj-selector
+    path=".custom div"
+  >
+    <mj-html-attribute
+      name="data-id"
+    >
+      42
+    </mj-html-attribute>
+    <mj-html-attribute
+      name="data-id-1"
+    >
+      32
+    </mj-html-attribute>
+    <mj-html-attribute
+      name="data-id-2"
+    >
+      22
+    </mj-html-attribute>
+  </mj-selector>
+</mj-html-attributes>
+`;

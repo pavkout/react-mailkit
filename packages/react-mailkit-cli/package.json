@@ -1,0 +1,33 @@
+{
+  "name": "@react-mailkit/cli",
+  "version": "0.0.1",
+  "repository": "git@github.com:pavkout/react-mailkit.git",
+  "author": "Pavlos Koutoglou <pkoutoglou@gmail.com>",
+  "homepage": "https://www.react-mailkit.io",
+  "license": "MIT",
+  "sideEffects": false,
+  "private": true,
+  "description": "A package to convert a MJML template from MJML format to react-mailkit format",
+  "main": "src/mailkit.js",
+  "bin": {
+    "mailkit": "src/cli.js"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "lint": "eslint src test",
+    "prettier": "prettier --write \"{src,test}/**/*.js\"",
+    "test": "jest test/"
+  },
+  "dependencies": {
+    "commander": "^7.2.0",
+    "mjml2json": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1"
+  }
+}
