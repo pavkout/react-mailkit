@@ -61,7 +61,7 @@ export type IColumnProps = {
   /**
    * Children
    */
-  children: ReactElement | ReactElement[];
+  children?: ReactElement | ReactElement[];
 } & IPaddingProps &
   IBorderProps &
   IMJClass;
