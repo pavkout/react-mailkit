@@ -48,7 +48,7 @@ Over 350 :arrow_up: unit tests
 ## ✍️ Example project
 
 You can find an example project
-[here](https://github.com/pavkout/react-mailkit/packages/react-mailkit-example)
+[here](https://github.com/pavkout/react-mailkit/packages/react-mailkit-example) and live preview [here](react-mailkit-example-hie5shp44-pavkout.vercel.app)
 
 ## TODO
 
