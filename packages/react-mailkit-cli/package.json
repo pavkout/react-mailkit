@@ -6,7 +6,6 @@
   "homepage": "https://www.react-mailkit.io",
   "license": "MIT",
   "sideEffects": false,
-  "private": true,
   "description": "A package to convert a MJML template from MJML format to react-mailkit format",
   "main": "src/mailkit.js",
   "bin": {

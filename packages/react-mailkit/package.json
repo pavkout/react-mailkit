@@ -15,7 +15,6 @@
   ],
   "license": "MIT",
   "sideEffects": false,
-  "private": true,
   "scripts": {
     "clean": "rimraf dist && rimraf types && rimraf tsconfig.tsbuildinfo",
     "build:declarations": "tsc",

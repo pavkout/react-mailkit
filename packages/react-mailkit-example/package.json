@@ -7,7 +7,6 @@
   "homepage": "https://www.react-mailkit.io",
   "license": "MIT",
   "sideEffects": false,
-  "private": true,
   "scripts": {
     "clean": "rimraf build",
     "build": "webpack",
