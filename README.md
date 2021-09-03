@@ -50,6 +50,10 @@ Over 350 🆙 unit tests
 You can find an example project
 [here](https://github.com/pavkout/react-mailkit/tree/main/packages/react-mailkit-example)
 
+## Try it live
+
+You can try it live [live](https://www.react-mailkit.io/#/try-it-live)
+
 ## TODO
 
 - Add ability to convert the MJML format to react-mailkit via js and CLI. (Working)
