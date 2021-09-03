@@ -48,7 +48,7 @@ Over 350 🆙 unit tests
 ## ✍️ Example project
 
 You can find an example project
-[here](https://github.com/pavkout/react-mailkit/packages/react-mailkit-example)
+[here](https://github.com/pavkout/react-mailkit/tree/main/packages/react-mailkit-example)
 
 ## TODO
 
