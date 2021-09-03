@@ -50,9 +50,9 @@ Over 350 🆙 unit tests
 You can find an example project
 [here](https://github.com/pavkout/react-mailkit/tree/main/packages/react-mailkit-example)
 
-## Try it live
+## ⌨️ Try it live
 
-You can try it live [live](https://www.react-mailkit.io/#/try-it-live)
+You can try it [live](https://www.react-mailkit.io/#/try-it-live)
 
 ## TODO
 

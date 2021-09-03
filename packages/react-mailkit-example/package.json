@@ -13,6 +13,6 @@
     "start": "webpack serve"
   },
   "dependencies": {
-    "react-mailkit": "1.0.3"
+    "react-mailkit": "1.0.4"
   }
 }
