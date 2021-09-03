@@ -7,7 +7,7 @@
 
 <img src="./logo-icon.png" height='64' />
 
-## <a href="www.react-mailkit.io">www.react-mailkit.io</a>
+### <a href="www.react-mailkit.io">www.react-mailkit.io</a>
 
 ---
 
