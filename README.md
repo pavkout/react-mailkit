@@ -1,17 +1,13 @@
-<style>.center-div { display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 22px; padding-bottom: 40px }</style>
-
-<div class=".center-div">
 <img
   src='./logo.png'
   height='84'
 />
-Welcome to react-mailkit
-</div>
 
-<div class=".center-div">
-  <img src="./logo-icon.png" height='64' />
-  <a href="www.react-mailkit.io">www.react-mailkit.io</a>
-</div>
+# Welcome to react-mailkit
+
+<img src="./logo-icon.png" height='64' />
+
+## <a href="www.react-mailkit.io">www.react-mailkit.io</a>
 
 ---
 
