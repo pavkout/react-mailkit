@@ -3,7 +3,7 @@
   height='84'
 />
 
-# Welcome to react-mailkit
+# Welcome to react-mailkit [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=@reactjs%20@mjmlio%20Create%20awesome%20and%20fully%20responsive%20emails%20without%20stress.&url=https://github.com/pavkout/react-mailkit&hashtags=react,email,templates,blocks,developers)
 
 <img src="./logo-icon.png" height='64' />
 
