@@ -1,8 +1,10 @@
 <p align="center">
+  <a href="https://www.react-mailkit.io">
   <img
     src='./logo.png'
     height='84'
   />
+  </a>
 </p>
 
 <h2 align="center">
