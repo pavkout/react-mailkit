@@ -1,17 +1,25 @@
-<img
-  src='./logo.png'
-  height='84'
-/>
+<p align="center">
+  <img
+    src='./logo.png'
+    height='84'
+  />
+</p>
 
-# Welcome to react-mailkit [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=@reactjs%20@mjmlio%20Create%20awesome%20and%20fully%20responsive%20emails%20without%20stress.&url=https://github.com/pavkout/react-mailkit&hashtags=react,email,templates,blocks,developers)
+<h2 align="center">
+  Welcome to react-mailkit 
+</h2>
 
-<img src="./logo-icon.png" height='64' />
+<p align="center"><img src="./logo-icon.png" height='64' /></p>
 
-### [react-mailkit.io](https://www.react-mailkit.io/#/)
+<p align="center" style="font-size: 18px">
+  <a href="https://www.react-mailkit.io">
+  www.react-mailkit.io 
+  </a>
+</p>
 
 ---
 
-## Documentation
+## Documentation [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=@reactjs%20@mjmlio%20Create%20awesome%20and%20fully%20responsive%20emails%20without%20stress.&url=https://github.com/pavkout/react-mailkit&hashtags=react,email,templates,blocks,developers)
 
 ### You can see more docs and examples in our [Storybook](https://pavkout.github.io/react-mailkit).
 
