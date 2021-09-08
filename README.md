@@ -38,9 +38,9 @@
 
 ---
 
-### Once upon a time, email creation wasn't an easy part using pure html and css. Now it is!
-
-### Create awesome and fully responsive emails without stress.
+> Once upon a time, email creation wasn't an easy part using pure `html` and `css`.
+>
+> `Now it is!` Create awesome and fully responsive emails without stress.
 
 ## Documentation
 
