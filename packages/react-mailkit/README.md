@@ -1,21 +1,54 @@
-<img
-  src='./logo.png'
-  height='84'
-/>
+<p align="center">
+  <a href="https://www.react-mailkit.io">
+  <img
+    src='./logo.png'
+    height='84'
+  />
+  </a>
+</p>
 
-# Welcome to react-mailkit
+<h2 align="center">
+  Welcome to react-mailkit 
+</h2>
 
-<img src="./logo-icon.png" height='64' />
+<p align="center">
+  <a href="https://twitter.com/intent/tweet?text=@reactjs%20@mjmlio%20Create%20awesome%20and%20fully%20responsive%20emails%20without%20stress.&url=https://github.com/pavkout/react-mailkit&hashtags=react,email,templates,blocks,developers" target="_blank">
+    <img alt="npm" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social">
+  </a>
+<p>
+<p align="center"><img src="./logo-icon.png" height='64' /></p>
 
-### [react-mailkit.io](https://www.react-mailkit.io/#/)
+<p align="center" style="font-size: 18px">
+  <a href="https://www.react-mailkit.io">
+  www.react-mailkit.io 
+  </a>
+</p>
+
+<p align="center">
+<img alt="npm" src="https://img.shields.io/npm/dw/react-mailkit">
+
+<img alt="npm" src="https://img.shields.io/npm/v/react-mailkit"/>
+
+<img alt="score" src="https://img.shields.io/npms-io/maintenance-score/react-mailkit"/>
+
+<img alt="license" src="https://img.shields.io/github/license/pavkout/react-mailkit"/>
+
+<img alt="contributors" src="https://img.shields.io/github/contributors/pavkout/react-mailkit"/>
+</p>
 
 ---
+
+### Once upon a time, email creation wasn't an easy part using pure html and css. Now it is!
+
+### Create awesome and fully responsive emails without stress.
 
 ## Documentation
 
 ### You can see more docs and examples in our [Storybook](https://pavkout.github.io/react-mailkit).
 
-## What We Use
+## Getting Started
+
+### What We Use
 
 <img
   src='https://cdn.worldvectorlogo.com/logos/mjml-by-mailjet.svg'
@@ -40,9 +73,91 @@ OR
 npm install react-mailkit
 ```
 
-## 👨‍💻 Test
+## 👨‍💻 Tests
 
 Over 350 🆙 unit tests
+
+## ✍️ Example
+
+```js
+import {
+  useEmail,
+  EMail,
+  EHead,
+  ETitle,
+  EPreview,
+  EBody,
+  ESection,
+  EColumn,
+  ECarousel,
+  ECarouselImage
+} from 'react-mailkit';
+
+const { html, errors } = useEmail(
+  <EMail>
+    <EHead>
+      <ETitle>Example</ETitle>
+      <EPreview>Example</EPreview>
+    </EHead>
+    <EBody width={600}>
+      <ESection>
+        <EColumn width='550px'>
+          <ECarousel
+            iconWidth='16px'
+            leftIcon='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/arrow-left.png'
+            rightIcon='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/arrow-right.png'
+            tbBorder='0px'
+            tbBorderRadius='0px'
+            tbHoverBorderColor='red'
+            tbWidth='50px'
+          >
+            <ECarouselImage
+              alt='Side view of the Royal in Baby Pink'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product1.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/BPNK.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product2.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/NOPK.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product3.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/BBLU.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              alt='Side view of the Royal in Black'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product4.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/BLK.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              alt='Side view of the Royal in Seal'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product5.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/SEL.gif'
+            ></ECarouselImage>
+            <ECarouselImage
+              alt='Side view of the Royal in White'
+              href='http://www.ugg.com/'
+              src='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/product6.jpg'
+              thumbnailsSrc='https://static.cdn.responsys.net/i2/responsysimages/uggs/contentlibrary/promotional/2017/06-june/20170615_u_royale-b/images/WHT.gif'
+            ></ECarouselImage>
+          </ECarousel>
+        </EColumn>
+      </ESection>
+    </EBody>
+  </EMail>
+);
+```
+
+And this is the result (works in mobile too!)
+
+<img
+    src='./example.png'
+  />
 
 ## ✍️ Example project
 
@@ -65,6 +180,10 @@ Have a bug or a feature request? Please open a new
 
 Before opening a new issue, please search through any [existing issues](https://github.com/pavkout/react-mailkit/issues)
 to avoid submitting duplicates.
+
+## Contributing
+
+All contributions are welcome! ❤️
 
 ## License Information
 

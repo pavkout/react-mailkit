@@ -2,8 +2,11 @@
   "name": "react-mailkit",
   "repository": "git@github.com:pavkout/react-mailkit.git",
   "author": "Pavlos Koutoglou <pkoutoglou@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pavkout/react-mailkit/issues"
+  },
   "homepage": "https://www.react-mailkit.io",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Create awesome and fully responsive emails without stress.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,6 +18,9 @@
   ],
   "license": "MIT",
   "sideEffects": false,
+  "contributors": [
+    "Pavlos Koutoglou"
+  ],
   "scripts": {
     "clean": "rimraf dist && rimraf types && rimraf tsconfig.tsbuildinfo",
     "build:declarations": "tsc",
