@@ -47,20 +47,22 @@ export default {
   }
 } as ComponentMeta<typeof EAppStore>;
 
-const Template: ComponentStory<typeof EAppStore> = args => (
+const Template: ComponentStory<typeof EAppStore> = (args) => (
   <EAppStore {...args} />
 );
 
 export const Apple = Template.bind({});
 
 Apple.args = {
-  url: 'https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg',
+  url:
+    'https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg',
   platform: 'ios'
 };
 
 export const Android = Template.bind({});
 
 Android.args = {
-  url: 'https://raw.github.com/yjb94/google-play-badge-svg/master/img/en_get.svg?sanitize=true',
+  url:
+    'https://raw.github.com/yjb94/google-play-badge-svg/master/img/en_get.svg?sanitize=true',
   platform: 'android'
 };

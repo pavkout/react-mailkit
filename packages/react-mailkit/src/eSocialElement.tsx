@@ -145,7 +145,7 @@ export type ISocialElementProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const ESocialElement: FC<ISocialElementProps> = props => {
+export const ESocialElement: FC<ISocialElementProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-social-element', normalizeProps(rest), children);

@@ -38,7 +38,7 @@ export type ICarouselImageProps = {
   title?: string;
 } & IMJClass;
 
-export const ECarouselImage: FC<ICarouselImageProps> = props =>
+export const ECarouselImage: FC<ICarouselImageProps> = (props) =>
   createElement('mj-carousel-image', normalizeProps(props), null);
 
 ECarouselImage.displayName = 'ECarouselImage';

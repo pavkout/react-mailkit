@@ -10,7 +10,7 @@ export type IRawProps = {
   children: string | GoC<ReactElement>;
 };
 
-export const ERaw: FC<IRawProps> = props => {
+export const ERaw: FC<IRawProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-raw', normalizeProps(rest), children);

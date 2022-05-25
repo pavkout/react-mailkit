@@ -11,7 +11,7 @@ export type IBreakpointProps = {
   width: px;
 };
 
-export const EBreakpoint: FC<IBreakpointProps> = props =>
+export const EBreakpoint: FC<IBreakpointProps> = (props) =>
   createElement('mj-breakpoint', normalizeProps(props), null);
 
 EBreakpoint.displayName = 'EBreakpoint';

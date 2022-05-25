@@ -19,7 +19,7 @@ const defaultProps: Partial<IImageTextProps> = {
   imagePosition: 'left'
 };
 
-export const EImageText: FC<IImageTextProps> = props => {
+export const EImageText: FC<IImageTextProps> = (props) => {
   const {
     text,
     imageSrc,
@@ -32,7 +32,7 @@ export const EImageText: FC<IImageTextProps> = props => {
 
   const renderImage = () => {
     return (
-      <EColumn {...columnProps} key='col-1'>
+      <EColumn {...columnProps} key="col-1">
         <EImage {...imageProps} src={imageSrc} />
       </EColumn>
     );
@@ -40,7 +40,7 @@ export const EImageText: FC<IImageTextProps> = props => {
 
   const renderText = () => {
     return (
-      <EColumn {...columnProps} key='col-2'>
+      <EColumn {...columnProps} key="col-2">
         <EText {...textProps}>{text}</EText>
       </EColumn>
     );

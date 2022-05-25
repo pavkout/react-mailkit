@@ -15,7 +15,7 @@ export type IHtmlAttributesProps = {
   children: IHtmlAttributesChildren;
 };
 
-export const EHtmlAttributes: FC<IHtmlAttributesProps> = props =>
+export const EHtmlAttributes: FC<IHtmlAttributesProps> = (props) =>
   createElement('mj-html-attributes', null, props.children);
 
 EHtmlAttributes.displayName = 'EHtmlAttributes';

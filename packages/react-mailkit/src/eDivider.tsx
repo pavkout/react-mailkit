@@ -46,7 +46,7 @@ export type IDividerProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const EDivider: FC<IDividerProps> = props =>
+export const EDivider: FC<IDividerProps> = (props) =>
   createElement('mj-divider', normalizeProps(props), null);
 
 EDivider.displayName = 'EDivider';

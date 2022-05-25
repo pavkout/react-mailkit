@@ -32,7 +32,7 @@ export type IAccordionTitleProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const EAccordionTitle: FC<IAccordionTitleProps> = props => {
+export const EAccordionTitle: FC<IAccordionTitleProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-accordion-title', normalizeProps(rest), children);

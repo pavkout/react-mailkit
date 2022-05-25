@@ -188,7 +188,7 @@ export default {
   }
 } as ComponentMeta<typeof EButton>;
 
-const Template: ComponentStory<typeof EButton> = args => (
+const Template: ComponentStory<typeof EButton> = (args) => (
   <EButton {...args}>Button</EButton>
 );
 

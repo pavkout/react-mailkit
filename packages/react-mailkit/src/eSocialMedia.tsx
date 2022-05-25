@@ -29,8 +29,7 @@ export const ESocialMedia = (props: ISocialMediaProps) => {
           key={m.name}
           name={m.name}
           href={m.href}
-          {...socialElementProps}
-        >
+          {...socialElementProps}>
           {m.name}
         </ESocialElement>
       ))}

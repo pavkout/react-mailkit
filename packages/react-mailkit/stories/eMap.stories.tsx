@@ -123,7 +123,7 @@ export default {
   }
 } as ComponentMeta<typeof EMap>;
 
-const Template: ComponentStory<typeof EMap> = args => <EMap {...args} />;
+const Template: ComponentStory<typeof EMap> = (args) => <EMap {...args} />;
 
 export const Roadmap = Template.bind({});
 

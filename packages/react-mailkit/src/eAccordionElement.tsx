@@ -26,7 +26,7 @@ export type IAccordionElementProps = {
 } & IDefaultAccordionProps &
   IMJClass;
 
-export const EAccordionElement: FC<IAccordionElementProps> = props => {
+export const EAccordionElement: FC<IAccordionElementProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-accordion-element', normalizeProps(rest), children);

@@ -8,7 +8,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y'
   ],
-  babel: async options => ({
+  babel: async (options) => ({
     ...options,
     plugins: [
       ...options.plugins,

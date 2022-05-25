@@ -96,7 +96,7 @@ export type INavbarProps = {
   children: INavbarChildren;
 } & IMJClass;
 
-export const ENavbar: FC<INavbarProps> = props => {
+export const ENavbar: FC<INavbarProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-navbar', normalizeProps(rest), children);

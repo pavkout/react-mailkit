@@ -149,13 +149,14 @@ export default {
   }
 } as ComponentMeta<typeof EImage>;
 
-const Template: ComponentStory<typeof EImage> = args => <EImage {...args} />;
+const Template: ComponentStory<typeof EImage> = (args) => <EImage {...args} />;
 
 export const Overview = Template.bind({});
 
 Overview.args = {
   width: 300,
-  src: 'https://www.online-image-editor.com//styles/2014/images/example_image.png'
+  src:
+    'https://www.online-image-editor.com//styles/2014/images/example_image.png'
 };
 
 export const HrefImage = Template.bind({});
@@ -164,7 +165,8 @@ HrefImage.args = {
   href: 'https://www.google.com',
   target: '_blank',
   width: 300,
-  src: 'https://www.online-image-editor.com//styles/2014/images/example_image.png'
+  src:
+    'https://www.online-image-editor.com//styles/2014/images/example_image.png'
 };
 
 export const RadiusImage = Template.bind({});
@@ -172,5 +174,6 @@ export const RadiusImage = Template.bind({});
 RadiusImage.args = {
   borderRadius: 50,
   width: 300,
-  src: 'https://www.online-image-editor.com//styles/2014/images/example_image.png'
+  src:
+    'https://www.online-image-editor.com//styles/2014/images/example_image.png'
 };

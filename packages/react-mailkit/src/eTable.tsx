@@ -69,7 +69,7 @@ export type ITableProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const ETable: FC<ITableProps> = props => {
+export const ETable: FC<ITableProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-table', normalizeProps(rest), children);

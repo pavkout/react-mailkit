@@ -64,7 +64,7 @@ export type IWrapperProps = {
   IBorderProps &
   IMJClass;
 
-export const EWrapper: FC<IWrapperProps> = props => {
+export const EWrapper: FC<IWrapperProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-wrapper', normalizeProps(rest), children);

@@ -62,7 +62,7 @@ const getImage = (locale = 'en-us', platform = 'ios') => {
   return `https://raw.github.com/yjb94/google-play-badge-svg/master/img/${code}_get.svg?sanitize=true`;
 };
 
-export const EAppStore: FC<IAppStoreProps> = props => {
+export const EAppStore: FC<IAppStoreProps> = (props) => {
   const { url, platform, defaultLocale, locale, height, width, target } = props;
 
   if (!url) {

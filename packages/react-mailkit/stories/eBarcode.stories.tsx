@@ -63,7 +63,7 @@ export default {
   }
 } as ComponentMeta<typeof EBarcode>;
 
-const Template: ComponentStory<typeof EBarcode> = args => (
+const Template: ComponentStory<typeof EBarcode> = (args) => (
   <EBarcode {...args} />
 );
 

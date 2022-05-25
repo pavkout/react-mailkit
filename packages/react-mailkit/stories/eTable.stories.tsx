@@ -115,15 +115,14 @@ export default {
   }
 } as ComponentMeta<typeof ETable>;
 
-const Template: ComponentStory<typeof ETable> = args => (
+const Template: ComponentStory<typeof ETable> = (args) => (
   <ETable {...args}>
     <tr
       style={{
         borderBottom: '1px solid #ecedee',
         textAlign: 'left',
         padding: '15px 0'
-      }}
-    >
+      }}>
       <th style={{ padding: '0 15px 0 0' }}>Year</th>
       <th style={{ padding: '0 15px' }}>Language</th>
       <th style={{ padding: '0 0 0 15px' }}>Inspired from</th>

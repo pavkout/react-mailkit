@@ -110,18 +110,18 @@ export default {
   }
 } as ComponentMeta<typeof ENavbar>;
 
-const Template: ComponentStory<typeof ENavbar> = args => (
+const Template: ComponentStory<typeof ENavbar> = (args) => (
   <ENavbar {...args}>
-    <ENavbarLink href='/gettings-started-onboard' color='#ffffff'>
+    <ENavbarLink href="/gettings-started-onboard" color="#ffffff">
       Getting started
     </ENavbarLink>
-    <ENavbarLink href='/try-it-live' color='#ffffff'>
+    <ENavbarLink href="/try-it-live" color="#ffffff">
       Try it live
     </ENavbarLink>
-    <ENavbarLink href='/templates' color='#ffffff'>
+    <ENavbarLink href="/templates" color="#ffffff">
       Templates
     </ENavbarLink>
-    <ENavbarLink href='/components' color='#ffffff'>
+    <ENavbarLink href="/components" color="#ffffff">
       Components
     </ENavbarLink>
   </ENavbar>

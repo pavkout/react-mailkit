@@ -105,7 +105,7 @@ export default {
   }
 } as ComponentMeta<typeof ENavbarLink>;
 
-const Template: ComponentStory<typeof ENavbarLink> = args => (
+const Template: ComponentStory<typeof ENavbarLink> = (args) => (
   <ENavbar>
     <ENavbarLink {...args}>Getting started</ENavbarLink>
   </ENavbar>

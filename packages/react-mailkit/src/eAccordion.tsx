@@ -82,7 +82,7 @@ export type IAccordionProps = {
   IPaddingProps &
   IMJClass;
 
-export const EAccordion: FC<IAccordionProps> = props => {
+export const EAccordion: FC<IAccordionProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-accordion', normalizeProps(rest), children);

@@ -70,7 +70,7 @@ export default {
   }
 } as ComponentMeta<typeof EYoutube>;
 
-const Template: ComponentStory<typeof EYoutube> = args => (
+const Template: ComponentStory<typeof EYoutube> = (args) => (
   <EYoutube {...args} />
 );
 

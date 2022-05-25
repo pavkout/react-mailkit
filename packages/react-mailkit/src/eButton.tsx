@@ -115,7 +115,7 @@ export type IButtonProps = {
   IBorderProps &
   IMJClass;
 
-export const EButton: FC<IButtonProps> = props => {
+export const EButton: FC<IButtonProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-button', normalizeProps(rest), children);

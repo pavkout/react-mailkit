@@ -44,7 +44,7 @@ export type IAccordionTextProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const EAccordionText: FC<IAccordionTextProps> = props => {
+export const EAccordionText: FC<IAccordionTextProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-accordion-text', normalizeProps(rest), children);

@@ -16,7 +16,7 @@ export const ETracking = (props: ITrackingProps) => {
     throw new Error('You must specify a "url" attribute for Tracking');
   }
 
-  return <EImage src={url} border='none' padding='0' width={1} height={1} />;
+  return <EImage src={url} border="none" padding="0" width={1} height={1} />;
 };
 
 ETracking.displayName = 'ETracking';

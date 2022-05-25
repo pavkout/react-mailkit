@@ -66,7 +66,7 @@ export type IColumnProps = {
   IBorderProps &
   IMJClass;
 
-export const EColumn: FC<IColumnProps> = props => {
+export const EColumn: FC<IColumnProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-column', normalizeProps(rest), children);

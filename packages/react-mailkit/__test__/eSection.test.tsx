@@ -7,9 +7,9 @@ import { EColumn } from '../src/eColumn';
 import { EText } from '../src/eText';
 
 const Section = (
-  <ESection backgroundColor='#ffffff'>
+  <ESection backgroundColor="#ffffff">
     <EColumn>
-      <EText color='#ffffff' fontSize='22px'>
+      <EText color="#ffffff" fontSize="22px">
         Hello react-mailkit
       </EText>
     </EColumn>
@@ -36,14 +36,14 @@ describe('should be correct output', () => {
 
   it('should have EColumn as children', () => {
     const { container } = render(Section);
-    container.querySelector('mj-section')?.childNodes.forEach(child => {
+    container.querySelector('mj-section')?.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-COLUMN');
     });
   });
 
   it(`should haven't ESection as children`, () => {
     const { container } = render(Section);
-    container.querySelector('mj-section')?.childNodes.forEach(child => {
+    container.querySelector('mj-section')?.childNodes.forEach((child) => {
       expect(child.nodeName).not.toEqual('MJ-SECTION');
     });
   });

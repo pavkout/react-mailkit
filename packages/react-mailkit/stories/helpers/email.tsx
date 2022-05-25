@@ -19,10 +19,9 @@ export const Email: FC<EmailProps> = ({
     <EBody width={600}>
       <ESection
         {...sectionProps}
-        backgroundColor='#ffffff'
+        backgroundColor="#ffffff"
         borderRadius={4}
-        padding='20px'
-      >
+        padding="20px">
         <EColumn width={600} {...columnProps}>
           {children}
         </EColumn>

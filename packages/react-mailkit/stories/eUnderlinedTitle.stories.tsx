@@ -35,7 +35,7 @@ export default {
   }
 } as ComponentMeta<typeof EUnderlinedTitle>;
 
-const Template: ComponentStory<typeof EUnderlinedTitle> = args => (
+const Template: ComponentStory<typeof EUnderlinedTitle> = (args) => (
   <EUnderlinedTitle {...args} />
 );
 

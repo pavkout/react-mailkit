@@ -27,7 +27,7 @@ const defaultProps: Partial<IAvatarProps> = {
   shape: 'circle'
 };
 
-export const EAvatar: FC<IAvatarProps> = props => {
+export const EAvatar: FC<IAvatarProps> = (props) => {
   const { alt, src, size, shape } = props;
 
   if (!src || src.trim().length === 0) {
@@ -42,9 +42,9 @@ export const EAvatar: FC<IAvatarProps> = props => {
       src={src}
       width={size}
       height={size}
-      align='center'
+      align="center"
       borderRadius={borderRadius}
-      padding='0px'
+      padding="0px"
     />
   );
 };

@@ -31,19 +31,23 @@ export default {
   }
 } as ComponentMeta<typeof EAvatar>;
 
-const Template: ComponentStory<typeof EAvatar> = args => <EAvatar {...args} />;
+const Template: ComponentStory<typeof EAvatar> = (args) => (
+  <EAvatar {...args} />
+);
 
 export const Circle = Template.bind({});
 
 Circle.args = {
-  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  src:
+    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
   shape: 'circle'
 };
 
 export const SmallCircle = Template.bind({});
 
 SmallCircle.args = {
-  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  src:
+    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
   shape: 'circle',
   size: 40
 };
@@ -51,14 +55,16 @@ SmallCircle.args = {
 export const Rectangular = Template.bind({});
 
 Rectangular.args = {
-  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  src:
+    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
   shape: 'rectangular'
 };
 
 export const SmallRectangular = Template.bind({});
 
 SmallRectangular.args = {
-  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  src:
+    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
   shape: 'rectangular',
   size: 40
 };

@@ -111,7 +111,7 @@ export default {
   }
 } as ComponentMeta<typeof EText>;
 
-const Template: ComponentStory<typeof EText> = args => (
+const Template: ComponentStory<typeof EText> = (args) => (
   <EText {...args}>I'm awesome email</EText>
 );
 

@@ -13,7 +13,7 @@ export type IHtmlAttributeProps = {
   children: string;
 };
 
-export const EHtmlAttribute: FC<IHtmlAttributeProps> = props => {
+export const EHtmlAttribute: FC<IHtmlAttributeProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-html-attribute', normalizeProps(rest), children);

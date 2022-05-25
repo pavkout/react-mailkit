@@ -35,7 +35,7 @@ export default {
   }
 } as ComponentMeta<typeof ESocialPost>;
 
-const Template: ComponentStory<typeof ESocialPost> = args => (
+const Template: ComponentStory<typeof ESocialPost> = (args) => (
   <ESocialPost {...args} />
 );
 

@@ -93,7 +93,7 @@ export type ISocialProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const ESocial: FC<ISocialProps> = props => {
+export const ESocial: FC<ISocialProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-social', normalizeProps(rest), children);

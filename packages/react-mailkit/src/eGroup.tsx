@@ -39,7 +39,7 @@ export type IGroupProps = {
   children: IGroupChildren;
 } & IMJClass;
 
-export const EGroup: FC<IGroupProps> = props => {
+export const EGroup: FC<IGroupProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-group', normalizeProps(rest), children);

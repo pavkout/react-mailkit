@@ -8,26 +8,24 @@ import { EButton } from '../src/eButton';
 
 const Hero = (
   <EHero
-    mode='fixed-height'
+    mode="fixed-height"
     height={469}
     backgroundWidth={600}
     backgroundHeight={469}
-    backgroundUrl='https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg'
-    backgroundColor='#2a3448'
-    padding='100px 0px'
-  >
+    backgroundUrl="https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg"
+    backgroundColor="#2a3448"
+    padding="100px 0px">
     <EText
-      padding='20px'
-      color='#ffffff'
-      fontFamily='Helvetica'
-      align='center'
+      padding="20px"
+      color="#ffffff"
+      fontFamily="Helvetica"
+      align="center"
       fontSize={45}
       lineHeight={45}
-      fontWeight='bold'
-    >
+      fontWeight="bold">
       GO TO SPACE
     </EText>
-    <EButton href='https://react-mailkit.io/' align='center'>
+    <EButton href="https://react-mailkit.io/" align="center">
       ORDER YOUR TICKET NOW
     </EButton>
   </EHero>

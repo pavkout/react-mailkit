@@ -7,7 +7,7 @@ export type ITitleProps = {
   children: string;
 };
 
-export const ETitle: FC<ITitleProps> = props =>
+export const ETitle: FC<ITitleProps> = (props) =>
   createElement('mj-title', null, props.children);
 
 ETitle.displayName = 'ETitle';

@@ -165,7 +165,7 @@ const defaultProps: Partial<IBarcodeProps> = {
   height: 150
 };
 
-export const EBarcode: FC<IBarcodeProps> = props => {
+export const EBarcode: FC<IBarcodeProps> = (props) => {
   const {
     width,
     height,
