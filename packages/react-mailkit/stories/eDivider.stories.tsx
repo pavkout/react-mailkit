@@ -73,7 +73,7 @@ export default {
   }
 } as ComponentMeta<typeof EDivider>;
 
-const Template: ComponentStory<typeof EDivider> = args => (
+const Template: ComponentStory<typeof EDivider> = (args) => (
   <EDivider {...args} />
 );
 

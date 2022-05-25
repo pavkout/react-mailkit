@@ -77,7 +77,7 @@ export type IHeroProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const EHero: FC<IHeroProps> = props => {
+export const EHero: FC<IHeroProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-hero', normalizeProps(rest), children);

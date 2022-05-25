@@ -7,7 +7,7 @@ export type IClassProps = {
   name: string;
 } & IAllChildProps;
 
-export const EClass: FC<IClassProps> = props =>
+export const EClass: FC<IClassProps> = (props) =>
   createElement('mj-class', normalizeProps(props), null);
 
 EClass.displayName = 'EClass';

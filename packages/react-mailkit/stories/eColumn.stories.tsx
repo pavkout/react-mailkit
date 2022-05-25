@@ -128,10 +128,10 @@ export default {
   }
 } as ComponentMeta<typeof EColumn>;
 
-const Template: ComponentStory<typeof EColumn> = args => (
-  <ESection backgroundColor='#f0f0f0'>
+const Template: ComponentStory<typeof EColumn> = (args) => (
+  <ESection backgroundColor="#f0f0f0">
     <EColumn {...args}>
-      <EText fontStyle='italic' fontSize='20px' color='#626262'>
+      <EText fontStyle="italic" fontSize="20px" color="#626262">
         Awesome Mail Kit
       </EText>
     </EColumn>
@@ -142,22 +142,20 @@ export const CompanyHeader = Template.bind({});
 
 CompanyHeader.args = {};
 
-const TemplateImage: ComponentStory<typeof EColumn> = args => (
+const TemplateImage: ComponentStory<typeof EColumn> = (args) => (
   <ESection
     backgroundUrl="https://1.bp.blogspot.com/-TPrfhxbYpDY/Uh3Refzk02I/AAAAAAAALw8/5sUJ0UUGYuw/s1600/New+York+in+The+1960's+-+70's+(2).jpg"
-    backgroundSize='cover'
-    backgroundRepeat='no-repeat'
-  >
+    backgroundSize="cover"
+    backgroundRepeat="no-repeat">
     <EColumn {...args}>
       <EText
-        align='center'
-        color='#fff'
-        fontSize='40px'
-        fontFamily='Helvetica Neue'
-      >
+        align="center"
+        color="#fff"
+        fontSize="40px"
+        fontFamily="Helvetica Neue">
         Slogan here
       </EText>
-      <EButton backgroundColor='#F63A4D' href='#'>
+      <EButton backgroundColor="#F63A4D" href="#">
         Promotion
       </EButton>
     </EColumn>
@@ -170,25 +168,24 @@ ImageHeader.args = {
   width: '600px'
 };
 
-const TemplateIntro: ComponentStory<typeof EColumn> = args => (
-  <ESection backgroundColor='#fafafa'>
+const TemplateIntro: ComponentStory<typeof EColumn> = (args) => (
+  <ESection backgroundColor="#fafafa">
     <EColumn {...args}>
       <EText
-        fontStyle='italic'
-        fontSize='20px'
-        fontFamily='Helvetica Neue'
-        color='#626262'
-      >
+        fontStyle="italic"
+        fontSize="20px"
+        fontFamily="Helvetica Neue"
+        color="#626262">
         My Awesome Text
       </EText>
-      <EText color='#525252'>
+      <EText color="#525252">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum
         enim eget magna efficitur, eu semper augue semper. Aliquam erat
         volutpat. Cras id dui lectus. Vestibulum sed finibus lectus, sit amet
         suscipit nibh. Proin nec commodo purus. Sed eget nulla elit. Nulla
         aliquet mollis faucibus.
       </EText>
-      <EButton backgroundColor='#F45E43' href='#'>
+      <EButton backgroundColor="#F45E43" href="#">
         Learn more
       </EButton>
     </EColumn>
@@ -201,24 +198,23 @@ IntroText.args = {
   width: '400px'
 };
 
-const TemplateTwoColumns: ComponentStory<typeof EColumn> = args => (
-  <ESection backgroundColor='white'>
+const TemplateTwoColumns: ComponentStory<typeof EColumn> = (args) => (
+  <ESection backgroundColor="white">
     <EColumn {...args}>
       <EImage
-        width='200px'
-        src='https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg'
+        width="200px"
+        src="https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg"
       />
     </EColumn>
     <EColumn {...args}>
       <EText
-        fontStyle='italic'
-        fontSize='20px'
-        fontFamily='Helvetica Neue'
-        color='#626262'
-      >
+        fontStyle="italic"
+        fontSize="20px"
+        fontFamily="Helvetica Neue"
+        color="#626262">
         Find amazing places
       </EText>
-      <EText color='#525252'>
+      <EText color="#525252">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum
         enim eget magna efficitur, eu semper augue semper. Aliquam erat
         volutpat. Cras id dui lectus. Vestibulum sed finibus lectus.

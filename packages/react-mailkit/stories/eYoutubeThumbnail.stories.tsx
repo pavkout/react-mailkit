@@ -50,7 +50,7 @@ export default {
   }
 } as ComponentMeta<typeof EYoutubeThumbnail>;
 
-const Template: ComponentStory<typeof EYoutubeThumbnail> = args => (
+const Template: ComponentStory<typeof EYoutubeThumbnail> = (args) => (
   <EYoutubeThumbnail {...args} />
 );
 

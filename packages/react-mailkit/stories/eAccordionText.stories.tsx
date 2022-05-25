@@ -87,21 +87,19 @@ export default {
   }
 } as ComponentMeta<typeof EAccordionText>;
 
-const Template: ComponentStory<typeof EAccordionText> = args => (
-  <EAccordion border='none' padding='1px'>
+const Template: ComponentStory<typeof EAccordionText> = (args) => (
+  <EAccordion border="none" padding="1px">
     <EAccordionElement
-      iconWrappedUrl='https://i.imgur.com/Xvw0vjq.png'
-      iconUnwrappedUrl='https://i.imgur.com/KKHenWa.png'
-      iconHeight='24px'
-      iconWidth='24px'
-    >
+      iconWrappedUrl="https://i.imgur.com/Xvw0vjq.png"
+      iconUnwrappedUrl="https://i.imgur.com/KKHenWa.png"
+      iconHeight="24px"
+      iconWidth="24px">
       <EAccordionTitle
-        fontFamily='Roboto, Open Sans, Helvetica, Arial, sans-serif'
-        backgroundColor='#fff'
-        color='#031017'
-        padding='15px'
-        fontSize='18px'
-      >
+        fontFamily="Roboto, Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#fff"
+        color="#031017"
+        padding="15px"
+        fontSize="18px">
         Why use an accordion?
       </EAccordionTitle>
       <EAccordionText {...args}>

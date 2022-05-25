@@ -46,7 +46,7 @@ describe('should be correct output', () => {
   });
 
   it('should have correct src attribute when pass satellite as maptype', () => {
-    const { container } = render(<EMap mapType='satellite' />);
+    const { container } = render(<EMap mapType="satellite" />);
     expect(
       container.querySelector('mj-image')?.getAttribute('src')
     ).toStrictEqual(
@@ -55,7 +55,7 @@ describe('should be correct output', () => {
   });
 
   it('should have correct src attribute when pass png8 as format', () => {
-    const { container } = render(<EMap mapType='satellite' format='png8' />);
+    const { container } = render(<EMap mapType="satellite" format="png8" />);
     expect(
       container.querySelector('mj-image')?.getAttribute('src')
     ).toStrictEqual(
@@ -65,7 +65,7 @@ describe('should be correct output', () => {
 
   it('renders correctly', () => {
     expect(
-      renderer.create(<EMap mapType='satellite' format='png8' />).toJSON()
+      renderer.create(<EMap mapType="satellite" format="png8" />).toJSON()
     ).toMatchSnapshot();
   });
 });

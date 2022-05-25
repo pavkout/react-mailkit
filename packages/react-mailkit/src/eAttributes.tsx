@@ -7,7 +7,7 @@ export type IAttributesProps = {
   children: any;
 };
 
-export const EAttributes: FC<IAttributesProps> = props =>
+export const EAttributes: FC<IAttributesProps> = (props) =>
   createElement('mj-attributes', null, props.children);
 
 EAttributes.displayName = 'EAttributes';

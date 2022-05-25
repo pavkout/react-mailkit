@@ -17,7 +17,7 @@ export type IStyleProps = {
   style?: string;
 };
 
-export const EStyle: FC<IStyleProps> = props => {
+export const EStyle: FC<IStyleProps> = (props) => {
   const { children, style, ...rest } = props;
 
   return createElement('mj-style', {

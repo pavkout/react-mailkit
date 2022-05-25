@@ -54,7 +54,9 @@ export default {
   }
 } as ComponentMeta<typeof EQrCode>;
 
-const Template: ComponentStory<typeof EQrCode> = args => <EQrCode {...args} />;
+const Template: ComponentStory<typeof EQrCode> = (args) => (
+  <EQrCode {...args} />
+);
 
 export const Overview = Template.bind({});
 

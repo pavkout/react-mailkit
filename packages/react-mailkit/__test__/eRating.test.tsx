@@ -8,7 +8,7 @@ import { ERating } from '../src/eRating';
 
 const Rating = (
   <ERating
-    url='https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field='
+    url="https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field="
     stars={5}
     size={36}
     urlPerStar={true}

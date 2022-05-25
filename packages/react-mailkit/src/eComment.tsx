@@ -14,7 +14,7 @@ export type ICommentProps = {
   children: string;
 };
 
-export const EComment: FC<ICommentProps> = props => {
+export const EComment: FC<ICommentProps> = (props) => {
   const { condition, children } = props;
 
   if (!children || children.trim().length === 0) {

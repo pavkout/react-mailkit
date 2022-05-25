@@ -37,7 +37,7 @@ export type IBodyProps = {
   children: IBodyChildren;
 } & IMJClass;
 
-export const EBody: FC<IBodyProps> = props => {
+export const EBody: FC<IBodyProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-body', normalizeProps(rest), children);

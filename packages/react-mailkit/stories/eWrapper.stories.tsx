@@ -123,33 +123,31 @@ export default {
   }
 } as ComponentMeta<typeof EWrapper>;
 
-const Template: ComponentStory<typeof EWrapper> = args => (
+const Template: ComponentStory<typeof EWrapper> = (args) => (
   <EWrapper {...args}>
     <ESection
-      borderTop='1px solid #aaaaaa'
-      borderLeft='1px solid #aaaaaa'
-      borderRight='1px solid #aaaaaa'
-      padding='20px'
-    >
+      borderTop="1px solid #aaaaaa"
+      borderLeft="1px solid #aaaaaa"
+      borderRight="1px solid #aaaaaa"
+      padding="20px">
       <EColumn>
-        <EImage padding='0' src='https://place-hold.it/350x150' />
+        <EImage padding="0" src="https://place-hold.it/350x150" />
       </EColumn>
     </ESection>
     <ESection
-      borderLeft='1px solid #aaaaaa'
-      borderRight='1px solid #aaaaaa'
-      padding='20px'
-      border-bottom='1px solid #aaaaaa'
-    >
-      <EColumn border='1px solid #dddddd'>
-        <EText padding='20px'> First line of text </EText>
+      borderLeft="1px solid #aaaaaa"
+      borderRight="1px solid #aaaaaa"
+      padding="20px"
+      border-bottom="1px solid #aaaaaa">
+      <EColumn border="1px solid #dddddd">
+        <EText padding="20px"> First line of text </EText>
         <EDivider
-          borderWidth='1px'
-          borderStyle='dashed'
-          borderColor='lightgrey'
-          padding='0 20px'
+          borderWidth="1px"
+          borderStyle="dashed"
+          borderColor="lightgrey"
+          padding="0 20px"
         />
-        <EText padding='20px'> Second line of text </EText>
+        <EText padding="20px"> Second line of text </EText>
       </EColumn>
     </ESection>
   </EWrapper>

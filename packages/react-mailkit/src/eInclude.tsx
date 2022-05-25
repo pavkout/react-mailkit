@@ -29,7 +29,7 @@ export type IIncludeProps = {
   cssInline?: 'inline';
 };
 
-export const EInclude: FC<IIncludeProps> = props =>
+export const EInclude: FC<IIncludeProps> = (props) =>
   createElement('mj-include', normalizeProps(props), null);
 
 EInclude.displayName = 'EInclude';

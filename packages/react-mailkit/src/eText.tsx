@@ -71,7 +71,7 @@ export type ITextProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const EText: FC<ITextProps> = props => {
+export const EText: FC<ITextProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-text', normalizeProps(rest), children);

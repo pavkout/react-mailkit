@@ -44,7 +44,7 @@ const defaultProps: Partial<IYoutubeThumbnailProps> = {
   borderRadius: 0
 };
 
-export const EYoutubeThumbnail: FC<IYoutubeThumbnailProps> = props => {
+export const EYoutubeThumbnail: FC<IYoutubeThumbnailProps> = (props) => {
   const { id, imageQuality, padding, borderRadius } = props;
 
   if (!id) {
@@ -66,7 +66,7 @@ export const EYoutubeThumbnail: FC<IYoutubeThumbnailProps> = props => {
 
   return (
     <EImage
-      alt='Youtube Thumbnail'
+      alt="Youtube Thumbnail"
       src={baseUrl}
       borderRadius={borderRadius}
       padding={padding}

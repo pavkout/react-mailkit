@@ -130,15 +130,15 @@ export default {
   }
 } as ComponentMeta<typeof ESocial>;
 
-const Template: ComponentStory<typeof ESocial> = args => (
+const Template: ComponentStory<typeof ESocial> = (args) => (
   <ESocial {...args}>
-    <ESocialElement name='facebook' href='https://mjml.io/'>
+    <ESocialElement name="facebook" href="https://mjml.io/">
       Facebook
     </ESocialElement>
-    <ESocialElement name='google' href='https://mjml.io/'>
+    <ESocialElement name="google" href="https://mjml.io/">
       Google
     </ESocialElement>
-    <ESocialElement name='twitter' href='https://mjml.io/'>
+    <ESocialElement name="twitter" href="https://mjml.io/">
       Twitter
     </ESocialElement>
   </ESocial>

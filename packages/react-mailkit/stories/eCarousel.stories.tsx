@@ -83,11 +83,11 @@ export default {
   }
 } as ComponentMeta<typeof ECarousel>;
 
-const Template: ComponentStory<typeof ECarousel> = args => (
+const Template: ComponentStory<typeof ECarousel> = (args) => (
   <ECarousel {...args}>
-    <ECarouselImage src='https://www.mailjet.com/wp-content/uploads/2016/11/ecommerce-guide.jpg' />
-    <ECarouselImage src='https://www.mailjet.com/wp-content/uploads/2016/09/3@1x.png' />
-    <ECarouselImage src='https://www.mailjet.com/wp-content/uploads/2016/09/1@1x.png' />
+    <ECarouselImage src="https://www.mailjet.com/wp-content/uploads/2016/11/ecommerce-guide.jpg" />
+    <ECarouselImage src="https://www.mailjet.com/wp-content/uploads/2016/09/3@1x.png" />
+    <ECarouselImage src="https://www.mailjet.com/wp-content/uploads/2016/09/1@1x.png" />
   </ECarousel>
 );
 

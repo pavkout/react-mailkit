@@ -51,7 +51,7 @@ export default {
   }
 } as ComponentMeta<typeof ESpacer>;
 
-const Template: ComponentStory<typeof ESpacer> = args => (
+const Template: ComponentStory<typeof ESpacer> = (args) => (
   <ESection>
     <EColumn>
       <EText>A first line of text</EText>

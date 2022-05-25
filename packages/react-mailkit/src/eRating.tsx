@@ -76,13 +76,12 @@ export const ERating = (props: IRatingProps) => {
 
   return (
     <ERaw>
-      <Rating className='rating' size={size}>
-        {map(Array.from(Array(stars).keys()).reverse(), value => (
+      <Rating className="rating" size={size}>
+        {map(Array.from(Array(stars).keys()).reverse(), (value) => (
           <Anchor
             key={value}
             href={urlPerStar ? `${url}${value + 1}` : url}
-            title={`${value + 1}`}
-          >
+            title={`${value + 1}`}>
             ★
           </Anchor>
         ))}

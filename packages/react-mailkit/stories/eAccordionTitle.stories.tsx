@@ -72,22 +72,20 @@ export default {
   }
 } as ComponentMeta<typeof EAccordionTitle>;
 
-const Template: ComponentStory<typeof EAccordionTitle> = args => (
-  <EAccordion border='none' padding='1px'>
+const Template: ComponentStory<typeof EAccordionTitle> = (args) => (
+  <EAccordion border="none" padding="1px">
     <EAccordionElement
-      iconWrappedUrl='https://i.imgur.com/Xvw0vjq.png'
-      iconUnwrappedUrl='https://i.imgur.com/KKHenWa.png'
-      iconHeight='24px'
-      iconWidth='24px'
-    >
+      iconWrappedUrl="https://i.imgur.com/Xvw0vjq.png"
+      iconUnwrappedUrl="https://i.imgur.com/KKHenWa.png"
+      iconHeight="24px"
+      iconWidth="24px">
       <EAccordionTitle {...args}>Why use an accordion?</EAccordionTitle>
       <EAccordionText
-        fontFamily='Open Sans, Helvetica, Arial, sans-serif'
-        backgroundColor='#fafafa'
-        padding='15px'
-        color='#505050'
-        fontSize='14potrt'
-      >
+        fontFamily="Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#fafafa"
+        padding="15px"
+        color="#505050"
+        fontSize="14potrt">
         <span style={{ lineHeight: '20px' }}>
           Because emails with a lot of content are most of the time a very bad
           experience on mobile, E-accordion comes handy when you want to deliver

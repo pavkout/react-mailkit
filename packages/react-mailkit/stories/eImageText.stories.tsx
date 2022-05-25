@@ -51,7 +51,7 @@ export default {
   }
 } as ComponentMeta<typeof EImageText>;
 
-const Template: ComponentStory<typeof EImageText> = args => (
+const Template: ComponentStory<typeof EImageText> = (args) => (
   <EImageText {...args} />
 );
 

@@ -127,10 +127,10 @@ export default {
   }
 } as ComponentMeta<typeof ESection>;
 
-const Template: ComponentStory<typeof ESection> = args => (
+const Template: ComponentStory<typeof ESection> = (args) => (
   <ESection {...args}>
     <EColumn>
-      <EText color='#ffffff' fontSize='22px'>
+      <EText color="#ffffff" fontSize="22px">
         Hello react-mailkit
       </EText>
     </EColumn>

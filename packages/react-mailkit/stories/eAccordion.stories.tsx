@@ -107,30 +107,27 @@ export default {
   }
 } as ComponentMeta<typeof EAccordion>;
 
-const Template: ComponentStory<typeof EAccordion> = args => (
+const Template: ComponentStory<typeof EAccordion> = (args) => (
   <EAccordion {...args}>
     <EAccordionElement
-      iconWrappedUrl='https://i.imgur.com/Xvw0vjq.png'
-      iconUnwrappedUrl='https://i.imgur.com/KKHenWa.png'
-      iconHeight='24px'
-      iconWidth='24px'
-    >
+      iconWrappedUrl="https://i.imgur.com/Xvw0vjq.png"
+      iconUnwrappedUrl="https://i.imgur.com/KKHenWa.png"
+      iconHeight="24px"
+      iconWidth="24px">
       <EAccordionTitle
-        fontFamily='Roboto, Open Sans, Helvetica, Arial, sans-serif'
-        backgroundColor='#fff'
-        color='#031017'
-        padding='15px'
-        fontSize='18px'
-      >
+        fontFamily="Roboto, Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#fff"
+        color="#031017"
+        padding="15px"
+        fontSize="18px">
         Why use an accordion?
       </EAccordionTitle>
       <EAccordionText
-        fontFamily='Open Sans, Helvetica, Arial, sans-serif'
-        backgroundColor='#fafafa'
-        padding='15px'
-        color='#505050'
-        fontSize='14potrt'
-      >
+        fontFamily="Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#fafafa"
+        padding="15px"
+        color="#505050"
+        fontSize="14potrt">
         <span style={{ lineHeight: '20px' }}>
           Because emails with a lot of content are most of the time a very bad
           experience on mobile, E-accordion comes handy when you want to deliver
@@ -139,27 +136,24 @@ const Template: ComponentStory<typeof EAccordion> = args => (
       </EAccordionText>
     </EAccordionElement>
     <EAccordionElement
-      iconWrappedUrl='https://i.imgur.com/Xvw0vjq.png'
-      iconUnwrappedUrl='https://i.imgur.com/KKHenWa.png'
-      iconHeight='24px'
-      iconWidth='24px'
-    >
+      iconWrappedUrl="https://i.imgur.com/Xvw0vjq.png"
+      iconUnwrappedUrl="https://i.imgur.com/KKHenWa.png"
+      iconHeight="24px"
+      iconWidth="24px">
       <EAccordionTitle
-        fontFamily='Roboto, Open Sans, Helvetica, Arial, sans-serif'
-        backgroundColor='#fff'
-        color='#031017'
-        padding='15px'
-        fontSize='18px'
-      >
+        fontFamily="Roboto, Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#fff"
+        color="#031017"
+        padding="15px"
+        fontSize="18px">
         How it works
       </EAccordionTitle>
       <EAccordionText
-        fontFamily='Open Sans, Helvetica, Arial, sans-serif'
-        backgroundColor='#fafafa'
-        padding='15px'
-        color='#505050'
-        fontSize='14potrt'
-      >
+        fontFamily="Open Sans, Helvetica, Arial, sans-serif"
+        backgroundColor="#fafafa"
+        padding="15px"
+        color="#505050"
+        fontSize="14potrt">
         <span style={{ lineHeight: '20px' }}>
           Content is stacked into tabs and users can expand them at will. If
           responsive styles are not supported (mostly on desktop clients), tabs

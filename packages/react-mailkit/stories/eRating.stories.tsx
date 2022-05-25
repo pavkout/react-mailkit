@@ -31,7 +31,9 @@ export default {
   }
 } as ComponentMeta<typeof ERating>;
 
-const Template: ComponentStory<typeof ERating> = args => <ERating {...args} />;
+const Template: ComponentStory<typeof ERating> = (args) => (
+  <ERating {...args} />
+);
 
 export const FiveStarts = Template.bind({});
 

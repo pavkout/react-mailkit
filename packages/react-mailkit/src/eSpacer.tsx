@@ -20,7 +20,7 @@ export type ISpacerProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const ESpacer: FC<ISpacerProps> = props =>
+export const ESpacer: FC<ISpacerProps> = (props) =>
   createElement('mj-spacer', normalizeProps(props), null);
 
 ESpacer.displayName = 'ESpacer';

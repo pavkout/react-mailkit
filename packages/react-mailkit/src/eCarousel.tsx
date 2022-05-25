@@ -71,7 +71,7 @@ export type ICarouselProps = {
   children: ICarouselChildren;
 } & IMJClass;
 
-export const ECarousel: FC<ICarouselProps> = props => {
+export const ECarousel: FC<ICarouselProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-carousel', normalizeProps(rest), children);

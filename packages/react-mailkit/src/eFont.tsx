@@ -13,7 +13,7 @@ export type IFontProps = {
   name: string;
 };
 
-export const EFont: FC<IFontProps> = props =>
+export const EFont: FC<IFontProps> = (props) =>
   createElement('mj-font', normalizeProps(props), null);
 
 EFont.displayName = 'EFont';

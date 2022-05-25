@@ -28,7 +28,7 @@ export type IMailProps = {
   children: IMailChildren;
 };
 
-export const EMail: FC<IMailProps> = props => {
+export const EMail: FC<IMailProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mjml', normalizeProps(rest), children);

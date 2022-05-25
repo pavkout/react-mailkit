@@ -20,7 +20,7 @@ export type ISelectorProps = {
   children: ISelectorChildren;
 };
 
-export const ESelector: FC<ISelectorProps> = props => {
+export const ESelector: FC<ISelectorProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-selector', normalizeProps(rest), children);

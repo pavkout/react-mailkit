@@ -93,20 +93,19 @@ export default {
   }
 } as ComponentMeta<typeof EHero>;
 
-const Template: ComponentStory<typeof EHero> = args => (
+const Template: ComponentStory<typeof EHero> = (args) => (
   <EHero {...args}>
     <EText
-      padding='20px'
-      color='#ffffff'
-      fontFamily='Helvetica'
-      align='center'
-      fontSize='45px'
-      lineHeight='45px'
-      fontWeight='bold'
-    >
+      padding="20px"
+      color="#ffffff"
+      fontFamily="Helvetica"
+      align="center"
+      fontSize="45px"
+      lineHeight="45px"
+      fontWeight="bold">
       GO TO SPACE
     </EText>
-    <EButton href='https://mjml.io/' align='center'>
+    <EButton href="https://mjml.io/" align="center">
       ORDER YOUR TICKET NOW
     </EButton>
   </EHero>

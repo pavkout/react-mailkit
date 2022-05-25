@@ -30,7 +30,7 @@ export type IHeadProps = {
   children: IHeadChildren;
 };
 
-export const EHead: FC<IHeadProps> = props =>
+export const EHead: FC<IHeadProps> = (props) =>
   createElement('mj-head', null, props.children);
 
 EHead.displayName = 'EHead';

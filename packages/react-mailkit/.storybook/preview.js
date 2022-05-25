@@ -26,7 +26,7 @@ export const parameters = {
 };
 
 export const decorators = [
-  Story => {
+  (Story) => {
     const { html } = useEmail(
       <Email>
         <Story />

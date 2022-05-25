@@ -83,7 +83,7 @@ export type IImageProps = {
   IPaddingProps &
   IMJClass;
 
-export const EImage: FC<IImageProps> = props =>
+export const EImage: FC<IImageProps> = (props) =>
   createElement('mj-image', normalizeProps(props), null);
 
 EImage.displayName = 'EImage';

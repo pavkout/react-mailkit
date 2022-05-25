@@ -76,7 +76,7 @@ export type ISectionProps = {
   IBorderProps &
   IMJClass;
 
-export const ESection: FC<ISectionProps> = props => {
+export const ESection: FC<ISectionProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-section', normalizeProps(rest), children);

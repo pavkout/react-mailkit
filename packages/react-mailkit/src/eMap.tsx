@@ -152,9 +152,18 @@ const defaultProps: Partial<IMapProps> = {
   alt: 'Static Image Map'
 };
 
-export const EMap: FC<IMapProps> = props => {
-  const { key, scale, format, mapType, height, width, markers, size, alt } =
-    props;
+export const EMap: FC<IMapProps> = (props) => {
+  const {
+    key,
+    scale,
+    format,
+    mapType,
+    height,
+    width,
+    markers,
+    size,
+    alt
+  } = props;
 
   if (!key) {
     throw new Error('You must specify a "key" attribute for map');

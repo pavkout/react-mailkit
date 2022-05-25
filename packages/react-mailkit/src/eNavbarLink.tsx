@@ -71,7 +71,7 @@ export type INavbarLinkProps = {
 } & IPaddingProps &
   IMJClass;
 
-export const ENavbarLink: FC<INavbarLinkProps> = props => {
+export const ENavbarLink: FC<INavbarLinkProps> = (props) => {
   const { children, ...rest } = props;
 
   return createElement('mj-navbar-link', normalizeProps(rest), children);

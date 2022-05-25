@@ -53,7 +53,7 @@ const defaultProps: Partial<IQrCodeProps> = {
   protocol: 'https'
 };
 
-export const EQrCode: FC<IQrCodeProps> = props => {
+export const EQrCode: FC<IQrCodeProps> = (props) => {
   const {
     value,
     color,

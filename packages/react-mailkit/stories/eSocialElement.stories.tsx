@@ -171,8 +171,8 @@ export default {
   }
 } as ComponentMeta<typeof ESocialElement>;
 
-const Template: ComponentStory<typeof ESocialElement> = args => (
-  <ESocial fontSize={15} iconSize={30} mode='horizontal'>
+const Template: ComponentStory<typeof ESocialElement> = (args) => (
+  <ESocial fontSize={15} iconSize={30} mode="horizontal">
     <ESocialElement {...args}>Facebook</ESocialElement>
   </ESocial>
 );
