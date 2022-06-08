@@ -34,7 +34,6 @@
     "storybook": "start-storybook -p 6006 -s ./.storybook/assets",
     "build-storybook": "rimraf storybook-static && build-storybook -s ./.storybook/assets",
     "pretest": "yarn build",
-    "prepare": "husky install .config/husky",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   },
