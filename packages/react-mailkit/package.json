@@ -6,7 +6,7 @@
     "url": "https://github.com/pavkout/react-mailkit/issues"
   },
   "homepage": "https://www.react-mailkit.io",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Create awesome and fully responsive emails without stress.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
