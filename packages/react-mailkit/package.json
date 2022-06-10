@@ -49,7 +49,6 @@
     "json2mjml": "^1.0.3",
     "mjml": "^4.12.0",
     "mjml-browser": "^4.12.0",
-    "mjml2json": "^1.0.1",
     "static-google-map": "^0.0.3"
   },
   "devDependencies": {

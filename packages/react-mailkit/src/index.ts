@@ -9,7 +9,7 @@ import mjml2html from 'mjml';
 import json2mjml from 'json2mjml';
 
 // @ts-ignore: Unreachable code error
-import mjml2json from 'mjml2json';
+// import mjml2json from 'mjml2json';
 
 // @ts-ignore: Unreachable code error
 // import mailkit from '@react-mailkit/cli/src/mailkit';
@@ -48,7 +48,7 @@ export const jsonToMjml = (json: MJMLJsonObject) => json2mjml(json);
  * @param mjml The given mjml.
  * @returns The converted json.
  */
-export const mjmlToJson = (mjml: any) => mjml2json(mjml);
+// export const mjmlToJson = (mjml: any) => mjml2json(mjml);
 
 export { convertToMjml };
 
