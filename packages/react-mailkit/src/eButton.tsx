@@ -9,7 +9,7 @@ import {
   IPaddingProps,
   ITarget,
   ITextDecoration,
-  ITextTransform
+  ITextTransform,
 } from './propTypes/globalProps';
 import { px } from './propTypes/lengthUnit';
 import { normalizeProps } from './normalizers';

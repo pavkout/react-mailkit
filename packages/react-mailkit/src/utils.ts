@@ -11,7 +11,7 @@ type INormalizerProps = {
 type INormalizer = {
   [key: string]: ({
     name,
-    value
+    value,
   }: INormalizerProps) => string | number | boolean | undefined;
 };
 
@@ -112,5 +112,5 @@ export const normalizers: INormalizer = {
   'background-position-x': toPx,
   'background-position-y': toPx,
   'cell-padding': toPx,
-  'cell-spacing': toPx
+  'cell-spacing': toPx,
 };

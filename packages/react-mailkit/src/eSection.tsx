@@ -8,7 +8,7 @@ import {
   IBorderProps,
   IDirection,
   IMJClass,
-  IPaddingProps
+  IPaddingProps,
 } from './propTypes/globalProps';
 import { BackgroundPosition } from './propTypes/positionUnit';
 import { px } from './propTypes/lengthUnit';

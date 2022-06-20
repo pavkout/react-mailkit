@@ -6,7 +6,7 @@ import {
   IFontStyle,
   ITextDecoration,
   ITextTransform,
-  IMJClass
+  IMJClass,
 } from './propTypes/globalProps';
 import { px } from './propTypes/lengthUnit';
 import { normalizeProps } from './normalizers';

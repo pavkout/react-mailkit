@@ -22,7 +22,7 @@ export const EStyle: FC<IStyleProps> = (props) => {
 
   return createElement('mj-style', {
     ...normalizeProps(rest),
-    dangerouslySetInnerHTML: { __html: children || style }
+    dangerouslySetInnerHTML: { __html: children || style },
   });
 };
 

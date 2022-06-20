@@ -12,7 +12,7 @@ import { ISpacerProps } from './eSpacer';
 import {
   IMJClass,
   IPaddingProps,
-  IVerticalAlign
+  IVerticalAlign,
 } from './propTypes/globalProps';
 import { GoC } from './propTypes/global';
 import { px } from './propTypes/lengthUnit';

@@ -10,13 +10,13 @@ export type IImageTextProps = {
   imagePosition?: 'left' | 'right';
   sectionProps?: ISectionProps;
   columnProps?: IColumnProps;
-  imageProps?: IImageProps;
+  imageProps?: Omit<Partial<IImageProps>, 'src'>;
   textProps?: ITextProps;
   text: string | ReactElement[];
 };
 
 const defaultProps: Partial<IImageTextProps> = {
-  imagePosition: 'left'
+  imagePosition: 'left',
 };
 
 export const EImageText: FC<IImageTextProps> = (props) => {
@@ -27,7 +27,7 @@ export const EImageText: FC<IImageTextProps> = (props) => {
     sectionProps,
     columnProps,
     imageProps,
-    textProps
+    textProps,
   } = props;
 
   const renderImage = () => {

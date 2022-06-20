@@ -24,7 +24,7 @@ export type IAvatarProps = {
 const defaultProps: Partial<IAvatarProps> = {
   alt: 'avatar',
   size: 64,
-  shape: 'circle'
+  shape: 'circle',
 };
 
 export const EAvatar: FC<IAvatarProps> = (props) => {

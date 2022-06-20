@@ -50,7 +50,7 @@ const defaultProps: Partial<IQrCodeProps> = {
   ecLevel: 'M',
   width: 200,
   host: 'quickchart.io',
-  protocol: 'https'
+  protocol: 'https',
 };
 
 export const EQrCode: FC<IQrCodeProps> = (props) => {
@@ -62,7 +62,7 @@ export const EQrCode: FC<IQrCodeProps> = (props) => {
     ecLevel,
     width,
     host,
-    protocol
+    protocol,
   } = props;
 
   if (!value) {

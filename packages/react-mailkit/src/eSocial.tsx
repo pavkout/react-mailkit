@@ -7,7 +7,7 @@ import {
   IAlign,
   IMJClass,
   IPaddingProps,
-  ITextDecoration
+  ITextDecoration,
 } from './propTypes/globalProps';
 import { GoC } from './propTypes/global';
 import { px } from './propTypes/lengthUnit';

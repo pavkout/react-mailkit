@@ -4,7 +4,7 @@ import {
   IBorderProps,
   IMJClass,
   IPaddingProps,
-  IVerticalAlign
+  IVerticalAlign,
 } from './propTypes/globalProps';
 import { px } from './propTypes/lengthUnit';
 import { normalizeProps } from './normalizers';

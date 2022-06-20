@@ -7,7 +7,7 @@ import {
   IAlign,
   IMJClass,
   ITextDecoration,
-  ITextTransform
+  ITextTransform,
 } from './propTypes/globalProps';
 import { GoC } from './propTypes/global';
 import { px } from './propTypes/lengthUnit';

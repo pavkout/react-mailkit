@@ -4,7 +4,7 @@ export const normalizeProps = (props: any) => {
   return Object.keys(props).reduce((acc, curr) => {
     return {
       ...acc,
-      [kebabCase(curr)]: normalizeProp(kebabCase(curr), props[curr])
+      [kebabCase(curr)]: normalizeProp(kebabCase(curr), props[curr]),
     };
   }, {});
 };

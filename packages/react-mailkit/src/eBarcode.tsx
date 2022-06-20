@@ -162,7 +162,7 @@ export type IBarcodeProps = {
 const defaultProps: Partial<IBarcodeProps> = {
   bcid: 'code128',
   width: 300,
-  height: 150
+  height: 150,
 };
 
 export const EBarcode: FC<IBarcodeProps> = (props) => {
@@ -176,7 +176,7 @@ export const EBarcode: FC<IBarcodeProps> = (props) => {
     scale,
     rotate,
     monochrome,
-    includetext
+    includetext,
   } = props;
 
   if (!bcid) {

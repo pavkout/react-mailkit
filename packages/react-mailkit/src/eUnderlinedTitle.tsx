@@ -30,11 +30,11 @@ export type IUnderlinedTitleProps = {
 
 const defaultProps = {
   textProps: {
-    fontSize: 20
+    fontSize: 20,
   },
   dividerProps: {
-    borderWidth: 1
-  }
+    borderWidth: 1,
+  },
 };
 
 export const EUnderlinedTitle = (props: IUnderlinedTitleProps) => {

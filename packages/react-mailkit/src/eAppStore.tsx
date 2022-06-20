@@ -43,7 +43,7 @@ const defaultProps: Partial<IAppStoreProps> = {
   locale: (typeof navigator !== 'undefined' && navigator.language) || 'en-us',
   width: 135,
   height: 135 / HEIGHT_RATIO,
-  target: '_blank'
+  target: '_blank',
 };
 
 const expeptionLocale = ['zh-cn', 'zh-tw'];

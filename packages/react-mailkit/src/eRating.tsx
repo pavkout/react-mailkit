@@ -26,7 +26,7 @@ export type IRatingProps = {
 const defaultProps = {
   stars: 5,
   urlPerStar: false,
-  size: 36
+  size: 36,
 };
 
 const Rating = styled.div`

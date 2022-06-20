@@ -21,7 +21,7 @@ export const ImageQuality = {
   medium: 'mqdefault',
   high: 'hqdefault',
   standard: 'sddefault',
-  maxres: 'maxresdefault'
+  maxres: 'maxresdefault',
 };
 
 export type IYoutubeThumbnailProps = {
@@ -41,7 +41,7 @@ export type IYoutubeThumbnailProps = {
 
 const defaultProps: Partial<IYoutubeThumbnailProps> = {
   imageQuality: 'default',
-  borderRadius: 0
+  borderRadius: 0,
 };
 
 export const EYoutubeThumbnail: FC<IYoutubeThumbnailProps> = (props) => {

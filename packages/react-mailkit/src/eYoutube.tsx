@@ -19,7 +19,7 @@ export type IYoutubeProps = {
 } & IPaddingProps;
 
 const defaultProps: Partial<IYoutubeProps> = {
-  imageQuality: 'default'
+  imageQuality: 'default',
 };
 
 export const EYoutube: FC<IYoutubeProps> = (props) => {

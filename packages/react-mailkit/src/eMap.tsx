@@ -5,7 +5,7 @@ import {
   Path,
   PathGroup,
   // @ts-ignore: Unreachable code error
-  staticMapUrl
+  staticMapUrl,
 } from 'static-google-map';
 
 import { EImage } from './eImage';
@@ -149,21 +149,12 @@ const defaultProps: Partial<IMapProps> = {
   height: 300,
   format: 'png',
   mapType: 'roadmap',
-  alt: 'Static Image Map'
+  alt: 'Static Image Map',
 };
 
 export const EMap: FC<IMapProps> = (props) => {
-  const {
-    key,
-    scale,
-    format,
-    mapType,
-    height,
-    width,
-    markers,
-    size,
-    alt
-  } = props;
+  const { key, scale, format, mapType, height, width, markers, size, alt } =
+    props;
 
   if (!key) {
     throw new Error('You must specify a "key" attribute for map');
@@ -175,7 +166,7 @@ export const EMap: FC<IMapProps> = (props) => {
     size: size || `${width}x${height}`,
     format,
     maptype: mapType,
-    markers
+    markers,
   });
 
   return <EImage alt={alt} src={src} width={width} height={height} />;

@@ -32,7 +32,7 @@ import {
   IPaddingProps,
   ITarget,
   ITextDecoration,
-  IVerticalAlign
+  IVerticalAlign,
 } from './propTypes/globalProps';
 import { px } from './propTypes/lengthUnit';
 import { normalizeProps } from './normalizers';

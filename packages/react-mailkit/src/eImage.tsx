@@ -5,7 +5,7 @@ import {
   IBorderProps,
   IMJClass,
   IPaddingProps,
-  ITarget
+  ITarget,
 } from './propTypes/globalProps';
 import { px } from './propTypes/lengthUnit';
 import { normalizeProps } from './normalizers';

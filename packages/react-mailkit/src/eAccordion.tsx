@@ -12,7 +12,7 @@ import { normalizeProps } from './normalizers';
 
 enum IconPosition {
   left = 'left',
-  right = 'right'
+  right = 'right',
 }
 
 // Accepted types for Accordion component
