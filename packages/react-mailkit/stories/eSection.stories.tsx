@@ -10,121 +10,121 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     backgroundPosition: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundPositionX: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundPositionY: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundRepeat: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundSize: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundUrl: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     direction: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     textAlign: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     fullWidth: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof ESection>;
 
 const Template: ComponentStory<typeof ESection> = (args) => (
@@ -141,5 +141,5 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   fullWidth: 'full-width',
-  backgroundColor: '#0075ff'
+  backgroundColor: '#0075ff',
 };

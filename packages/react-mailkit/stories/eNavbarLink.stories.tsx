@@ -9,100 +9,100 @@ export default {
   argTypes: {
     href: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     color: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     fontSize: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontStyle: {
       table: {
-        category: 'Font'
+        category: 'Font',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     fontWeight: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     letterSpacing: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     lineHeight: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     rel: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     target: {
       table: {
-        category: 'Hyperlink'
+        category: 'Hyperlink',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     textDecoration: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     textTransform: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
-    }
-  }
+        category: 'Extra Class',
+      },
+    },
+  },
 } as ComponentMeta<typeof ENavbarLink>;
 
 const Template: ComponentStory<typeof ENavbarLink> = (args) => (
@@ -115,5 +115,5 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   href: '/gettings-started-onboard',
-  color: 'white'
+  color: 'white',
 };

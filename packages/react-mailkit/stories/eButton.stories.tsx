@@ -10,182 +10,182 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     color: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     fontSize: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontStyle: {
       table: {
-        category: 'Font'
+        category: 'Font',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     fontWeight: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     textAlign: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     textDecoration: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     textTransform: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     letterSpacing: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     lineHeight: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     href: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     rel: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     target: {
       table: {
-        category: 'Hyperlink'
+        category: 'Hyperlink',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     title: {
       table: {
-        category: 'Accessibility'
-      }
+        category: 'Accessibility',
+      },
     },
     verticalAlign: {
       table: {
-        category: 'Alignment'
-      }
+        category: 'Alignment',
+      },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     innerPadding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EButton>;
 
 const Template: ComponentStory<typeof EButton> = (args) => (
@@ -195,7 +195,7 @@ const Template: ComponentStory<typeof EButton> = (args) => (
 export const BackgroundColor = Template.bind({});
 
 BackgroundColor.args = {
-  backgroundColor: '#86c232'
+  backgroundColor: '#86c232',
 };
 
 export const ContainerColor = Template.bind({});
@@ -203,7 +203,7 @@ export const ContainerColor = Template.bind({});
 ContainerColor.args = {
   color: '#86c232',
   backgroundColor: '#fff',
-  containerBackgroundColor: '#86c232'
+  containerBackgroundColor: '#86c232',
 };
 
 export const Border = Template.bind({});
@@ -212,21 +212,21 @@ Border.args = {
   color: '#86c232',
   backgroundColor: '#fff',
   border: '1px solid #86c232',
-  borderRadius: 25
+  borderRadius: 25,
 };
 
 export const BorderRadius = Template.bind({});
 
 BorderRadius.args = {
   backgroundColor: '#86c232',
-  BorderRadius: 10
+  BorderRadius: 10,
 };
 
 export const Size = Template.bind({});
 
 Size.args = {
   width: 300,
-  backgroundColor: '#86c232'
+  backgroundColor: '#86c232',
 };
 
 export const TextAlign = Template.bind({});
@@ -234,5 +234,5 @@ export const TextAlign = Template.bind({});
 TextAlign.args = {
   width: 200,
   backgroundColor: '#86c232',
-  textAlign: 'right'
+  textAlign: 'right',
 };

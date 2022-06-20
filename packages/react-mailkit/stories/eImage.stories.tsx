@@ -10,143 +10,143 @@ export default {
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     sizes: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     src: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     srcSet: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     name: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     alt: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     href: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     rel: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     target: {
       table: {
-        category: 'Hyperlink'
+        category: 'Hyperlink',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     fluidOnMobile: {
       table: {
-        category: 'Fluid on Mobile'
+        category: 'Fluid on Mobile',
       },
-      control: { type: 'boolean' }
+      control: { type: 'boolean' },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     useMap: {
       table: {
-        category: 'Attributes'
-      }
+        category: 'Attributes',
+      },
     },
     title: {
       table: {
-        category: 'Accessibility'
-      }
-    }
-  }
+        category: 'Accessibility',
+      },
+    },
+  },
 } as ComponentMeta<typeof EImage>;
 
 const Template: ComponentStory<typeof EImage> = (args) => <EImage {...args} />;
@@ -155,8 +155,7 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   width: 300,
-  src:
-    'https://www.online-image-editor.com//styles/2014/images/example_image.png'
+  src: 'https://www.online-image-editor.com//styles/2014/images/example_image.png',
 };
 
 export const HrefImage = Template.bind({});
@@ -165,8 +164,7 @@ HrefImage.args = {
   href: 'https://www.google.com',
   target: '_blank',
   width: 300,
-  src:
-    'https://www.online-image-editor.com//styles/2014/images/example_image.png'
+  src: 'https://www.online-image-editor.com//styles/2014/images/example_image.png',
 };
 
 export const RadiusImage = Template.bind({});
@@ -174,6 +172,5 @@ export const RadiusImage = Template.bind({});
 RadiusImage.args = {
   borderRadius: 50,
   width: 300,
-  src:
-    'https://www.online-image-editor.com//styles/2014/images/example_image.png'
+  src: 'https://www.online-image-editor.com//styles/2014/images/example_image.png',
 };

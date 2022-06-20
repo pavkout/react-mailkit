@@ -10,87 +10,87 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     mode: {
       table: {
-        category: 'Mode'
+        category: 'Mode',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     verticalAlign: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     backgroundUrl: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundPosition: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundHeight: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundWidth: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EHero>;
 
 const Template: ComponentStory<typeof EHero> = (args) => (
@@ -121,7 +121,7 @@ FixedHeight.args = {
   backgroundUrl:
     'https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg',
   backgroundColor: '#2a3448',
-  padding: '100px 0px'
+  padding: '100px 0px',
 };
 
 export const FluidHeight = Template.bind({});
@@ -134,5 +134,5 @@ FluidHeight.args = {
     'https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg',
   backgroundColor: '#2a3448',
   padding: '100px 0px',
-  width: '100%'
+  width: '100%',
 };

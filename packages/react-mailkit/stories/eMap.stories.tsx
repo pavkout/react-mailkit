@@ -9,118 +9,118 @@ export default {
   argTypes: {
     key: {
       table: {
-        category: 'Google Map Key'
-      }
+        category: 'Google Map Key',
+      },
     },
     mapType: {
       table: {
-        category: 'Map Type'
+        category: 'Map Type',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     size: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     scale: {
       table: {
-        category: 'Image'
+        category: 'Image',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     alt: {
       table: {
-        category: 'Image'
-      }
+        category: 'Image',
+      },
     },
     format: {
       table: {
-        category: 'Image'
+        category: 'Image',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     language: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     region: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     center: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     zoom: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     visible: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     style: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     path: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     client: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     signature: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     channel: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     markers: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     markerGroups: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     paths: {
       table: {
-        category: 'Map'
-      }
+        category: 'Map',
+      },
     },
     pathGroups: {
       table: {
-        category: 'Map'
-      }
-    }
-  }
+        category: 'Map',
+      },
+    },
+  },
 } as ComponentMeta<typeof EMap>;
 
 const Template: ComponentStory<typeof EMap> = (args) => <EMap {...args} />;
@@ -128,32 +128,32 @@ const Template: ComponentStory<typeof EMap> = (args) => <EMap {...args} />;
 export const Roadmap = Template.bind({});
 
 Roadmap.args = {
-  maptype: 'roadmap'
+  maptype: 'roadmap',
 };
 
 export const Satellite = Template.bind({});
 
 Satellite.args = {
-  maptype: 'satellite'
+  maptype: 'satellite',
 };
 
 export const Terrain = Template.bind({});
 
 Terrain.args = {
-  maptype: 'terrain'
+  maptype: 'terrain',
 };
 
 export const Hybrid = Template.bind({});
 
 Hybrid.args = {
-  maptype: 'hybrid'
+  maptype: 'hybrid',
 };
 
 export const Scaled = Template.bind({});
 
 Scaled.args = {
   scale: 'four',
-  maptype: 'hybrid'
+  maptype: 'hybrid',
 };
 
 export const Marker = Template.bind({});
@@ -163,9 +163,9 @@ Marker.args = {
   markers: [
     {
       location: 'Memphis,TN',
-      color: 'red'
-    }
-  ]
+      color: 'red',
+    },
+  ],
 };
 
 export const TinyMarker = Template.bind({});
@@ -176,9 +176,9 @@ TinyMarker.args = {
     {
       location: 'Memphis,TN',
       color: 'purple',
-      size: 'tiny'
-    }
-  ]
+      size: 'tiny',
+    },
+  ],
 };
 
 export const Size = Template.bind({});
@@ -190,7 +190,7 @@ Size.args = {
   markers: [
     {
       location: 'Memphis,TN',
-      color: 'orange'
-    }
-  ]
+      color: 'orange',
+    },
+  ],
 };

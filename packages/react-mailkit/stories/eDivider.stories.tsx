@@ -10,67 +10,67 @@ export default {
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     borderColor: {
       table: {
-        category: 'Border'
-      }
+        category: 'Border',
+      },
     },
     borderStyle: {
       table: {
-        category: 'Border'
+        category: 'Border',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     borderWidth: {
       table: {
-        category: 'Border'
-      }
-    }
-  }
+        category: 'Border',
+      },
+    },
+  },
 } as ComponentMeta<typeof EDivider>;
 
 const Template: ComponentStory<typeof EDivider> = (args) => (

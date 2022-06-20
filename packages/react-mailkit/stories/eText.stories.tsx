@@ -10,105 +10,105 @@ export default {
     color: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     fontSize: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontStyle: {
       table: {
-        category: 'Font'
+        category: 'Font',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     fontWeight: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     textDecoration: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     textTransform: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     letterSpacing: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     lineHeight: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EText>;
 
 const Template: ComponentStory<typeof EText> = (args) => (
@@ -122,13 +122,13 @@ Overview.args = {};
 export const Color = Template.bind({});
 
 Color.args = {
-  color: 'red'
+  color: 'red',
 };
 
 export const Size = Template.bind({});
 
 Size.args = {
-  fontSize: '22px'
+  fontSize: '22px',
 };
 
 export const WithBackground = Template.bind({});
@@ -137,5 +137,5 @@ WithBackground.args = {
   color: '#ffffff',
   align: 'center',
   fontSize: '22px',
-  containerBackgroundColor: '#095a95'
+  containerBackgroundColor: '#095a95',
 };

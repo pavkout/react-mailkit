@@ -7,7 +7,7 @@ import {
   EColumn,
   EImage,
   EText,
-  EDivider
+  EDivider,
 } from '../src/browser';
 
 export default {
@@ -17,110 +17,110 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     fullWidth: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     backgroundPosition: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundPositionX: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundPositionY: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundRepeat: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundSize: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     backgroundUrl: {
       table: {
-        category: 'Background'
-      }
+        category: 'Background',
+      },
     },
     textAlign: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EWrapper>;
 
 const Template: ComponentStory<typeof EWrapper> = (args) => (
@@ -157,5 +157,5 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   border: '1px solid #000000',
-  padding: '50px 30px'
+  padding: '50px 30px',
 };

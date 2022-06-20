@@ -10,45 +10,45 @@ export default {
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
-    }
-  }
+        category: 'Extra Class',
+      },
+    },
+  },
 } as ComponentMeta<typeof ESpacer>;
 
 const Template: ComponentStory<typeof ESpacer> = (args) => (
@@ -64,12 +64,12 @@ const Template: ComponentStory<typeof ESpacer> = (args) => (
 export const Overview = Template.bind({});
 
 Overview.args = {
-  height: '50px'
+  height: '50px',
 };
 
 export const WithColor = Template.bind({});
 
 WithColor.args = {
   height: '100px',
-  containerBackgroundColor: '#a21717'
+  containerBackgroundColor: '#a21717',
 };

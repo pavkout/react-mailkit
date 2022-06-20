@@ -9,46 +9,46 @@ export default {
   argTypes: {
     text: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     textProps: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     imageSrc: {
       table: {
-        category: 'Image'
-      }
+        category: 'Image',
+      },
     },
     imagePosition: {
       table: {
-        category: 'Image'
+        category: 'Image',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     sectionProps: {
       table: {
-        category: 'Section'
-      }
+        category: 'Section',
+      },
     },
     columnProps: {
       table: {
-        category: 'Column'
-      }
+        category: 'Column',
+      },
     },
     imageProps: {
       table: {
-        category: 'Extra Image Options'
-      }
+        category: 'Extra Image Options',
+      },
     },
     children: {
       table: {
-        category: 'Children'
-      }
-    }
-  }
+        category: 'Children',
+      },
+    },
+  },
 } as ComponentMeta<typeof EImageText>;
 
 const Template: ComponentStory<typeof EImageText> = (args) => (
@@ -62,12 +62,12 @@ ImageRight.args = {
   imageSrc:
     'https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg',
   sectionProps: {
-    backgroundColor: '#cfe856'
+    backgroundColor: '#cfe856',
   },
   text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 	Lorem Ipsum has been the industry's standard dummy text ever since the
 	1500s, when an unknown printer took a galley of type and scrambled it to
-	make a type specimen book.`
+	make a type specimen book.`,
 };
 
 export const ImageLeft = Template.bind({});
@@ -77,17 +77,17 @@ ImageLeft.args = {
   imageSrc:
     'https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg',
   sectionProps: {
-    backgroundColor: '#56abe8'
+    backgroundColor: '#56abe8',
   },
   textProps: {
     color: '#ffffff',
-    fontSize: 16
+    fontSize: 16,
   },
   imageProps: {
-    borderRadius: 50
+    borderRadius: 50,
   },
   text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 	Lorem Ipsum has been the industry's standard dummy text ever since the
 	1500s, when an unknown printer took a galley of type and scrambled it to
-	make a type specimen book.`
+	make a type specimen book.`,
 };

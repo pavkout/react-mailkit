@@ -10,122 +10,122 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     innerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerBorder: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerBorderTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerBorderBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerBorderRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerBorderLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerBorderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     verticalAlign: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EColumn>;
 
 const Template: ComponentStory<typeof EColumn> = (args) => (
@@ -165,7 +165,7 @@ const TemplateImage: ComponentStory<typeof EColumn> = (args) => (
 export const ImageHeader = TemplateImage.bind({});
 
 ImageHeader.args = {
-  width: '600px'
+  width: '600px',
 };
 
 const TemplateIntro: ComponentStory<typeof EColumn> = (args) => (
@@ -195,7 +195,7 @@ const TemplateIntro: ComponentStory<typeof EColumn> = (args) => (
 export const IntroText = TemplateIntro.bind({});
 
 IntroText.args = {
-  width: '400px'
+  width: '400px',
 };
 
 const TemplateTwoColumns: ComponentStory<typeof EColumn> = (args) => (

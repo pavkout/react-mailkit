@@ -9,26 +9,26 @@ export default {
   argTypes: {
     src: {
       table: {
-        category: 'Image'
-      }
+        category: 'Image',
+      },
     },
     alt: {
       table: {
-        category: 'Accessibility'
-      }
+        category: 'Accessibility',
+      },
     },
     size: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     shape: {
       table: {
-        category: 'Shape'
+        category: 'Shape',
       },
-      control: { type: 'select' }
-    }
-  }
+      control: { type: 'select' },
+    },
+  },
 } as ComponentMeta<typeof EAvatar>;
 
 const Template: ComponentStory<typeof EAvatar> = (args) => (
@@ -38,33 +38,29 @@ const Template: ComponentStory<typeof EAvatar> = (args) => (
 export const Circle = Template.bind({});
 
 Circle.args = {
-  src:
-    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
-  shape: 'circle'
+  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  shape: 'circle',
 };
 
 export const SmallCircle = Template.bind({});
 
 SmallCircle.args = {
-  src:
-    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
   shape: 'circle',
-  size: 40
+  size: 40,
 };
 
 export const Rectangular = Template.bind({});
 
 Rectangular.args = {
-  src:
-    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
-  shape: 'rectangular'
+  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  shape: 'rectangular',
 };
 
 export const SmallRectangular = Template.bind({});
 
 SmallRectangular.args = {
-  src:
-    'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
+  src: 'https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/1024',
   shape: 'rectangular',
-  size: 40
+  size: 40,
 };

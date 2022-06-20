@@ -9,42 +9,42 @@ export default {
   argTypes: {
     url: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     platform: {
       table: {
-        category: 'Store'
+        category: 'Store',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     target: {
       table: {
-        category: 'Hyperlink'
+        category: 'Hyperlink',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     locale: {
       table: {
-        category: 'Locale'
-      }
+        category: 'Locale',
+      },
     },
     defaultLocale: {
       table: {
-        category: 'Locale'
-      }
-    }
-  }
+        category: 'Locale',
+      },
+    },
+  },
 } as ComponentMeta<typeof EAppStore>;
 
 const Template: ComponentStory<typeof EAppStore> = (args) => (
@@ -54,15 +54,13 @@ const Template: ComponentStory<typeof EAppStore> = (args) => (
 export const Apple = Template.bind({});
 
 Apple.args = {
-  url:
-    'https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg',
-  platform: 'ios'
+  url: 'https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg',
+  platform: 'ios',
 };
 
 export const Android = Template.bind({});
 
 Android.args = {
-  url:
-    'https://raw.github.com/yjb94/google-play-badge-svg/master/img/en_get.svg?sanitize=true',
-  platform: 'android'
+  url: 'https://raw.github.com/yjb94/google-play-badge-svg/master/img/en_get.svg?sanitize=true',
+  platform: 'android',
 };

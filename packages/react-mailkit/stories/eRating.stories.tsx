@@ -9,26 +9,26 @@ export default {
   argTypes: {
     size: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     url: {
       table: {
-        category: 'Link'
-      }
+        category: 'Link',
+      },
     },
     stars: {
       table: {
-        category: 'Number of Starts'
-      }
+        category: 'Number of Starts',
+      },
     },
     urlPerStar: {
       table: {
-        category: 'Security'
+        category: 'Security',
       },
-      control: { type: 'Boolean' }
-    }
-  }
+      control: { type: 'Boolean' },
+    },
+  },
 } as ComponentMeta<typeof ERating>;
 
 const Template: ComponentStory<typeof ERating> = (args) => (
@@ -40,7 +40,7 @@ export const FiveStarts = Template.bind({});
 FiveStarts.args = {
   url: 'https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=',
   stars: 5,
-  size: 36
+  size: 36,
 };
 
 export const Smaller = Template.bind({});
@@ -48,7 +48,7 @@ export const Smaller = Template.bind({});
 Smaller.args = {
   url: 'https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=',
   stars: 5,
-  size: 20
+  size: 20,
 };
 
 export const TenStarts = Template.bind({});
@@ -56,7 +56,7 @@ export const TenStarts = Template.bind({});
 TenStarts.args = {
   url: 'https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=',
   stars: 10,
-  size: 36
+  size: 36,
 };
 
 export const URLPerStart = Template.bind({});
@@ -65,5 +65,5 @@ URLPerStart.args = {
   url: 'https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=',
   stars: 5,
   size: 36,
-  urlPerStar: true
+  urlPerStar: true,
 };

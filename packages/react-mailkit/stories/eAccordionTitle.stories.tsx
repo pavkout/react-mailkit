@@ -5,7 +5,7 @@ import {
   EAccordion,
   EAccordionElement,
   EAccordionText,
-  EAccordionTitle
+  EAccordionTitle,
 } from '../src/browser';
 
 export default {
@@ -15,61 +15,61 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     color: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontSize: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EAccordionTitle>;
 
 const Template: ComponentStory<typeof EAccordionTitle> = (args) => (
@@ -103,5 +103,5 @@ Overview.args = {
   backgroundColor: '#fff',
   color: '#031017',
   padding: '15px',
-  fontSize: '18px'
+  fontSize: '18px',
 };

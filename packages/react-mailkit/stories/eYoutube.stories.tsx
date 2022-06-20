@@ -9,65 +9,65 @@ export default {
   argTypes: {
     id: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     imageQuality: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     videoTitle: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     videoViews: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     videoDatePeriod: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     accountName: {
       table: {
-        category: 'Account'
-      }
+        category: 'Account',
+      },
     },
     accountThumbnail: {
       table: {
-        category: 'Account'
-      }
+        category: 'Account',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
-    }
-  }
+        category: 'Sizes',
+      },
+    },
+  },
 } as ComponentMeta<typeof EYoutube>;
 
 const Template: ComponentStory<typeof EYoutube> = (args) => (
@@ -77,33 +77,33 @@ const Template: ComponentStory<typeof EYoutube> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  id: 'smGTQrwvOc8'
+  id: 'smGTQrwvOc8',
 };
 
 export const Medium = Template.bind({});
 
 Medium.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'medium'
+  imageQuality: 'medium',
 };
 
 export const High = Template.bind({});
 
 High.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'high'
+  imageQuality: 'high',
 };
 
 export const Standard = Template.bind({});
 
 Standard.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'standard'
+  imageQuality: 'standard',
 };
 
 export const Maxres = Template.bind({});
 
 Maxres.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'maxres'
+  imageQuality: 'maxres',
 };

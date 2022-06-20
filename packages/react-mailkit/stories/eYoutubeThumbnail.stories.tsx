@@ -9,45 +9,45 @@ export default {
   argTypes: {
     id: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     imageQuality: {
       table: {
-        category: 'Video'
-      }
+        category: 'Video',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
-    }
-  }
+        category: 'Sizes',
+      },
+    },
+  },
 } as ComponentMeta<typeof EYoutubeThumbnail>;
 
 const Template: ComponentStory<typeof EYoutubeThumbnail> = (args) => (
@@ -57,35 +57,35 @@ const Template: ComponentStory<typeof EYoutubeThumbnail> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  id: 'smGTQrwvOc8'
+  id: 'smGTQrwvOc8',
 };
 
 export const Medium = Template.bind({});
 
 Medium.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'medium'
+  imageQuality: 'medium',
 };
 
 export const High = Template.bind({});
 
 High.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'high'
+  imageQuality: 'high',
 };
 
 export const Standard = Template.bind({});
 
 Standard.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'standard'
+  imageQuality: 'standard',
 };
 
 export const Maxres = Template.bind({});
 
 Maxres.args = {
   id: 'smGTQrwvOc8',
-  imageQuality: 'maxres'
+  imageQuality: 'maxres',
 };
 
 export const MaxresWithRadius = Template.bind({});
@@ -93,5 +93,5 @@ export const MaxresWithRadius = Template.bind({});
 MaxresWithRadius.args = {
   id: 'smGTQrwvOc8',
   imageQuality: 'maxres',
-  borderRadius: 12
+  borderRadius: 12,
 };

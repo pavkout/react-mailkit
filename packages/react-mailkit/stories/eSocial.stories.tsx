@@ -10,124 +10,124 @@ export default {
     color: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     fontSize: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontStyle: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontWeight: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     textDecoration: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     lineHeight: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     iconSize: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconHeight: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     mode: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     textPadding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     iconPadding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     innerPadding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof ESocial>;
 
 const Template: ComponentStory<typeof ESocial> = (args) => (
@@ -149,5 +149,5 @@ export const Overview = Template.bind({});
 Overview.args = {
   fontSize: '15px',
   iconSize: '30px',
-  mode: 'horizontal'
+  mode: 'horizontal',
 };

@@ -9,166 +9,166 @@ export default {
   argTypes: {
     name: {
       table: {
-        category: 'Name'
-      }
+        category: 'Name',
+      },
     },
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     color: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     sizes: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     src: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     href: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     rel: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     alt: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     target: {
       table: {
-        category: 'Hyperlink'
+        category: 'Hyperlink',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     srcSet: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     title: {
       table: {
-        category: 'Accessibility'
-      }
+        category: 'Accessibility',
+      },
     },
     verticalAlign: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     fontSize: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontStyle: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     fontWeight: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     lineHeight: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     textDecoration: {
       table: {
-        category: 'Text'
+        category: 'Text',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     iconSize: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconHeight: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconPadding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     textPadding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof ESocialElement>;
 
 const Template: ComponentStory<typeof ESocialElement> = (args) => (
@@ -181,5 +181,5 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   name: 'facebook',
-  href: 'https://mjml.io/'
+  href: 'https://mjml.io/',
 };

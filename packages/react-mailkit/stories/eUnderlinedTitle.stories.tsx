@@ -9,30 +9,30 @@ export default {
   argTypes: {
     title: {
       table: {
-        category: 'Text'
-      }
+        category: 'Text',
+      },
     },
     textProps: {
       table: {
-        category: 'Text Props'
-      }
+        category: 'Text Props',
+      },
     },
     sectionProps: {
       table: {
-        category: 'Section Props'
-      }
+        category: 'Section Props',
+      },
     },
     columnProps: {
       table: {
-        category: 'Column Props'
-      }
+        category: 'Column Props',
+      },
     },
     dividerProps: {
       table: {
-        category: 'Divider Props'
-      }
-    }
-  }
+        category: 'Divider Props',
+      },
+    },
+  },
 } as ComponentMeta<typeof EUnderlinedTitle>;
 
 const Template: ComponentStory<typeof EUnderlinedTitle> = (args) => (
@@ -42,7 +42,7 @@ const Template: ComponentStory<typeof EUnderlinedTitle> = (args) => (
 export const LeftAlign = Template.bind({});
 
 LeftAlign.args = {
-  title: 'My Awesome Tilte'
+  title: 'My Awesome Tilte',
 };
 
 export const CenterAlign = Template.bind({});
@@ -50,8 +50,8 @@ export const CenterAlign = Template.bind({});
 CenterAlign.args = {
   title: 'My Awesome Tilte',
   textProps: {
-    align: 'center'
-  }
+    align: 'center',
+  },
 };
 
 export const RightAlign = Template.bind({});
@@ -59,6 +59,6 @@ export const RightAlign = Template.bind({});
 RightAlign.args = {
   title: 'My Awesome Tilte',
   textProps: {
-    align: 'right'
-  }
+    align: 'right',
+  },
 };

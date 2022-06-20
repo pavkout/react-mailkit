@@ -9,58 +9,58 @@ export default {
   argTypes: {
     bcid: {
       table: {
-        category: 'Barcode Type'
-      }
+        category: 'Barcode Type',
+      },
     },
     value: {
       table: {
-        category: 'Value'
-      }
+        category: 'Value',
+      },
     },
     scale: {
       table: {
-        category: 'Scale'
-      }
+        category: 'Scale',
+      },
     },
     scaleX: {
       table: {
-        category: 'Scale'
-      }
+        category: 'Scale',
+      },
     },
     scaleY: {
       table: {
-        category: 'Scale'
-      }
+        category: 'Scale',
+      },
     },
     rotate: {
       table: {
-        category: 'Rotation'
+        category: 'Rotation',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     monochrome: {
       table: {
-        category: 'Monochrome'
+        category: 'Monochrome',
       },
-      control: { type: 'boolean' }
+      control: { type: 'boolean' },
     },
     includetext: {
       table: {
-        category: 'Include Text'
+        category: 'Include Text',
       },
-      control: { type: 'boolean' }
+      control: { type: 'boolean' },
     },
     height: {
       table: {
-        category: 'Dimensions'
-      }
+        category: 'Dimensions',
+      },
     },
     width: {
       table: {
-        category: 'Dimensions'
-      }
-    }
-  }
+        category: 'Dimensions',
+      },
+    },
+  },
 } as ComponentMeta<typeof EBarcode>;
 
 const Template: ComponentStory<typeof EBarcode> = (args) => (
@@ -71,7 +71,7 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   value: '1234567890',
-  rotate: 'N'
+  rotate: 'N',
 };
 
 export const Scale = Template.bind({});
@@ -79,14 +79,14 @@ export const Scale = Template.bind({});
 Scale.args = {
   value: '1234567890',
   scale: 3,
-  rotate: 'N'
+  rotate: 'N',
 };
 
 export const Rotate = Template.bind({});
 
 Rotate.args = {
   value: '1234567890',
-  rotate: 'L'
+  rotate: 'L',
 };
 
 export const WithTextIncluded = Template.bind({});
@@ -94,7 +94,7 @@ export const WithTextIncluded = Template.bind({});
 WithTextIncluded.args = {
   value: '1234567890',
   includetext: true,
-  rotate: 'N'
+  rotate: 'N',
 };
 
 export const RotateWithText = Template.bind({});
@@ -102,5 +102,5 @@ export const RotateWithText = Template.bind({});
 RotateWithText.args = {
   value: '1234567890',
   includetext: true,
-  rotate: 'R'
+  rotate: 'R',
 };

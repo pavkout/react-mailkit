@@ -13,7 +13,7 @@ export type EmailProps = {
 export const Email: FC<EmailProps> = ({
   sectionProps,
   columnProps,
-  children
+  children,
 }) => (
   <EMail>
     <EBody width={600}>

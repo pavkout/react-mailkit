@@ -9,7 +9,7 @@ import {
   ESection,
   EColumn,
   ECarousel,
-  ECarouselImage
+  ECarouselImage,
 } from 'react-mailkit';
 
 const IntroExample = () => {
@@ -66,7 +66,7 @@ const IntroExample = () => {
   );
 
   const { html } = useEmail(email, {
-    validationLevel: 'soft'
+    validationLevel: 'soft',
   });
 
   return (
@@ -77,7 +77,7 @@ const IntroExample = () => {
         alignItems: 'center',
         width: '100%',
         height: 500,
-        background: '#ffffff50'
+        background: '#ffffff50',
       }}>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>

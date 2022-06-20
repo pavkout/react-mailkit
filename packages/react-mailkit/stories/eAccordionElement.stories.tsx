@@ -5,7 +5,7 @@ import {
   EAccordion,
   EAccordionElement,
   EAccordionText,
-  EAccordionTitle
+  EAccordionTitle,
 } from '../src/browser';
 
 export default {
@@ -15,77 +15,77 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     iconAlign: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconHeight: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconWidth: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconPosition: {
       table: {
-        category: 'Icon'
+        category: 'Icon',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     iconUnwrappedAlt: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconUnwrappedUrl: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconWrappedAlt: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconWrappedUrl: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EAccordionElement>;
 
 const Tempate: ComponentStory<typeof EAccordionElement> = (args) => (
@@ -121,5 +121,5 @@ Overview.args = {
   iconWrappedUrl: 'https://i.imgur.com/Xvw0vjq.png',
   iconUnwrappedUrl: 'https://i.imgur.com/KKHenWa.png',
   iconHeight: '24px',
-  iconWidth: '24px'
+  iconWidth: '24px',
 };

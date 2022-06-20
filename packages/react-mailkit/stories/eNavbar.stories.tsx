@@ -9,105 +9,105 @@ export default {
   argTypes: {
     baseUrl: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     hamburger: {
       table: {
-        category: 'Hamburger'
-      }
+        category: 'Hamburger',
+      },
     },
     align: {
       table: {
-        category: 'Alignment'
+        category: 'Alignment',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     icoColor: {
       control: 'color',
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoAlign: {
       table: {
-        category: 'Icon'
+        category: 'Icon',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     icoClose: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoFontFamily: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoFontSize: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoLineHeight: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoOpen: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoPadding: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoPaddingTop: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoPaddingBottom: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoPaddingLeft: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoPaddingRight: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     icoTextDecoration: {
       table: {
-        category: 'Icon'
+        category: 'Icon',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     icoTextTransform: {
       table: {
-        category: 'Icon'
+        category: 'Icon',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof ENavbar>;
 
 const Template: ComponentStory<typeof ENavbar> = (args) => (
@@ -132,5 +132,5 @@ export const Overview = Template.bind({});
 Overview.args = {
   baseUrl: 'https://mjml.io',
   hamburger: 'hamburger',
-  icoColor: '#d9d9d9'
+  icoColor: '#d9d9d9',
 };

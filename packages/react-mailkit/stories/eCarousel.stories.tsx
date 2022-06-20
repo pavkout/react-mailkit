@@ -10,77 +10,77 @@ export default {
     backgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     align: {
       table: {
-        category: 'Alignment'
-      }
+        category: 'Alignment',
+      },
     },
     borderRadius: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     leftIcon: {
       table: {
-        category: 'Arror Icons'
-      }
+        category: 'Arror Icons',
+      },
     },
     rightIcon: {
       table: {
-        category: 'Arror Icons'
-      }
+        category: 'Arror Icons',
+      },
     },
     iconWidth: {
       table: {
-        category: 'Arror Icons'
-      }
+        category: 'Arror Icons',
+      },
     },
     thumbnails: {
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     tbWidth: {
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     tbBorderRadius: {
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     tbBorder: {
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     tbHoverBorderColor: {
       control: 'color',
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     tbSelectedBorderColor: {
       control: 'color',
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof ECarousel>;
 
 const Template: ComponentStory<typeof ECarousel> = (args) => (

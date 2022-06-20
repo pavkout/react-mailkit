@@ -5,7 +5,7 @@ import {
   EAccordion,
   EAccordionElement,
   EAccordionText,
-  EAccordionTitle
+  EAccordionTitle,
 } from '../src/browser';
 
 export default {
@@ -15,96 +15,96 @@ export default {
     containerBackgroundColor: {
       control: 'color',
       table: {
-        category: 'Colors'
-      }
+        category: 'Colors',
+      },
     },
     padding: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingTop: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingBottom: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingRight: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     paddingLeft: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     border: {
       table: {
-        category: 'Sizes'
-      }
+        category: 'Sizes',
+      },
     },
     fontFamily: {
       table: {
-        category: 'Font'
-      }
+        category: 'Font',
+      },
     },
     iconAlign: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconHeight: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconWidth: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconPosition: {
       table: {
-        category: 'Icon'
+        category: 'Icon',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     iconUnwrappedAlt: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconUnwrappedUrl: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconWrappedAlt: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     iconWrappedUrl: {
       table: {
-        category: 'Icon'
-      }
+        category: 'Icon',
+      },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
+        category: 'Extra Class',
+      },
     },
     children: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 } as ComponentMeta<typeof EAccordion>;
 
 const Template: ComponentStory<typeof EAccordion> = (args) => (
@@ -168,5 +168,5 @@ export const Overview = Template.bind({});
 
 Overview.args = {
   border: 'none',
-  padding: '1px'
+  padding: '1px',
 };

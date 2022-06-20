@@ -9,46 +9,46 @@ export default {
   argTypes: {
     thumbnailsSrc: {
       table: {
-        category: 'Thumbnail'
-      }
+        category: 'Thumbnail',
+      },
     },
     src: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     href: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     alt: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     rel: {
       table: {
-        category: 'Hyperlink'
-      }
+        category: 'Hyperlink',
+      },
     },
     title: {
       table: {
-        category: 'Accessibility'
-      }
+        category: 'Accessibility',
+      },
     },
     target: {
       table: {
-        category: 'Hyperlink'
+        category: 'Hyperlink',
       },
-      control: { type: 'select' }
+      control: { type: 'select' },
     },
     cssClass: {
       table: {
-        category: 'Extra Class'
-      }
-    }
-  }
+        category: 'Extra Class',
+      },
+    },
+  },
 } as ComponentMeta<typeof ECarouselImage>;
 
 const Template: ComponentStory<typeof ECarouselImage> = (args) => (
