@@ -22,14 +22,14 @@ describe('should be correct output', () => {
   it('should have width attribute', () => {
     const { container } = render(Divider);
     expect(
-      container.querySelector('mj-divider')?.hasAttribute('width')
+      container.querySelector('mj-divider')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have 500px as width attribute', () => {
     const { container } = render(Divider);
     expect(
-      container.querySelector('mj-divider')?.getAttribute('width')
+      container.querySelector('mj-divider')!.getAttribute('width')
     ).toStrictEqual('500px');
   });
 

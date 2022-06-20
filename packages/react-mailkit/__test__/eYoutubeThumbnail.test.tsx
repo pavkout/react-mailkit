@@ -22,28 +22,28 @@ describe('should be correct output', () => {
   it('should have border-radius attribute', () => {
     const { container } = render(YoutubeThumbnail);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('border-radius')
+      container.querySelector('mj-image')!.hasAttribute('border-radius')
     ).toBeTruthy();
   });
 
   it('should have 0px as border-radius attribute', () => {
     const { container } = render(YoutubeThumbnail);
     expect(
-      container.querySelector('mj-image')?.getAttribute('border-radius')
+      container.querySelector('mj-image')!.getAttribute('border-radius')
     ).toStrictEqual('0px');
   });
 
   it('should have src attribute', () => {
     const { container } = render(YoutubeThumbnail);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('src')
+      container.querySelector('mj-image')!.hasAttribute('src')
     ).toBeTruthy();
   });
 
   it('should have correct src attribute', () => {
     const { container } = render(YoutubeThumbnail);
     expect(
-      container.querySelector('mj-image')?.getAttribute('src')
+      container.querySelector('mj-image')!.getAttribute('src')
     ).toStrictEqual('https://img.youtube.com/vi/smGTQrwvOc8/maxresdefault.jpg');
   });
 

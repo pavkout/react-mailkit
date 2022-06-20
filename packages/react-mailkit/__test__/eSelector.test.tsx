@@ -30,13 +30,13 @@ describe('should be correct output', () => {
   it('should have three children', () => {
     const { container } = render(Selector);
     expect(
-      container.querySelector('mj-selector')?.childNodes.length
+      container.querySelector('mj-selector')!.childNodes.length
     ).toStrictEqual(3);
   });
 
   it('should have EHtmlAttribute as children', () => {
     const { container } = render(Selector);
-    container.querySelector('mj-selector')?.childNodes.forEach((child) => {
+    container.querySelector('mj-selector')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-HTML-ATTRIBUTE');
     });
   });
@@ -44,14 +44,14 @@ describe('should be correct output', () => {
   it('should have path attribute', () => {
     const { container } = render(Selector);
     expect(
-      container.querySelector('mj-selector')?.hasAttribute('path')
+      container.querySelector('mj-selector')!.hasAttribute('path')
     ).toBeTruthy();
   });
 
   it('should have .custom div as path attribute', () => {
     const { container } = render(Selector);
     expect(
-      container.querySelector('mj-selector')?.getAttribute('path')
+      container.querySelector('mj-selector')!.getAttribute('path')
     ).toStrictEqual('.custom div');
   });
 

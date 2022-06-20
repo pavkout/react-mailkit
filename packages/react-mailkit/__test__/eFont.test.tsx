@@ -25,28 +25,28 @@ describe('should be correct output', () => {
   it('should have name attribute', () => {
     const { container } = render(Font);
     expect(
-      container.querySelector('mj-font')?.hasAttribute('name')
+      container.querySelector('mj-font')!.hasAttribute('name')
     ).toBeTruthy();
   });
 
   it('should have Raleway as name attribute', () => {
     const { container } = render(Font);
     expect(
-      container.querySelector('mj-font')?.getAttribute('name')
+      container.querySelector('mj-font')!.getAttribute('name')
     ).toStrictEqual('Raleway');
   });
 
   it('should have href attribute', () => {
     const { container } = render(Font);
     expect(
-      container.querySelector('mj-font')?.hasAttribute('href')
+      container.querySelector('mj-font')!.hasAttribute('href')
     ).toBeTruthy();
   });
 
   it('should have correct href attribute', () => {
     const { container } = render(Font);
     expect(
-      container.querySelector('mj-font')?.getAttribute('href')
+      container.querySelector('mj-font')!.getAttribute('href')
     ).toStrictEqual('https://fonts.googleapis.com/css?family=Raleway');
   });
 

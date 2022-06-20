@@ -30,20 +30,20 @@ describe('should be correct output', () => {
   it('should have one child', () => {
     const { container } = render(Section);
     expect(
-      container.querySelector('mj-section')?.childNodes.length
+      container.querySelector('mj-section')!.childNodes.length
     ).toStrictEqual(1);
   });
 
   it('should have EColumn as children', () => {
     const { container } = render(Section);
-    container.querySelector('mj-section')?.childNodes.forEach((child) => {
+    container.querySelector('mj-section')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-COLUMN');
     });
   });
 
   it(`should haven't ESection as children`, () => {
     const { container } = render(Section);
-    container.querySelector('mj-section')?.childNodes.forEach((child) => {
+    container.querySelector('mj-section')!.childNodes.forEach((child) => {
       expect(child.nodeName).not.toEqual('MJ-SECTION');
     });
   });
@@ -51,14 +51,14 @@ describe('should be correct output', () => {
   it('should have background-color attribute', () => {
     const { container } = render(Section);
     expect(
-      container.querySelector('mj-section')?.hasAttribute('background-color')
+      container.querySelector('mj-section')!.hasAttribute('background-color')
     ).toBeTruthy();
   });
 
   it('should have #ffffff as background-color attribute', () => {
     const { container } = render(Section);
     expect(
-      container.querySelector('mj-section')?.getAttribute('background-color')
+      container.querySelector('mj-section')!.getAttribute('background-color')
     ).toStrictEqual('#ffffff');
   });
 

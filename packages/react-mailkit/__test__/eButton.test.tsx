@@ -24,48 +24,48 @@ describe('should be correct output', () => {
   it('should have font-family attribute', () => {
     const { container } = render(Button);
     expect(
-      container.querySelector('mj-button')?.hasAttribute('font-family')
+      container.querySelector('mj-button')!.hasAttribute('font-family')
     ).toBeTruthy();
   });
 
   it('should have background-color attribute', () => {
     const { container } = render(Button);
     expect(
-      container.querySelector('mj-button')?.hasAttribute('background-color')
+      container.querySelector('mj-button')!.hasAttribute('background-color')
     ).toBeTruthy();
   });
 
   it('should have color attribute', () => {
     const { container } = render(Button);
     expect(
-      container.querySelector('mj-button')?.hasAttribute('color')
+      container.querySelector('mj-button')!.hasAttribute('color')
     ).toBeTruthy();
   });
 
   it('should have Helvetica as font-family attribute', () => {
     const { container } = render(Button);
     expect(
-      container.querySelector('mj-button')?.getAttribute('font-family')
+      container.querySelector('mj-button')!.getAttribute('font-family')
     ).toStrictEqual('Helvetica');
   });
 
   it('should have #f45e43 as background-color attribute', () => {
     const { container } = render(Button);
     expect(
-      container.querySelector('mj-button')?.getAttribute('background-color')
+      container.querySelector('mj-button')!.getAttribute('background-color')
     ).toStrictEqual('#f45e43');
   });
 
   it('should have white as color attribute', () => {
     const { container } = render(Button);
     expect(
-      container.querySelector('mj-button')?.getAttribute('color')
+      container.querySelector('mj-button')!.getAttribute('color')
     ).toStrictEqual('white');
   });
 
   it('should have correct content', () => {
     const { container } = render(Button);
-    expect(container.querySelector('mj-button')?.textContent).toStrictEqual(
+    expect(container.querySelector('mj-button')!.textContent).toStrictEqual(
       "Don't click me!"
     );
   });

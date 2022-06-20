@@ -36,20 +36,20 @@ describe('should be correct output', () => {
   it('should have three children', () => {
     const { container } = render(Carousel);
     expect(
-      container.querySelector('mj-carousel')?.childNodes.length
+      container.querySelector('mj-carousel')!.childNodes.length
     ).toStrictEqual(3);
   });
 
   it('should all children be ECarouselImage', () => {
     const { container } = render(Carousel);
-    container.querySelector('mj-carousel')?.childNodes.forEach((child) => {
+    container.querySelector('mj-carousel')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-CAROUSEL-IMAGE');
     });
   });
 
   it('should all children have src attribute', () => {
     const { container } = render(Carousel);
-    container.querySelector('mj-carousel')?.childNodes.forEach((child) => {
+    container.querySelector('mj-carousel')!.childNodes.forEach((child) => {
       expect(child).toHaveAttribute('src');
     });
   });

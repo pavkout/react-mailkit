@@ -18,14 +18,14 @@ describe('should be correct output', () => {
   it('should have width attribute', () => {
     const { container } = render(<EBreakpoint width={320} />);
     expect(
-      container.querySelector('mj-breakpoint')?.hasAttribute('width')
+      container.querySelector('mj-breakpoint')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have 320px as width attribute', () => {
     const { container } = render(<EBreakpoint width={320} />);
     expect(
-      container.querySelector('mj-breakpoint')?.getAttribute('width')
+      container.querySelector('mj-breakpoint')!.getAttribute('width')
     ).toStrictEqual('320px');
   });
 

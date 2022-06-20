@@ -28,14 +28,14 @@ describe('should be correct output', () => {
   it('should have one children', () => {
     const { container } = render(HtmlAttributes);
     expect(
-      container.querySelector('mj-html-attributes')?.childNodes.length
+      container.querySelector('mj-html-attributes')!.childNodes.length
     ).toStrictEqual(1);
   });
 
   it('should have as first child an ESelector', () => {
     const { container } = render(HtmlAttributes);
     expect(
-      container.querySelector('mj-html-attributes')?.childNodes[0].nodeName
+      container.querySelector('mj-html-attributes')!.childNodes[0].nodeName
     ).toStrictEqual('MJ-SELECTOR');
   });
 
@@ -47,14 +47,14 @@ describe('should be correct output', () => {
   it('should have name attribute', () => {
     const { container } = render(HtmlAttributes);
     expect(
-      container.querySelector('mj-html-attribute')?.hasAttribute('name')
+      container.querySelector('mj-html-attribute')!.hasAttribute('name')
     ).toBeTruthy();
   });
 
   it('should have data-id as name attribute', () => {
     const { container } = render(HtmlAttributes);
     expect(
-      container.querySelector('mj-html-attribute')?.getAttribute('name')
+      container.querySelector('mj-html-attribute')!.getAttribute('name')
     ).toStrictEqual('data-id');
   });
 

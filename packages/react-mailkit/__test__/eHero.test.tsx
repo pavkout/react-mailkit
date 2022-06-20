@@ -44,7 +44,7 @@ describe('should be correct output', () => {
 
   it('should have two children', () => {
     const { container } = render(Hero);
-    expect(container.querySelector('mj-hero')?.childNodes.length).toStrictEqual(
+    expect(container.querySelector('mj-hero')!.childNodes.length).toStrictEqual(
       2
     );
   });
@@ -52,56 +52,56 @@ describe('should be correct output', () => {
   it('should have as first child an EText', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.childNodes[0].nodeName
+      container.querySelector('mj-hero')!.childNodes[0].nodeName
     ).toStrictEqual('MJ-TEXT');
   });
 
   it('should have as second child an EButton', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.childNodes[1].nodeName
+      container.querySelector('mj-hero')!.childNodes[1].nodeName
     ).toStrictEqual('MJ-BUTTON');
   });
 
   it('should have mode attribute', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.hasAttribute('mode')
+      container.querySelector('mj-hero')!.hasAttribute('mode')
     ).toBeTruthy();
   });
 
   it('should have fixed-height as mode attribute', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.getAttribute('mode')
+      container.querySelector('mj-hero')!.getAttribute('mode')
     ).toStrictEqual('fixed-height');
   });
 
   it('should have height attribute', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.hasAttribute('height')
+      container.querySelector('mj-hero')!.hasAttribute('height')
     ).toBeTruthy();
   });
 
   it('should have correct height attribute', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.getAttribute('height')
+      container.querySelector('mj-hero')!.getAttribute('height')
     ).toStrictEqual('469px');
   });
 
   it('should have background-url attribute', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.hasAttribute('background-url')
+      container.querySelector('mj-hero')!.hasAttribute('background-url')
     ).toBeTruthy();
   });
 
   it('should have correct backgroundUrl attribute', () => {
     const { container } = render(Hero);
     expect(
-      container.querySelector('mj-hero')?.getAttribute('background-url')
+      container.querySelector('mj-hero')!.getAttribute('background-url')
     ).toStrictEqual(
       'https://cloud.githubusercontent.com/assets/1830348/15354890/1442159a-1cf0-11e6-92b1-b861dadf1750.jpg'
     );

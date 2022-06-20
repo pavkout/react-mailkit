@@ -20,42 +20,42 @@ describe('should be correct output', () => {
   it('should have name attribute', () => {
     const { container } = render(Class);
     expect(
-      container.querySelector('mj-class')?.hasAttribute('name')
+      container.querySelector('mj-class')!.hasAttribute('name')
     ).toBeTruthy();
   });
 
   it('should have color attribute', () => {
     const { container } = render(Class);
     expect(
-      container.querySelector('mj-class')?.hasAttribute('color')
+      container.querySelector('mj-class')!.hasAttribute('color')
     ).toBeTruthy();
   });
 
   it('should have font-size attribute', () => {
     const { container } = render(Class);
     expect(
-      container.querySelector('mj-class')?.hasAttribute('font-size')
+      container.querySelector('mj-class')!.hasAttribute('font-size')
     ).toBeTruthy();
   });
 
   it('should have blue as name attribute', () => {
     const { container } = render(Class);
     expect(
-      container.querySelector('mj-class')?.getAttribute('name')
+      container.querySelector('mj-class')!.getAttribute('name')
     ).toStrictEqual('blue');
   });
 
   it('should have blue as color attribute', () => {
     const { container } = render(Class);
     expect(
-      container.querySelector('mj-class')?.getAttribute('color')
+      container.querySelector('mj-class')!.getAttribute('color')
     ).toStrictEqual('blue');
   });
 
   it('should have 20px as font-size attribute', () => {
     const { container } = render(Class);
     expect(
-      container.querySelector('mj-class')?.getAttribute('font-size')
+      container.querySelector('mj-class')!.getAttribute('font-size')
     ).toStrictEqual('20px');
   });
 

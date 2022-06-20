@@ -22,14 +22,14 @@ describe('should be correct output', () => {
   it('should have inline attribute', () => {
     const { container } = render(Style);
     expect(
-      container.querySelector('mj-style')?.hasAttribute('inline')
+      container.querySelector('mj-style')!.hasAttribute('inline')
     ).toBeTruthy();
   });
 
   it('should have inline as inline attribute', () => {
     const { container } = render(Style);
     expect(
-      container.querySelector('mj-style')?.getAttribute('inline')
+      container.querySelector('mj-style')!.getAttribute('inline')
     ).toStrictEqual('inline');
   });
 

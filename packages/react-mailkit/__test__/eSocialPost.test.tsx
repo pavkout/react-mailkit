@@ -27,13 +27,13 @@ describe('should be correct output', () => {
   it('should have two children', () => {
     const { container } = render(SocialPost);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes.length
+      container.querySelector('mj-wrapper')!.childNodes.length
     ).toStrictEqual(2);
   });
 
   it('should all children be ESection', () => {
     const { container } = render(SocialPost);
-    container.querySelector('mj-wrapper')?.childNodes.forEach((child) => {
+    container.querySelector('mj-wrapper')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-SECTION');
     });
   });
@@ -41,7 +41,7 @@ describe('should be correct output', () => {
   it('should have as second child an EImage inside EColumn', () => {
     const { container } = render(SocialPost);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes[0].childNodes[0]
+      container.querySelector('mj-wrapper')!.childNodes[0].childNodes[0]
         .childNodes[0].nodeName
     ).toStrictEqual('MJ-IMAGE');
   });
@@ -49,7 +49,7 @@ describe('should be correct output', () => {
   it('should have Title', () => {
     const { container } = render(SocialPost);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes[1].childNodes[0]
+      container.querySelector('mj-wrapper')!.childNodes[1].childNodes[0]
         .childNodes[0].nodeName
     ).toStrictEqual('MJ-TEXT');
   });
@@ -57,7 +57,7 @@ describe('should be correct output', () => {
   it('should have Content text', () => {
     const { container } = render(SocialPost);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes[1].childNodes[0]
+      container.querySelector('mj-wrapper')!.childNodes[1].childNodes[0]
         .childNodes[1].nodeName
     ).toStrictEqual('MJ-TEXT');
   });
@@ -65,7 +65,7 @@ describe('should be correct output', () => {
   it('should have ESocial', () => {
     const { container } = render(SocialPost);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes[1].childNodes[0]
+      container.querySelector('mj-wrapper')!.childNodes[1].childNodes[0]
         .childNodes[2].nodeName
     ).toStrictEqual('MJ-SOCIAL');
   });
@@ -73,7 +73,7 @@ describe('should be correct output', () => {
   it('should have name attribute into ESocialElement', () => {
     const { container } = render(SocialPost);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes[1].childNodes[0]
+      container.querySelector('mj-wrapper')!.childNodes[1].childNodes[0]
         .childNodes[2].childNodes[0]
     ).toHaveAttribute('name');
   });

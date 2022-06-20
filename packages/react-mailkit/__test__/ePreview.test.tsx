@@ -20,7 +20,7 @@ describe('should be correct output', () => {
   it('should have one child', () => {
     const { container } = render(Preview);
     expect(
-      container.querySelector('mj-preview')?.childNodes.length
+      container.querySelector('mj-preview')!.childNodes.length
     ).toStrictEqual(1);
   });
 

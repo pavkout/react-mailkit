@@ -31,7 +31,7 @@ describe('should be correct output', () => {
   it('should have one children', () => {
     const { container } = render(Column);
     expect(
-      container.querySelector('mj-column')?.childNodes.length
+      container.querySelector('mj-column')!.childNodes.length
     ).toStrictEqual(1);
   });
 
@@ -43,28 +43,28 @@ describe('should be correct output', () => {
   it('should have width attribute', () => {
     const { container } = render(Column);
     expect(
-      container.querySelector('mj-column')?.hasAttribute('width')
+      container.querySelector('mj-column')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have 250px as width attribute', () => {
     const { container } = render(Column);
     expect(
-      container.querySelector('mj-column')?.getAttribute('width')
+      container.querySelector('mj-column')!.getAttribute('width')
     ).toStrictEqual('250px');
   });
 
   it('should not render nested EColumn inside EColumn', () => {
     const { container } = render(Column);
     expect(
-      container.querySelector('mj-column')?.querySelector('mj-column')
+      container.querySelector('mj-column')!.querySelector('mj-column')
     ).toBeNull();
   });
 
   it('should not render nested ESection inside EColumn', () => {
     const { container } = render(Column);
     expect(
-      container.querySelector('mj-column')?.querySelector('mj-section')
+      container.querySelector('mj-column')!.querySelector('mj-section')
     ).toBeNull();
   });
 

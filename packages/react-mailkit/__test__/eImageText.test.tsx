@@ -9,14 +9,14 @@ const LeftImage = (
     imagePosition="left"
     imageSrc="https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg"
     sectionProps={{
-      backgroundColor: '#56abe8'
+      backgroundColor: '#56abe8',
     }}
     textProps={{
       color: '#ffffff',
-      fontSize: 16
+      fontSize: 16,
     }}
     imageProps={{
-      borderRadius: 50
+      borderRadius: 50,
     }}
     text={`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -50,7 +50,7 @@ describe('should be correct output', () => {
   it('should have two children', () => {
     const { container } = render(LeftImage);
     expect(
-      container.querySelector('mj-section')?.childNodes.length
+      container.querySelector('mj-section')!.childNodes.length
     ).toStrictEqual(2);
   });
 
@@ -67,7 +67,7 @@ describe('should be correct output', () => {
   it('should have as first child an EImage', () => {
     const { container } = render(LeftImage);
     expect(
-      container.querySelector('mj-section')?.childNodes[0].childNodes[0]
+      container.querySelector('mj-section')!.childNodes[0].childNodes[0]
         .nodeName
     ).toStrictEqual('MJ-IMAGE');
   });
@@ -75,7 +75,7 @@ describe('should be correct output', () => {
   it('should have as second child an EText', () => {
     const { container } = render(LeftImage);
     expect(
-      container.querySelector('mj-section')?.childNodes[1].childNodes[0]
+      container.querySelector('mj-section')!.childNodes[1].childNodes[0]
         .nodeName
     ).toStrictEqual('MJ-TEXT');
   });
@@ -83,7 +83,7 @@ describe('should be correct output', () => {
   it('should have two children', () => {
     const { container } = render(RightImage);
     expect(
-      container.querySelector('mj-section')?.childNodes.length
+      container.querySelector('mj-section')!.childNodes.length
     ).toStrictEqual(2);
   });
 
@@ -95,14 +95,14 @@ describe('should be correct output', () => {
   it('should EImage have attribute src', () => {
     const { container } = render(RightImage);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('src')
+      container.querySelector('mj-image')!.hasAttribute('src')
     ).toBeTruthy();
   });
 
   it('should EImage have correct imageSrc attribute', () => {
     const { container } = render(RightImage);
     expect(
-      container.querySelector('mj-image')?.getAttribute('src')
+      container.querySelector('mj-image')!.getAttribute('src')
     ).toStrictEqual(
       'https://designspell.files.wordpress.com/2012/01/sciolino-paris-bw.jpg'
     );
@@ -111,7 +111,7 @@ describe('should be correct output', () => {
   it('should have as first child an EText', () => {
     const { container } = render(RightImage);
     expect(
-      container.querySelector('mj-section')?.childNodes[0].childNodes[0]
+      container.querySelector('mj-section')!.childNodes[0].childNodes[0]
         .nodeName
     ).toStrictEqual('MJ-TEXT');
   });
@@ -119,7 +119,7 @@ describe('should be correct output', () => {
   it('should have as second child an EImage', () => {
     const { container } = render(RightImage);
     expect(
-      container.querySelector('mj-section')?.childNodes[1].childNodes[0]
+      container.querySelector('mj-section')!.childNodes[1].childNodes[0]
         .nodeName
     ).toStrictEqual('MJ-IMAGE');
   });

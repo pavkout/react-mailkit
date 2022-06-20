@@ -31,14 +31,14 @@ describe('should be correct output', () => {
   it('should have height attribute', () => {
     const { container } = render(Spacer);
     expect(
-      container.querySelector('mj-spacer')?.hasAttribute('height')
+      container.querySelector('mj-spacer')!.hasAttribute('height')
     ).toBeTruthy();
   });
 
   it('should have 100px as height attribute', () => {
     const { container } = render(Spacer);
     expect(
-      container.querySelector('mj-spacer')?.getAttribute('height')
+      container.querySelector('mj-spacer')!.getAttribute('height')
     ).toStrictEqual('100px');
   });
 

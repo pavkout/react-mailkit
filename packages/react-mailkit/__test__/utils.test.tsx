@@ -4,7 +4,7 @@ import {
   convertToMjml,
   kebabCase,
   toColor,
-  toPx
+  toPx,
 } from '../src/utils';
 
 import { EMail } from '../src/eMail';

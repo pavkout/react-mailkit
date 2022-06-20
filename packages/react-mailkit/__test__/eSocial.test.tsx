@@ -33,13 +33,13 @@ describe('should be correct output', () => {
   it('should have three children', () => {
     const { container } = render(Social);
     expect(
-      container.querySelector('mj-social')?.childNodes.length
+      container.querySelector('mj-social')!.childNodes.length
     ).toStrictEqual(3);
   });
 
   it('should have ESocialElement as children', () => {
     const { container } = render(Social);
-    container.querySelector('mj-social')?.childNodes.forEach((child) => {
+    container.querySelector('mj-social')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-SOCIAL-ELEMENT');
     });
   });
@@ -47,20 +47,20 @@ describe('should be correct output', () => {
   it('should have font-size attribute', () => {
     const { container } = render(Social);
     expect(
-      container.querySelector('mj-social')?.hasAttribute('font-size')
+      container.querySelector('mj-social')!.hasAttribute('font-size')
     ).toBeTruthy();
   });
 
   it('should have 15px as font-size attribute', () => {
     const { container } = render(Social);
     expect(
-      container.querySelector('mj-social')?.getAttribute('font-size')
+      container.querySelector('mj-social')!.getAttribute('font-size')
     ).toStrictEqual('15px');
   });
 
   it('should first ESocialElement have name attribute', () => {
     const { container } = render(Social);
-    expect(container.querySelector('mj-social')?.childNodes[0]).toHaveAttribute(
+    expect(container.querySelector('mj-social')!.childNodes[0]).toHaveAttribute(
       'name'
     );
   });

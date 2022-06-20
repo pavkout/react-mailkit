@@ -28,7 +28,7 @@ describe('should be correct output', () => {
 
   it('should have three children', () => {
     const { container } = render(Head);
-    expect(container.querySelector('mj-head')?.childNodes.length).toStrictEqual(
+    expect(container.querySelector('mj-head')!.childNodes.length).toStrictEqual(
       3
     );
   });
@@ -36,21 +36,21 @@ describe('should be correct output', () => {
   it('should have as first child an EPreview', () => {
     const { container } = render(Head);
     expect(
-      container.querySelector('mj-head')?.childNodes[0].nodeName
+      container.querySelector('mj-head')!.childNodes[0].nodeName
     ).toStrictEqual('MJ-PREVIEW');
   });
 
   it('should have as second child an EBreakpoint', () => {
     const { container } = render(Head);
     expect(
-      container.querySelector('mj-head')?.childNodes[1].nodeName
+      container.querySelector('mj-head')!.childNodes[1].nodeName
     ).toStrictEqual('MJ-BREAKPOINT');
   });
 
   it('should have as third child an ETitle', () => {
     const { container } = render(Head);
     expect(
-      container.querySelector('mj-head')?.childNodes[2].nodeName
+      container.querySelector('mj-head')!.childNodes[2].nodeName
     ).toStrictEqual('MJ-TITLE');
   });
 

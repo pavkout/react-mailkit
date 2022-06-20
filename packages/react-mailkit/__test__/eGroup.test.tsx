@@ -56,20 +56,20 @@ describe('should be correct output', () => {
   it('should not render nested ESection inside EGroup', () => {
     const { container } = render(Group);
     expect(
-      container.querySelector('mj-group')?.querySelector('mj-section')
+      container.querySelector('mj-group')!.querySelector('mj-section')
     ).toBeNull();
   });
 
   it('should have two children', () => {
     const { container } = render(Group);
     expect(
-      container.querySelector('mj-group')?.childNodes.length
+      container.querySelector('mj-group')!.childNodes.length
     ).toStrictEqual(2);
   });
 
   it('should all children be EColumn', () => {
     const { container } = render(Group);
-    container.querySelector('mj-group')?.childNodes.forEach((child) => {
+    container.querySelector('mj-group')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-COLUMN');
     });
   });
@@ -77,14 +77,14 @@ describe('should be correct output', () => {
   it('should have width attribute', () => {
     const { container } = render(Group);
     expect(
-      container.querySelector('mj-group')?.hasAttribute('width')
+      container.querySelector('mj-group')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have 600px as width attribute', () => {
     const { container } = render(Group);
     expect(
-      container.querySelector('mj-group')?.getAttribute('width')
+      container.querySelector('mj-group')!.getAttribute('width')
     ).toStrictEqual('600px');
   });
 

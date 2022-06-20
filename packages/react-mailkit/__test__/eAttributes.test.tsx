@@ -29,7 +29,7 @@ describe('should be correct output', () => {
   it('should have three children', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-attributes')?.childNodes.length
+      container.querySelector('mj-attributes')!.childNodes.length
     ).toStrictEqual(3);
   });
 
@@ -51,27 +51,27 @@ describe('should be correct output', () => {
   it('should have as first child an EText', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-attributes')?.childNodes[0].nodeName
+      container.querySelector('mj-attributes')!.childNodes[0].nodeName
     ).toStrictEqual('MJ-TEXT');
   });
 
   it('should have as second child an EClass', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-attributes')?.childNodes[1].nodeName
+      container.querySelector('mj-attributes')!.childNodes[1].nodeName
     ).toStrictEqual('MJ-CLASS');
   });
 
   it('should have as third child an EAll', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-attributes')?.childNodes[2].nodeName
+      container.querySelector('mj-attributes')!.childNodes[2].nodeName
     ).toStrictEqual('MJ-ALL');
   });
 
   it('should any of the children has children', () => {
     const { container } = render(Attributes);
-    container.querySelector('mj-accordion')?.childNodes.forEach((child) => {
+    container.querySelector('mj-accordion')!.childNodes.forEach((child) => {
       expect(child.hasChildNodes()).toBeFalsy();
     });
   });
@@ -79,34 +79,34 @@ describe('should be correct output', () => {
   it('should EText has attribute padding', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-text')?.hasAttribute('padding')
+      container.querySelector('mj-text')!.hasAttribute('padding')
     ).toBeTruthy();
   });
 
   it('should EClass has attributes name, color, font-size', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-class')?.hasAttribute('name')
+      container.querySelector('mj-class')!.hasAttribute('name')
     ).toBeTruthy();
     expect(
-      container.querySelector('mj-class')?.hasAttribute('color')
+      container.querySelector('mj-class')!.hasAttribute('color')
     ).toBeTruthy();
     expect(
-      container.querySelector('mj-class')?.hasAttribute('font-size')
+      container.querySelector('mj-class')!.hasAttribute('font-size')
     ).toBeTruthy();
   });
 
   it('should EAll have attribute font-family', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-all')?.hasAttribute('font-family')
+      container.querySelector('mj-all')!.hasAttribute('font-family')
     ).toBeTruthy();
   });
 
   it('should EAll have Arial as font-family attribute', () => {
     const { container } = render(Attributes);
     expect(
-      container.querySelector('mj-all')?.getAttribute('font-family')
+      container.querySelector('mj-all')!.getAttribute('font-family')
     ).toStrictEqual('Arial');
   });
 

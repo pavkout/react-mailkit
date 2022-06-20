@@ -36,20 +36,20 @@ describe('should be correct output', () => {
   it('should have three children', () => {
     const { container } = render(Navbar);
     expect(
-      container.querySelector('mj-navbar')?.childNodes.length
+      container.querySelector('mj-navbar')!.childNodes.length
     ).toStrictEqual(4);
   });
 
   it('should have ENavbarLink as children', () => {
     const { container } = render(Navbar);
-    container.querySelector('mj-navbar')?.childNodes.forEach((child) => {
+    container.querySelector('mj-navbar')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-NAVBAR-LINK');
     });
   });
 
   it('should all ENavbarLink have href attribute', () => {
     const { container } = render(Navbar);
-    container.querySelector('mj-navbar')?.childNodes.forEach((child) => {
+    container.querySelector('mj-navbar')!.childNodes.forEach((child) => {
       expect(child).toHaveAttribute('href');
     });
   });

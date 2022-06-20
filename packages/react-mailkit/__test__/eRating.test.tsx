@@ -29,20 +29,20 @@ describe('should be correct output', () => {
   it('should have five stars', () => {
     const { container } = render(Rating);
     expect(
-      container.querySelector('mj-raw')?.firstChild?.childNodes.length
+      container.querySelector('mj-raw')!.firstChild!.childNodes.length
     ).toStrictEqual(5);
   });
 
   it('should have the fifth star correct href attribute', () => {
     const { container } = render(Rating);
-    expect(container.querySelector('a')?.getAttribute('href')).toStrictEqual(
+    expect(container.querySelector('a')!.getAttribute('href')).toStrictEqual(
       'https://campaignmonitor.wufoo.com/forms/q1iszi41dp3po9/def/field=5'
     );
   });
 
   it('should have the fifth star correct title attribute', () => {
     const { container } = render(Rating);
-    expect(container.querySelector('a')?.getAttribute('title')).toStrictEqual(
+    expect(container.querySelector('a')!.getAttribute('title')).toStrictEqual(
       '5'
     );
   });

@@ -53,13 +53,13 @@ describe('should be correct output', () => {
   it('should have two children', () => {
     const { container } = render(Wrapper);
     expect(
-      container.querySelector('mj-wrapper')?.childNodes.length
+      container.querySelector('mj-wrapper')!.childNodes.length
     ).toStrictEqual(2);
   });
 
   it('should have ESection as children', () => {
     const { container } = render(Wrapper);
-    container.querySelector('mj-wrapper')?.childNodes.forEach((child) => {
+    container.querySelector('mj-wrapper')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-SECTION');
     });
   });
@@ -67,28 +67,28 @@ describe('should be correct output', () => {
   it('should have border attribute', () => {
     const { container } = render(Wrapper);
     expect(
-      container.querySelector('mj-wrapper')?.hasAttribute('border')
+      container.querySelector('mj-wrapper')!.hasAttribute('border')
     ).toBeTruthy();
   });
 
   it('should have 1px solid #000000 as border attribute', () => {
     const { container } = render(Wrapper);
     expect(
-      container.querySelector('mj-wrapper')?.getAttribute('border')
+      container.querySelector('mj-wrapper')!.getAttribute('border')
     ).toStrictEqual('1px solid #000000');
   });
 
   it('should have padding attribute', () => {
     const { container } = render(Wrapper);
     expect(
-      container.querySelector('mj-wrapper')?.hasAttribute('padding')
+      container.querySelector('mj-wrapper')!.hasAttribute('padding')
     ).toBeTruthy();
   });
 
   it('should have 50px 30px as padding attribute', () => {
     const { container } = render(Wrapper);
     expect(
-      container.querySelector('mj-wrapper')?.getAttribute('padding')
+      container.querySelector('mj-wrapper')!.getAttribute('padding')
     ).toStrictEqual('50px 30px');
   });
 

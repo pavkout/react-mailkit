@@ -27,28 +27,28 @@ describe('should be correct output', () => {
   it('should have href attribute', () => {
     const { container } = render(Image);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('href')
+      container.querySelector('mj-image')!.hasAttribute('href')
     ).toBeTruthy();
   });
 
   it('should have https://www.google.com as href attribute', () => {
     const { container } = render(Image);
     expect(
-      container.querySelector('mj-image')?.getAttribute('href')
+      container.querySelector('mj-image')!.getAttribute('href')
     ).toStrictEqual('https://www.google.com');
   });
 
   it('should have width attribute', () => {
     const { container } = render(Image);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('width')
+      container.querySelector('mj-image')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have 300px as width attribute', () => {
     const { container } = render(Image);
     expect(
-      container.querySelector('mj-image')?.getAttribute('width')
+      container.querySelector('mj-image')!.getAttribute('width')
     ).toStrictEqual('300px');
   });
 

@@ -22,42 +22,42 @@ describe('should be correct output', () => {
   it('should have path attribute', () => {
     const { container } = render(Include);
     expect(
-      container.querySelector('mj-include')?.hasAttribute('path')
+      container.querySelector('mj-include')!.hasAttribute('path')
     ).toBeTruthy();
   });
 
   it('should have correct path attribute', () => {
     const { container } = render(Include);
     expect(
-      container.querySelector('mj-include')?.getAttribute('path')
+      container.querySelector('mj-include')!.getAttribute('path')
     ).toStrictEqual('./inline-styles.css');
   });
 
   it('should have cssInline attribute', () => {
     const { container } = render(Include);
     expect(
-      container.querySelector('mj-include')?.hasAttribute('css-inline')
+      container.querySelector('mj-include')!.hasAttribute('css-inline')
     ).toBeTruthy();
   });
 
   it('should have inline as cssInline attribute', () => {
     const { container } = render(Include);
     expect(
-      container.querySelector('mj-include')?.getAttribute('css-inline')
+      container.querySelector('mj-include')!.getAttribute('css-inline')
     ).toStrictEqual('inline');
   });
 
   it('should have type attribute', () => {
     const { container } = render(Include);
     expect(
-      container.querySelector('mj-include')?.hasAttribute('type')
+      container.querySelector('mj-include')!.hasAttribute('type')
     ).toBeTruthy();
   });
 
   it('should have css as type attribute', () => {
     const { container } = render(Include);
     expect(
-      container.querySelector('mj-include')?.getAttribute('type')
+      container.querySelector('mj-include')!.getAttribute('type')
     ).toStrictEqual('css');
   });
 

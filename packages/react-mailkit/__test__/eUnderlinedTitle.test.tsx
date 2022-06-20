@@ -8,7 +8,7 @@ const Avatar = (
   <EUnderlinedTitle
     title="My Awesome Tilte"
     textProps={{
-      align: 'center'
+      align: 'center',
     }}
   />
 );

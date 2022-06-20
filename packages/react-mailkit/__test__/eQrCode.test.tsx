@@ -18,28 +18,28 @@ describe('should be correct output', () => {
   it('should have width attribute', () => {
     const { container } = render(<EQrCode value="Awesome QR" />);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('width')
+      container.querySelector('mj-image')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have 200px as width attribute', () => {
     const { container } = render(<EQrCode value="Awesome QR" />);
     expect(
-      container.querySelector('mj-image')?.getAttribute('width')
+      container.querySelector('mj-image')!.getAttribute('width')
     ).toStrictEqual('200px');
   });
 
   it('should have src attribute', () => {
     const { container } = render(<EQrCode value="Awesome QR" />);
     expect(
-      container.querySelector('mj-image')?.hasAttribute('src')
+      container.querySelector('mj-image')!.hasAttribute('src')
     ).toBeTruthy();
   });
 
   it('should have correct src attribute', () => {
     const { container } = render(<EQrCode value="Awesome QR" />);
     expect(
-      container.querySelector('mj-image')?.getAttribute('src')
+      container.querySelector('mj-image')!.getAttribute('src')
     ).toStrictEqual(
       'https://quickchart.io/qr?text=Awesome%20QR&size=200&dark=000000&light=%23ffffff&ecLevel=M&margin=4'
     );

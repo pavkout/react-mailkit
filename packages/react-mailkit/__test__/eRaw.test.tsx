@@ -19,7 +19,7 @@ describe('should be correct output', () => {
 
   it('should have one child', () => {
     const { container } = render(Raw);
-    expect(container.querySelector('mj-raw')?.childNodes.length).toStrictEqual(
+    expect(container.querySelector('mj-raw')!.childNodes.length).toStrictEqual(
       1
     );
   });

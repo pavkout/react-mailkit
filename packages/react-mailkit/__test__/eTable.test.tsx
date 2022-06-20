@@ -10,7 +10,7 @@ const Table = (
       style={{
         borderBottom: '1px solid #ecedee',
         textAlign: 'left',
-        padding: '15px 0'
+        padding: '15px 0',
       }}>
       <th style={{ padding: '0 15px 0 0' }}>Year</th>
       <th style={{ padding: '0 15px' }}>Language</th>
@@ -43,20 +43,20 @@ describe('should be correct output', () => {
   it('should have three children', () => {
     const { container } = render(Table);
     expect(
-      container.querySelector('mj-table')?.childNodes.length
+      container.querySelector('mj-table')!.childNodes.length
     ).toStrictEqual(3);
   });
 
   it('should have tr as children', () => {
     const { container } = render(Table);
-    container.querySelector('mj-table')?.childNodes.forEach((child) => {
+    container.querySelector('mj-table')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('TR');
     });
   });
 
   it('should each tr have td as children', () => {
     const { container } = render(Table);
-    container.querySelector('mj-table')?.childNodes.forEach((child, index) => {
+    container.querySelector('mj-table')!.childNodes.forEach((child, index) => {
       child.childNodes.forEach((trChild) => {
         expect(trChild.nodeName).toEqual(index === 0 ? 'TH' : 'TD');
       });

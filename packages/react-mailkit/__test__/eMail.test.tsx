@@ -33,20 +33,20 @@ describe('should be correct output', () => {
 
   it('should have one child', () => {
     const { container } = render(Email);
-    expect(container.querySelector('mjml')?.childNodes.length).toStrictEqual(1);
+    expect(container.querySelector('mjml')!.childNodes.length).toStrictEqual(1);
   });
 
   it('should have EBody child as root', () => {
     const { container } = render(Email);
     expect(
-      container.querySelector('mjml')?.childNodes[0].nodeName
+      container.querySelector('mjml')!.childNodes[0].nodeName
     ).toStrictEqual('MJ-BODY');
   });
 
   it(`should haven't EText as root child`, () => {
     const { container } = render(Email);
     expect(
-      container.querySelector('mjml')?.childNodes[0].nodeName
+      container.querySelector('mjml')!.childNodes[0].nodeName
     ).not.toStrictEqual('MJ-TEXT');
   });
 

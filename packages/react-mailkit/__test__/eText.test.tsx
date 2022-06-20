@@ -24,28 +24,28 @@ describe('should be correct output', () => {
   it('should have font-size attribute', () => {
     const { container } = render(Text);
     expect(
-      container.querySelector('mj-text')?.hasAttribute('font-size')
+      container.querySelector('mj-text')!.hasAttribute('font-size')
     ).toBeTruthy();
   });
 
   it('should have 20px as font-size attribute', () => {
     const { container } = render(Text);
     expect(
-      container.querySelector('mj-text')?.getAttribute('font-size')
+      container.querySelector('mj-text')!.getAttribute('font-size')
     ).toStrictEqual('20px');
   });
 
   it('should have align attribute', () => {
     const { container } = render(Text);
     expect(
-      container.querySelector('mj-text')?.hasAttribute('align')
+      container.querySelector('mj-text')!.hasAttribute('align')
     ).toBeTruthy();
   });
 
   it('should have center as align attribute', () => {
     const { container } = render(Text);
     expect(
-      container.querySelector('mj-text')?.getAttribute('align')
+      container.querySelector('mj-text')!.getAttribute('align')
     ).toStrictEqual('center');
   });
 

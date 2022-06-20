@@ -80,67 +80,67 @@ describe('should be correct output', () => {
   it('should have two children', () => {
     const { container } = render(Accordion);
     expect(
-      container.querySelector('mj-accordion')?.childNodes.length
+      container.querySelector('mj-accordion')!.childNodes.length
     ).toStrictEqual(2);
   });
 
   it('should all children be mj-accordion-element', () => {
     const { container } = render(Accordion);
-    container.querySelector('mj-accordion')?.childNodes.forEach((child) => {
+    container.querySelector('mj-accordion')!.childNodes.forEach((child) => {
       expect(child.nodeName).toEqual('MJ-ACCORDION-ELEMENT');
     });
   });
 
   it('should each mj-accordion-element has 2 children', () => {
     const { container } = render(Accordion);
-    container.querySelector('mj-accordion')?.childNodes.forEach((child) => {
+    container.querySelector('mj-accordion')!.childNodes.forEach((child) => {
       expect(child.childNodes.length).toStrictEqual(2);
     });
   });
 
   it('should each mj-accordion-element has one mj-accordion-title and one mj-accordion-text', () => {
     const { container } = render(Accordion);
-    container.querySelector('mj-accordion')?.childNodes.forEach((child) => {
-      expect(child.firstChild?.nodeName).toEqual('MJ-ACCORDION-TITLE');
-      expect(child.lastChild?.nodeName).toEqual('MJ-ACCORDION-TEXT');
+    container.querySelector('mj-accordion')!.childNodes.forEach((child) => {
+      expect(child.firstChild!.nodeName).toEqual('MJ-ACCORDION-TITLE');
+      expect(child.lastChild!.nodeName).toEqual('MJ-ACCORDION-TEXT');
     });
   });
 
   it('should the first mj-accordion-element has correct title', () => {
     const { container } = render(Accordion);
     expect(
-      container.querySelector('mj-accordion')?.firstChild?.firstChild
-        ?.firstChild?.nodeValue
+      container.querySelector('mj-accordion')!.firstChild!.firstChild!
+        .firstChild!.nodeValue
     ).toEqual('Why use an accordion?');
   });
 
   it('should the mj-accordion-text of the first mj-accordion-element not empty', () => {
     const { container } = render(Accordion);
     expect(
-      container.querySelector('mj-accordion')?.firstChild?.lastChild?.firstChild
-        ?.firstChild
+      container.querySelector('mj-accordion')!.firstChild!.lastChild!
+        .firstChild!.firstChild
     ).not.toBeNull();
   });
 
   it('should the mj-accordion-text of the first mj-accordion-element to be span', () => {
     const { container } = render(Accordion);
     expect(
-      container.querySelector('mj-accordion')?.firstChild?.lastChild?.firstChild
-        ?.nodeName
+      container.querySelector('mj-accordion')!.firstChild!.lastChild!
+        .firstChild!.nodeName
     ).toBe('SPAN');
   });
 
   it('should the span of the mj-accordion-text of the first mj-accordion-element has style lineHeight: 20px', () => {
     const { container } = render(Accordion);
     expect(
-      container.querySelector('mj-accordion')?.firstChild?.lastChild?.firstChild
+      container.querySelector('mj-accordion')!.firstChild!.lastChild!.firstChild
     ).toHaveStyle('lineHeight: 20px');
   });
 
   it('should mj-accordion-text of the second mj-accordion-element has correct attribute', () => {
     const { container } = render(Accordion);
     expect(
-      container.querySelector('mj-accordion')?.lastChild?.lastChild
+      container.querySelector('mj-accordion')!.lastChild!.lastChild
     ).toHaveAttribute('color');
   });
 

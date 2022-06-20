@@ -30,7 +30,7 @@ describe('should be correct output', () => {
 
   it('should have one child', () => {
     const { container } = render(Body);
-    expect(container.querySelector('mj-body')?.childNodes.length).toStrictEqual(
+    expect(container.querySelector('mj-body')!.childNodes.length).toStrictEqual(
       1
     );
   });
@@ -38,26 +38,26 @@ describe('should be correct output', () => {
   it('should have attributes background-color, css-class width', () => {
     const { container } = render(Body);
     expect(
-      container.querySelector('mj-body')?.hasAttribute('background-color')
+      container.querySelector('mj-body')!.hasAttribute('background-color')
     ).toBeTruthy();
     expect(
-      container.querySelector('mj-body')?.hasAttribute('css-class')
+      container.querySelector('mj-body')!.hasAttribute('css-class')
     ).toBeTruthy();
     expect(
-      container.querySelector('mj-body')?.hasAttribute('width')
+      container.querySelector('mj-body')!.hasAttribute('width')
     ).toBeTruthy();
   });
 
   it('should have correct values in attributes', () => {
     const { container } = render(Body);
     expect(
-      container.querySelector('mj-body')?.getAttribute('background-color')
+      container.querySelector('mj-body')!.getAttribute('background-color')
     ).toStrictEqual('#d9d9d9');
     expect(
-      container.querySelector('mj-body')?.getAttribute('css-class')
+      container.querySelector('mj-body')!.getAttribute('css-class')
     ).toStrictEqual('mjml-body-class');
     expect(
-      container.querySelector('mj-body')?.getAttribute('width')
+      container.querySelector('mj-body')!.getAttribute('width')
     ).toStrictEqual('500px');
   });
 

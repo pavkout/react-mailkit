@@ -18,14 +18,14 @@ describe('should be correct output', () => {
   it('should have font-family attribute', () => {
     const { container } = render(<EAll fontFamily="Arial" />);
     expect(
-      container.querySelector('mj-all')?.hasAttribute('font-family')
+      container.querySelector('mj-all')!.hasAttribute('font-family')
     ).toBeTruthy();
   });
 
   it('should have Arial as font-family attribute', () => {
     const { container } = render(<EAll fontFamily="Arial" />);
     expect(
-      container.querySelector('mj-all')?.getAttribute('font-family')
+      container.querySelector('mj-all')!.getAttribute('font-family')
     ).toStrictEqual('Arial');
   });
 
