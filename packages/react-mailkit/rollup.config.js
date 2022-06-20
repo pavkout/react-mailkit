@@ -36,13 +36,13 @@ export default (async () => [
       format: 'umd',
       name: moduleName,
       banner,
-      sourcemap: isProduction ? false : 'inline'
+      sourcemap: isProduction ? false : 'inline',
     },
     // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
     // https://rollupjs.org/guide/en/#external
     external: [
       ...Object.keys(pkg.dependencies || {}),
-      ...Object.keys(pkg.devDependencies || {})
+      ...Object.keys(pkg.devDependencies || {}),
     ],
     plugins: [
       json(),
@@ -56,11 +56,11 @@ export default (async () => [
       babel({
         exclude: 'node_modules/**',
         babelHelpers: 'bundled',
-        extensions
+        extensions,
       }),
       // Only in production mode
-      isProduction && (await import('rollup-plugin-terser')).terser()
-    ]
+      isProduction && (await import('rollup-plugin-terser')).terser(),
+    ],
   },
 
   // CommonJS (for Node) and ES module (for bundlers) build.
@@ -75,21 +75,21 @@ export default (async () => [
     // https://rollupjs.org/guide/en/#external
     external: [
       ...Object.keys(pkg.dependencies || {}),
-      ...Object.keys(pkg.devDependencies || {})
+      ...Object.keys(pkg.devDependencies || {}),
     ],
     output: [
       {
         file: pkg.main,
         format: 'cjs',
         banner,
-        sourcemap: isProduction ? false : 'inline'
+        sourcemap: isProduction ? false : 'inline',
       },
       {
         file: pkg.module,
         format: 'es',
         banner,
-        sourcemap: isProduction ? false : 'inline'
-      }
+        sourcemap: isProduction ? false : 'inline',
+      },
     ],
     plugins: [
       json(),
@@ -104,16 +104,16 @@ export default (async () => [
       babel({
         exclude: 'node_modules/**',
         babelHelpers: 'bundled',
-        extensions
+        extensions,
       }),
       // Only in production mode
-      isProduction && (await import('rollup-plugin-terser')).terser()
-    ]
+      isProduction && (await import('rollup-plugin-terser')).terser(),
+    ],
   },
   {
     // path to your declaration files root
     input: './dist/dts/index.d.ts',
     output: [{ file: pkg.types, format: 'umd' }],
-    plugins: [dts()]
-  }
+    plugins: [dts()],
+  },
 ])();

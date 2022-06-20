@@ -90,7 +90,7 @@ import {
   ESection,
   EColumn,
   ECarousel,
-  ECarouselImage
+  ECarouselImage,
 } from 'react-mailkit';
 
 const { html, errors } = useEmail(

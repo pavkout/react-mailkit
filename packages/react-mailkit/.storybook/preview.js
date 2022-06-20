@@ -6,7 +6,7 @@ import { theme } from './theme';
 
 export const parameters = {
   docs: {
-    theme
+    theme,
   },
   layout: 'centered',
   options: {
@@ -18,11 +18,11 @@ export const parameters = {
           'Components',
           'Standard Head components',
           'Standard Body components',
-          'Custom Body components'
-        ]
-      ]
-    }
-  }
+          'Custom Body components',
+        ],
+      ],
+    },
+  },
 };
 
 export const decorators = [
@@ -34,5 +34,5 @@ export const decorators = [
     );
 
     return <div dangerouslySetInnerHTML={{ __html: html }} />;
-  }
+  },
 ];

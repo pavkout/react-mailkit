@@ -12,5 +12,5 @@ export const theme = create({
   gridCellSize: 12,
   brandTitle: 'react-mailkit storybook',
   brandUrl: 'https://react-mailkit.io',
-  brandImage: logo
+  brandImage: logo,
 });
