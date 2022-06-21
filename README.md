@@ -38,11 +38,9 @@
 
 ---
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bcc92f8f4f494d28a22b81233173f5fb)](https://app.codacy.com/gh/pavkout/react-mailkit?utm_source=github.com&utm_medium=referral&utm_content=pavkout/react-mailkit&utm_campaign=Badge_Grade_Settings)
+Once upon a time, email creation wasn't an easy part using pure `html` and `css`.
 
-> Once upon a time, email creation wasn't an easy part using pure `html` and `css`.
->
-> `Now it is!` Create awesome and fully responsive emails without stress.
+`Now it is!` Create awesome and fully responsive emails without stress.
 
 ## Documentation
 
